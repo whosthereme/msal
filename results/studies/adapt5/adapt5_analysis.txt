@@ -1,0 +1,75 @@
+complete seeds: [148021, 148022, 148023, 148024, 148025]  partial: {}
+pairs per machine: {'local': 45, 'nodes': 160}
+== primary (trunk vs head, complete method)
+  A1 flow, k=1                                     -8.7% [ -11.1,   -6.2] lower | new seeds:   -9.4% [ -11.4,   -7.4] lower | tasks:   -8.7% [ -10.5,   -6.7] lower, 39/41 | folds 164/205
+                                                 per seed: -5.6 -8.4 -9.5 -8.5 -11.1
+  A2 sampled chunk, k=1                           -20.3% [ -24.1,  -16.4] lower | new seeds:  -21.0% [ -25.8,  -15.8] lower | tasks:  -20.3% [ -22.5,  -18.0] lower, 39/41 | folds 197/205
+                                                 per seed: -17.8 -18.9 -23.9 -17.6 -23.3
+  A1 flow, k=16                                    -9.6% [ -12.1,   -7.0] lower | new seeds:  -10.2% [ -12.8,   -7.6] lower | tasks:   -9.6% [ -11.5,   -7.5] lower, 39/41 | folds 172/205
+                                                 per seed: -6.9 -9.5 -9.8 -9.0 -12.6
+  A2 sampled chunk, k=16                          -20.8% [ -24.5,  -16.8] lower | new seeds:  -21.4% [ -26.2,  -16.3] lower | tasks:  -20.8% [ -23.0,  -18.3] lower, 39/41 | folds 199/205
+                                                 per seed: -18.1 -19.6 -23.5 -17.9 -24.4
+== secondary
+  code beyond inversion, trunk, flow, k=1          -8.2% [  -8.8,   -7.6] lower | new seeds:   -8.2% [  -9.1,   -7.3] lower | tasks:   -8.2% [  -8.9,   -7.5] lower, 41/41 | folds 205/205
+                                                 per seed: -8.3 -7.4 -8.3 -8.5 -8.6
+  code beyond inversion, trunk, chunk, k=1         -4.1% [  -4.5,   -3.7] lower | new seeds:   -4.2% [  -4.8,   -3.6] lower | tasks:   -4.1% [  -4.7,   -3.6] lower, 41/41 | folds 191/205
+                                                 per seed: -4.0 -3.7 -4.5 -4.1 -4.4
+  code beyond inversion, head, flow, k=1           -8.1% [  -8.4,   -7.7] lower | new seeds:   -8.0% [  -8.5,   -7.5] lower | tasks:   -8.1% [  -8.6,   -7.5] lower, 41/41 | folds 205/205
+                                                 per seed: -8.3 -7.9 -7.7 -8.2 -8.3
+  code beyond inversion, head, chunk, k=1          -3.9% [  -4.3,   -3.5] lower | new seeds:   -3.8% [  -4.2,   -3.5] lower | tasks:   -3.9% [  -4.6,   -3.4] lower, 41/41 | folds 189/205
+                                                 per seed: -4.4 -3.6 -4.1 -3.8 -3.9
+  inversion trunk vs head, flow, k=1               -8.5% [ -10.7,   -6.2] lower | new seeds:   -9.2% [ -10.9,   -7.4] lower | tasks:   -8.5% [ -10.2,   -6.7] lower, 39/41 | folds 165/205
+                                                 per seed: -5.7 -8.8 -8.8 -8.3 -10.8
+  code beyond inversion, trunk, flow, k=16         -9.3% [ -10.0,   -8.6] lower | new seeds:   -9.3% [ -10.3,   -8.2] lower | tasks:   -9.3% [ -10.0,   -8.6] lower, 41/41 | folds 205/205
+                                                 per seed: -9.4 -8.6 -9.0 -9.4 -10.1
+  code beyond inversion, trunk, chunk, k=16        -4.3% [  -4.7,   -3.8] lower | new seeds:   -4.3% [  -4.9,   -3.7] lower | tasks:   -4.3% [  -4.8,   -3.8] lower, 41/41 | folds 200/205
+                                                 per seed: -4.1 -3.8 -4.5 -4.4 -4.6
+  code beyond inversion, head, flow, k=16          -8.7% [  -9.2,   -8.3] lower | new seeds:   -8.7% [  -9.3,   -8.1] lower | tasks:   -8.7% [  -9.3,   -8.1] lower, 41/41 | folds 205/205
+                                                 per seed: -8.9 -8.5 -8.2 -9.0 -9.0
+  code beyond inversion, head, chunk, k=16         -4.1% [  -4.6,   -3.6] lower | new seeds:   -3.9% [  -4.3,   -3.5] lower | tasks:   -4.1% [  -4.7,   -3.6] lower, 41/41 | folds 197/205
+                                                 per seed: -4.7 -3.6 -4.2 -4.0 -4.0
+  inversion trunk vs head, flow, k=16              -9.0% [ -11.2,   -6.7] lower | new seeds:   -9.6% [ -11.7,   -7.5] lower | tasks:   -9.0% [ -10.8,   -7.2] lower, 39/41 | folds 171/205
+                                                 per seed: -6.4 -9.5 -9.0 -8.6 -11.5
+  zero-shot trunk vs head, flow                    -5.8% [  -9.4,   -2.0] lower | new seeds:   -6.2% [ -11.3,   -0.8] lower | tasks:   -5.8% [  -7.9,   -3.5] lower, 35/41 | folds 143/205
+                                                 per seed: -4.2 -7.1 -3.8 -3.3 -10.3
+  zero-shot trunk vs head, chunk                  -15.8% [ -20.7,  -10.6] lower | new seeds:  -16.0% [ -23.1,   -8.2] lower | tasks:  -15.8% [ -18.5,  -12.9] lower, 39/41 | folds 180/205
+                                                 per seed: -15.2 -18.1 -17.5 -8.7 -19.1
+  head: method vs own zero-shot, flow, k=1        -24.6% [ -25.5,  -23.6] lower | new seeds:  -24.4% [ -25.4,  -23.3] lower | tasks:  -24.6% [ -27.0,  -22.3] lower, 41/41 | folds 205/205
+                                                 per seed: -25.5 -23.4 -24.6 -24.8 -24.6
+  head: method vs own zero-shot, chunk, k=1       -20.2% [ -22.4,  -18.1] lower | new seeds:  -19.5% [ -20.2,  -18.8] lower | tasks:  -20.2% [ -23.6,  -16.8] lower, 41/41 | folds 197/205
+                                                 per seed: -23.2 -19.4 -19.4 -19.0 -20.1
+  head: method vs own zero-shot, flow, k=16       -26.7% [ -27.5,  -25.8] lower | new seeds:  -26.4% [ -27.1,  -25.7] lower | tasks:  -26.7% [ -28.9,  -24.5] lower, 41/41 | folds 205/205
+                                                 per seed: -27.6 -25.8 -26.4 -26.9 -26.6
+  head: method vs own zero-shot, chunk, k=16      -22.0% [ -23.7,  -20.3] lower | new seeds:  -21.5% [ -22.5,  -20.5] lower | tasks:  -22.0% [ -25.3,  -18.8] lower, 41/41 | folds 203/205
+                                                 per seed: -24.3 -21.4 -22.3 -20.8 -21.4
+  trunk: method vs own zero-shot, flow, k=1       -26.9% [ -29.4,  -24.2] lower | new seeds:  -26.9% [ -30.7,  -23.0] lower | tasks:  -26.9% [ -29.6,  -24.2] lower, 41/41 | folds 205/205
+                                                 per seed: -26.6 -24.4 -29.0 -28.9 -25.3
+  trunk: method vs own zero-shot, chunk, k=1      -24.5% [ -27.6,  -21.3] lower | new seeds:  -24.3% [ -28.7,  -19.6] lower | tasks:  -24.5% [ -28.8,  -20.4] lower, 41/41 | folds 200/205
+                                                 per seed: -25.5 -20.2 -25.6 -26.9 -24.3
+  trunk: method vs own zero-shot, flow, k=16      -29.6% [ -31.5,  -27.7] lower | new seeds:  -29.6% [ -32.3,  -26.7] lower | tasks:  -29.6% [ -32.4,  -26.9] lower, 41/41 | folds 205/205
+                                                 per seed: -29.7 -27.7 -30.9 -31.2 -28.4
+  trunk: method vs own zero-shot, chunk, k=16     -26.6% [ -29.3,  -23.8] lower | new seeds:  -26.6% [ -30.6,  -22.3] lower | tasks:  -26.6% [ -30.8,  -22.5] lower, 41/41 | folds 201/205
+                                                 per seed: -26.8 -22.8 -28.0 -28.7 -26.5
+== descriptive
+  A1 flow, k=2                                     -9.2% [ -11.7,   -6.6] lower | new seeds:   -9.8% [ -12.4,   -7.2] lower | tasks:   -9.2% [ -11.1,   -7.2] lower, 39/41 | folds 169/205
+                                                 per seed: -6.5 -8.6 -9.6 -8.8 -12.2
+  A1 flow, k=4                                     -9.5% [ -12.0,   -6.9] lower | new seeds:  -10.2% [ -12.7,   -7.5] lower | tasks:   -9.5% [ -11.4,   -7.4] lower, 39/41 | folds 173/205
+                                                 per seed: -6.7 -9.3 -9.8 -9.0 -12.5
+  A1 flow, k=8                                     -9.6% [ -12.1,   -6.9] lower | new seeds:  -10.2% [ -12.8,   -7.5] lower | tasks:   -9.6% [ -11.5,   -7.5] lower, 39/41 | folds 174/205
+                                                 per seed: -6.8 -9.5 -9.8 -8.9 -12.6
+  A1 ROBUSTNESS flow, k=1                          -9.7% [ -12.9,   -6.4] lower | new seeds:  -10.6% [ -13.8,   -7.2] lower | tasks:   -9.7% [ -11.8,   -7.6] lower, 39/41 | folds 170/205
+                                                 per seed: -6.3 -9.5 -12.1 -8.2 -12.5
+  A1 ROBUSTNESS flow, k=16                        -10.6% [ -13.9,   -7.1] lower | new seeds:  -11.4% [ -15.1,   -7.5] lower | tasks:  -10.6% [ -12.7,   -8.2] lower, 39/41 | folds 171/205
+                                                 per seed: -7.3 -10.1 -12.4 -8.7 -14.1
+== check: retrained film_nl vs stored ws2 scores (flow MSE; log ratio over folds)
+  seed 148021 zero-shot    mean  +1.0% sd  9.4% identical 0
+  seed 148021 method k=16  mean  +1.1% sd  7.5% identical 0
+  seed 148022 zero-shot    mean  -2.2% sd  5.6% identical 0
+  seed 148022 method k=16  mean  -3.3% sd  5.6% identical 0
+  seed 148023 zero-shot    mean  -0.9% sd  7.8% identical 0
+  seed 148023 method k=16  mean  -1.3% sd  6.8% identical 0
+  seed 148024 zero-shot    mean  -1.8% sd  4.9% identical 0
+  seed 148024 method k=16  mean  -0.8% sd  3.7% identical 0
+  seed 148025 zero-shot    mean  -0.9% sd  4.2% identical 0
+  seed 148025 method k=16  mean  -0.4% sd  2.4% identical 0
+written results\adapt5\adapt5_analysis.json

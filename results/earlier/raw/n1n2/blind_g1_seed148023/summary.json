@@ -1,0 +1,36 @@
+{
+ "protocol": "revision_20261021_loto_v1",
+ "feature": "blind",
+ "seed": 148023,
+ "arms": {
+  "sal": {
+   "fold_count": 41,
+   "complete": true,
+   "mean_selection": 0.33623513133689886,
+   "mean_robustness": 0.3284994547782363,
+   "reference_max_abs_diff": 0.0,
+   "reference_folds": 41
+  },
+  "ctx_add": {
+   "fold_count": 41,
+   "complete": true,
+   "mean_selection": 0.34786240983663536,
+   "mean_robustness": 0.3428618618537013,
+   "reference_max_abs_diff": 0.017628371715545654,
+   "reference_folds": 41
+  },
+  "sal_noreg": {
+   "fold_count": 41,
+   "complete": true,
+   "mean_selection": 0.3733494756360049,
+   "mean_robustness": 0.36814649473851135
+  },
+  "film": {
+   "fold_count": 41,
+   "complete": true,
+   "mean_selection": 0.31973437510612535,
+   "mean_robustness": 0.3146990879734115
+  }
+ },
+ "finished_unix": 1792584067.7131405
+}

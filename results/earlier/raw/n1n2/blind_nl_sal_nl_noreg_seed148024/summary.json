@@ -1,0 +1,14 @@
+{
+ "protocol": "revision_20261024_loto_nl_v1",
+ "feature": "blind",
+ "seed": 148024,
+ "arms": {
+  "sal_nl_noreg": {
+   "fold_count": 41,
+   "complete": true,
+   "mean_selection": 0.2548156142420743,
+   "mean_robustness": 0.2741792133002458
+  }
+ },
+ "finished_unix": 1792800605.1069028
+}

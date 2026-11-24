@@ -1,0 +1,11 @@
+trunk modulation (tfilm_nl) against input concatenation (tin_nl), zero-shot, development family; post hoc
+  check  tfilm vs film_nl   act    -15.6% [ -20.1,  -10.8] per seed [-14.8, -19.1, -15.6, -9.6, -18.5]
+  check  tin vs film_nl     act     -4.1% [  -7.6,   -0.3] per seed [-1.6, -6.7, -4.7, -0.3, -6.7]
+  INDIRECT tfilm vs tin act    -12.0% [ -14.1,   -9.9]  folds lower 165/205, tasks lower 37/41, task bootstrap -15.0..-9.0, per seed [-13.4, -13.3, -11.4, -9.3, -12.6]
+  DIRECT, both on ws2   act    -13.2% [ -16.3,  -10.0] (bootstrap over 83 folds; lower on 69)
+  seed 148021, one study act    -13.4% (lower on 35/41)
+  check  tfilm vs film_nl   flow    -6.2% [ -10.3,   -1.9] per seed [-3.9, -9.4, -4.3, -3.1, -10.2]
+  check  tin vs film_nl     flow    -0.8% [  -4.4,   +3.1] per seed [4.0, -2.1, -0.0, -1.3, -4.1]
+  INDIRECT tfilm vs tin flow    -5.5% [  -8.5,   -2.4]  folds lower 143/205, tasks lower 32/41, task bootstrap -7.9..-3.1, per seed [-7.6, -7.4, -4.2, -1.8, -6.3]
+  DIRECT, both on ws2   flow    -6.9% [  -9.4,   -4.4] (bootstrap over 83 folds; lower on 61)
+  seed 148021, one study flow    -7.6% (lower on 30/41)

@@ -1,0 +1,33 @@
+{
+ "protocol": "revision_20261111_ideal_v1",
+ "stage": "zero",
+ "seed": 148024,
+ "smoke": false,
+ "data_sha256": "not_verified",
+ "environment": {
+  "hostname": "workstation",
+  "python": "3.10.20",
+  "executable": "/home/ubuntu/anaconda3/envs/sal-g12/bin/python",
+  "torch": "2.12.1+cu130",
+  "cuda_device": "NVIDIA GeForce RTX 4090 D",
+  "cuda_visible_devices": "1",
+  "G12_TRAIN_STEPS_env": null,
+  "train_steps_effective": 12800,
+  "batch_size": 512,
+  "learning_rate": 0.0002,
+  "weight_decay": 1e-05,
+  "orthogonality_weight": 0.02,
+  "group_sparsity_weight": 0.001,
+  "dead_action_dims": [
+   3,
+   4,
+   5
+  ],
+  "noise_draws": 8
+ },
+ "action_range": [
+  -1.0,
+  1.0
+ ],
+ "started_unix": 1794370218.8980231
+}

@@ -1,0 +1,39 @@
+tasks with both arms: 41 (local 7, nodes 34)
+== primary
+  A1 MSAL trunk vs MSAL head, flow, k=1                  -5.6% [  -9.1,   -2.3] lower  won 28/41
+  A2 MSAL trunk vs MSAL head, sampled chunk, k=1        -17.8% [ -20.6,  -14.9] lower  won 40/41
+  A1 MSAL trunk vs MSAL head, flow, k=16                 -6.9% [ -10.3,   -3.5] lower  won 31/41
+  A2 MSAL trunk vs MSAL head, sampled chunk, k=16       -18.1% [ -21.1,  -15.0] lower  won 40/41
+== secondary
+  code beyond inversion, trunk, flow, k=1                -8.3% [  -9.1,   -7.5] lower  won 41/41
+  code beyond inversion, head (replication), flow, k=1   -8.3% [  -9.0,   -7.6] lower  won 41/41
+  inversion trunk vs head, flow, k=1                     -5.7% [  -9.2,   -2.2] lower  won 26/41
+  code beyond inversion, trunk, sampled chunk, k=1       -4.0% [  -4.9,   -3.2] lower  won 39/41
+  code beyond inversion, head, sampled chunk, k=1        -4.4% [  -5.3,   -3.5] lower  won 39/41
+  code beyond inversion, trunk, flow, k=16               -9.4% [ -10.2,   -8.5] lower  won 41/41
+  code beyond inversion, head (replication), flow, k=16   -8.9% [  -9.6,   -8.2] lower  won 41/41
+  inversion trunk vs head, flow, k=16                    -6.4% [  -9.9,   -3.0] lower  won 29/41
+  code beyond inversion, trunk, sampled chunk, k=16      -4.1% [  -4.9,   -3.3] lower  won 40/41
+  code beyond inversion, head, sampled chunk, k=16       -4.7% [  -5.6,   -3.9] lower  won 40/41
+  zero-shot trunk vs head, flow                          -4.2% [  -8.9,   +0.3] n.d.   won 26/41
+  zero-shot trunk vs head, sampled chunk                -15.2% [ -19.2,  -11.3] lower  won 36/41
+== descriptive
+  MSAL trunk vs head, flow, k=1                          -5.6% [  -9.1,   -2.3] lower  won 28/41
+  MSAL trunk vs head, ROBUSTNESS flow, k=1               -6.3% [  -9.6,   -2.9] lower  won 31/41
+  MSAL trunk vs head, flow, k=2                          -6.5% [ -10.0,   -3.1] lower  won 31/41
+  MSAL trunk vs head, ROBUSTNESS flow, k=2               -7.1% [ -10.5,   -3.5] lower  won 31/41
+  MSAL trunk vs head, flow, k=4                          -6.7% [ -10.2,   -3.3] lower  won 31/41
+  MSAL trunk vs head, ROBUSTNESS flow, k=4               -7.2% [ -10.7,   -3.6] lower  won 31/41
+  MSAL trunk vs head, flow, k=8                          -6.8% [ -10.3,   -3.4] lower  won 31/41
+  MSAL trunk vs head, ROBUSTNESS flow, k=8               -7.2% [ -10.7,   -3.7] lower  won 31/41
+  MSAL trunk vs head, flow, k=16                         -6.9% [ -10.3,   -3.5] lower  won 31/41
+  MSAL trunk vs head, ROBUSTNESS flow, k=16              -7.3% [ -10.7,   -3.8] lower  won 31/41
+  film_nl: MSAL vs its zero-shot head, flow, k=1        -25.5% [ -28.3,  -22.6] lower  won 41/41
+  film_nl: MSAL vs its zero-shot head, sampled chunk, k=1  -23.2% [ -26.8,  -19.4] lower  won 40/41
+  film_nl: MSAL vs its zero-shot head, flow, k=16       -27.6% [ -30.3,  -25.0] lower  won 41/41
+  film_nl: MSAL vs its zero-shot head, sampled chunk, k=16  -24.3% [ -27.8,  -20.7] lower  won 41/41
+  tfilm_nl: MSAL vs its zero-shot head, flow, k=1       -26.6% [ -29.6,  -23.7] lower  won 41/41
+  tfilm_nl: MSAL vs its zero-shot head, sampled chunk, k=1  -25.5% [ -30.0,  -21.0] lower  won 41/41
+  tfilm_nl: MSAL vs its zero-shot head, flow, k=16      -29.7% [ -32.5,  -26.8] lower  won 41/41
+  tfilm_nl: MSAL vs its zero-shot head, sampled chunk, k=16  -26.8% [ -31.4,  -22.3] lower  won 41/41
+written results\adapt\adapt_analysis.json

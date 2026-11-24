@@ -1,0 +1,31 @@
+text records 8 (machines {'ws2': 0, 'a800': 8}); plain_nl records 7; stored word-descriptor records 199
+span share of the held descriptor: mean 0.775, min 0.599, max 0.955; scorer check 8/8
+T1: text embedding vs no task input
+  T1 sampled chunk                                       +3.9% [  +nan,   +nan] one seed            (1 seeds, folds 2/7)
+  T1 flow                                                -2.3% [  +nan,   +nan] one seed            (1 seeds, folds 4/7)
+T2: text embedding vs bag of words (stored MSAL head)
+  T2 sampled chunk                                       +8.9% [  +nan,   +nan] one seed            (1 seeds, folds 3/7)
+      same-machine pairs                                 -0.9% [  +nan,   +nan] one seed            (1 seeds, folds 1/1)
+  T2 flow                                                +0.7% [  +nan,   +nan] one seed            (1 seeds, folds 4/7)
+      same-machine pairs                                 -6.9% [  +nan,   +nan] one seed            (1 seeds, folds 1/1)
+T3: in-span part only vs whole descriptor (same model)
+  T3 sampled chunk                                       -1.3% [  +nan,   +nan] one seed            (1 seeds, folds 5/8)
+  T3 flow                                                -2.1% [  +nan,   +nan] one seed            (1 seeds, folds 6/8)
+T4: whole descriptor vs constant-only descriptor (same model)
+  T4 sampled chunk                                       +2.1% [  +nan,   +nan] one seed            (1 seeds, folds 4/8)
+  T4 flow                                                +1.1% [  +nan,   +nan] one seed            (1 seeds, folds 4/8)
+reference: bag of words vs no task input (stored head, new plain_nl)
+  W vs N sampled chunk                                   -5.8% [  +nan,   +nan] one seed            (1 seeds, folds 5/6)
+      same-machine pairs                                 -4.5% [  +nan,   +nan] one seed            (1 seeds, folds 4/5)
+  W vs N flow                                            -3.5% [  +nan,   +nan] one seed            (1 seeds, folds 5/6)
+      same-machine pairs                                 -3.1% [  +nan,   +nan] one seed            (1 seeds, folds 4/5)
+T5 sampled chunk: Spearman of span share and log(E/N) over 7 tasks: -0.50 [-1.00, +0.62] not supported
+  T1 sampled chunk, share at or above the median 0.78    -0.6% [  +nan,   +nan] one seed            (1 seeds, folds 2/4)
+  T3 sampled chunk, share at or above the median 0.78    -0.9% [  +nan,   +nan] one seed            (1 seeds, folds 2/4)
+  T1 sampled chunk, share below the median              +10.2% [  +nan,   +nan] one seed            (1 seeds, folds 0/3)
+  T3 sampled chunk, share below the median               -1.6% [  +nan,   +nan] one seed            (1 seeds, folds 3/4)
+T5 flow: Spearman of span share and log(E/N) over 7 tasks: -0.61 [-1.00, +0.35] not supported
+  T1 flow, share at or above the median 0.78             -5.2% [  +nan,   +nan] one seed            (1 seeds, folds 3/4)
+  T3 flow, share at or above the median 0.78             -1.4% [  +nan,   +nan] one seed            (1 seeds, folds 3/4)
+  T1 flow, share below the median                        +1.8% [  +nan,   +nan] one seed            (1 seeds, folds 1/3)
+  T3 flow, share below the median                        -2.8% [  +nan,   +nan] one seed            (1 seeds, folds 3/4)

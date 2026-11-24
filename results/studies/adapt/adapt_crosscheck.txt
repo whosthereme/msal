@@ -1,0 +1,10 @@
+zero-shot       local n= 7 mean  +1.1% sd  7.2% identical 0
+zero-shot       nodes n=34 mean  +1.0% sd  9.8% identical 0
+inversion k=16  local n= 7 mean  -0.8% sd  6.8% identical 0
+inversion k=16  nodes n=34 mean  +0.7% sd  7.1% identical 0
+MSAL k=1        local n= 7 mean  +1.0% sd  6.1% identical 0
+MSAL k=1        nodes n=34 mean  +1.1% sd  7.7% identical 0
+MSAL k=16       local n= 7 mean  +0.8% sd  5.9% identical 0
+MSAL k=16       nodes n=34 mean  +1.1% sd  7.9% identical 0
+stored ws2, this seed: MSAL k=1 vs zero-shot -25.5%
+stored ws2, this seed: MSAL k=16 vs zero-shot -27.7%

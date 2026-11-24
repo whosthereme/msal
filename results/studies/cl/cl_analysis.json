@@ -1,0 +1,257 @@
+{
+ "success_pct": {
+  "ft_k16": {
+   "overall": 59.25,
+   "per_task": {
+    "1000": 36.0,
+    "1019": 98.0,
+    "1020": 30.0,
+    "1023": 78.0,
+    "1025": 56.00000000000001,
+    "1030": 76.0,
+    "1033": 72.0,
+    "1037": 28.000000000000004
+   }
+  },
+  "ft_k1": {
+   "overall": 41.0,
+   "per_task": {
+    "1000": 4.0,
+    "1019": 92.0,
+    "1020": 8.0,
+    "1023": 34.0,
+    "1025": 70.0,
+    "1030": 64.0,
+    "1033": 54.0,
+    "1037": 2.0
+   }
+  },
+  "msal_k16": {
+   "overall": 13.75,
+   "per_task": {
+    "1000": 0.0,
+    "1019": 32.0,
+    "1020": 6.0,
+    "1023": 0.0,
+    "1025": 8.0,
+    "1030": 42.0,
+    "1033": 10.0,
+    "1037": 12.0
+   }
+  },
+  "msal_k1": {
+   "overall": 16.0,
+   "per_task": {
+    "1000": 0.0,
+    "1019": 44.0,
+    "1020": 2.0,
+    "1023": 0.0,
+    "1025": 10.0,
+    "1030": 40.0,
+    "1033": 12.0,
+    "1037": 20.0
+   }
+  },
+  "seen": {
+   "overall": 52.75,
+   "per_task": {
+    "1000": 46.0,
+    "1019": 82.0,
+    "1020": 60.0,
+    "1023": 56.00000000000001,
+    "1025": 62.0,
+    "1030": 52.0,
+    "1033": 36.0,
+    "1037": 28.000000000000004
+   }
+  },
+  "zero": {
+   "overall": 0.25,
+   "per_task": {
+    "1000": 0.0,
+    "1019": 0.0,
+    "1020": 0.0,
+    "1023": 0.0,
+    "1025": 0.0,
+    "1030": 2.0,
+    "1033": 0.0,
+    "1037": 0.0
+   }
+  },
+  "tmsal_k16": {
+   "overall": 10.75,
+   "per_task": {
+    "1000": 0.0,
+    "1019": 28.000000000000004,
+    "1020": 2.0,
+    "1023": 2.0,
+    "1025": 12.0,
+    "1030": 32.0,
+    "1033": 4.0,
+    "1037": 6.0
+   }
+  },
+  "tmsal_k1": {
+   "overall": 10.5,
+   "per_task": {
+    "1000": 0.0,
+    "1019": 42.0,
+    "1020": 2.0,
+    "1023": 4.0,
+    "1025": 0.0,
+    "1030": 26.0,
+    "1033": 0.0,
+    "1037": 10.0
+   }
+  },
+  "tzero": {
+   "overall": 0.0,
+   "per_task": {
+    "1000": 0.0,
+    "1019": 0.0,
+    "1020": 0.0,
+    "1023": 0.0,
+    "1025": 0.0,
+    "1030": 0.0,
+    "1033": 0.0,
+    "1037": 0.0
+   }
+  }
+ },
+ "comparisons": {
+  "T1": {
+   "a": "tmsal_k16",
+   "b": "msal_k16",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": -2.9999999999999996,
+   "boot95_pp": [
+    -8.25,
+    1.7500000000000004
+   ],
+   "reading": "not distinguishable",
+   "tasks_a_better": 2,
+   "tasks_b_better": 5,
+   "role": "primary"
+  },
+  "T2": {
+   "a": "tmsal_k1",
+   "b": "msal_k1",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": -5.500000000000001,
+   "boot95_pp": [
+    -11.5,
+    -6.895525817008439e-16
+   ],
+   "reading": "worse",
+   "tasks_a_better": 1,
+   "tasks_b_better": 5,
+   "role": "primary"
+  },
+  "T3": {
+   "a": "tzero",
+   "b": "zero",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": -0.25,
+   "boot95_pp": [
+    -1.25,
+    0.0
+   ],
+   "reading": "not distinguishable",
+   "tasks_a_better": 0,
+   "tasks_b_better": 1,
+   "role": "secondary"
+  },
+  "T4": {
+   "a": "tmsal_k16",
+   "b": "tzero",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": 10.750000000000002,
+   "boot95_pp": [
+    3.0000000000000004,
+    20.00624999999991
+   ],
+   "reading": "better",
+   "tasks_a_better": 7,
+   "tasks_b_better": 0,
+   "role": "secondary"
+  },
+  "T5": {
+   "a": "tmsal_k1",
+   "b": "tzero",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": 10.5,
+   "boot95_pp": [
+    1.5000000000000002,
+    22.0
+   ],
+   "reading": "better",
+   "tasks_a_better": 5,
+   "tasks_b_better": 0,
+   "role": "secondary"
+  }
+ },
+ "descriptive": {
+  "tmsal_k16 vs ft_k16": {
+   "a": "tmsal_k16",
+   "b": "ft_k16",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": -48.5,
+   "boot95_pp": [
+    -63.24999999999999,
+    -34.75
+   ],
+   "reading": "worse",
+   "tasks_a_better": 0,
+   "tasks_b_better": 8
+  },
+  "tmsal_k1 vs ft_k1": {
+   "a": "tmsal_k1",
+   "b": "ft_k1",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": -30.500000000000004,
+   "boot95_pp": [
+    -49.25000000000001,
+    -12.25
+   ],
+   "reading": "worse",
+   "tasks_a_better": 1,
+   "tasks_b_better": 7
+  },
+  "tmsal_k16 vs seen": {
+   "a": "tmsal_k16",
+   "b": "seen",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": -42.00000000000001,
+   "boot95_pp": [
+    -52.5,
+    -30.5
+   ],
+   "reading": "worse",
+   "tasks_a_better": 0,
+   "tasks_b_better": 8
+  },
+  "tmsal_k1 vs seen": {
+   "a": "tmsal_k1",
+   "b": "seen",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": -42.25,
+   "boot95_pp": [
+    -53.0,
+    -30.75
+   ],
+   "reading": "worse",
+   "tasks_a_better": 0,
+   "tasks_b_better": 8
+  }
+ },
+ "probe_max_abs": 5.7220458984375e-06
+}

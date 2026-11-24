@@ -1,0 +1,105 @@
+new records: 170  missing: 0
+== E (explanation), 85 folds with an unseen word
+  E1 zero-shot trunk, projected vs raw, flow            -25.2% [ -27.3,  -23.0] lower | tasks:  -25.2% [ -32.7,  -17.7] lower, 17/17 | folds 82/85
+                                                       per seed: -23.7 -27.2 -25.5 -23.1 -26.2
+  E1 zero-shot trunk, projected vs raw, chunk            -6.8% [  -8.3,   -5.3] lower | tasks:   -6.8% [  -9.7,   -4.1] lower, 17/17 | folds 73/85
+                                                       per seed: -6.9 -8.7 -5.4 -6.7 -6.3
+  E2 zero-shot trunk vs head, projected, flow           +34.1% [ +29.3,  +39.0] higher | tasks:  +34.1% [ +25.5,  +43.7] higher, 0/17 | folds 3/85
+                                                       per seed: +37.1 +33.1 +33.7 +38.3 +28.3
+  E2 zero-shot trunk vs head, projected, chunk           +7.5% [  +3.8,  +11.4] higher | tasks:   +7.5% [  +4.0,  +11.4] higher, 4/17 | folds 25/85
+                                                       per seed: +11.4 +5.0 +3.9 +8.1 +9.4
+     (raw gap) zero-shot trunk vs head, raw, flow       +78.5% [ +74.7,  +82.4] higher | tasks:  +78.5% [ +66.8,  +91.5] higher, 0/17 | folds 0/85
+                                                       per seed: +79.2 +81.9 +78.7 +79.3 +73.5
+     (raw gap) zero-shot trunk vs head, raw, chunk      +15.4% [ +10.8,  +20.1] higher | tasks:  +15.4% [ +11.0,  +19.9] higher, 1/17 | folds 12/85
+                                                       per seed: +19.7 +14.8 +9.7 +16.0 +16.9
+  E3 zero-shot head, projected vs raw, flow              -0.4% [  -0.5,   -0.2] lower | tasks:   -0.4% [  -0.5,   -0.2] lower, 17/17 | folds 62/85
+                                                       per seed: -0.2 -0.6 -0.4 -0.4 -0.2
+  E3 zero-shot head, projected vs raw, chunk             -0.0% [  -0.2,   +0.1] n.d. | tasks:   -0.0% [  -0.1,   +0.1] n.d., 8/17 | folds 46/85
+                                                       per seed: -0.0 -0.1 -0.1 -0.0 +0.2
+  explanation (E1 flow lower and projected gap < half the raw gap): NOT SUPPORTED  gap log raw 0.579 projected 0.293
+== D (decision), 200 folds, complete method, trunk vs head, both projected
+  D1 flow, k=1                                           -0.3% [  -4.2,   +3.9] n.d. | tasks:   -0.3% [  -2.0,   +1.5] n.d., 19/40 | folds 106/200
+                                                       per seed: -0.7 +0.6 -2.1 +4.9 -3.7
+  D2 sampled chunk, k=1                                  +3.7% [  +1.0,   +6.5] higher | tasks:   +3.7% [  +1.9,   +5.7] higher, 12/40 | folds 73/200
+                                                       per seed: +6.0 +1.5 +1.3 +5.3 +4.6
+  D1 flow, k=16                                          -1.3% [  -5.5,   +3.0] n.d. | tasks:   -1.3% [  -2.9,   +0.2] n.d., 26/40 | folds 114/200
+                                                       per seed: -1.5 -0.3 -3.9 +4.0 -4.8
+  D2 sampled chunk, k=16                                 +3.7% [  +0.5,   +7.0] higher | tasks:   +3.7% [  +2.1,   +5.4] higher, 10/40 | folds 73/200
+                                                       per seed: +6.6 +1.5 +0.8 +6.1 +3.7
+  rule: trunk head with projection proposed as main method: NO
+  same on the 85 folds only:
+  D1 flow, k=1, 85 folds                                 -0.8% [  -3.9,   +2.3] n.d. | tasks:   -0.8% [  -3.5,   +2.2] n.d., 11/17 | folds 51/85
+                                                       per seed: -2.5 -1.5 -1.2 +3.6 -2.4
+  D2 sampled chunk, k=1, 85 folds                        +4.1% [  +0.6,   +7.7] higher | tasks:   +4.1% [  +0.7,   +7.8] higher, 4/17 | folds 34/85
+                                                       per seed: +6.2 +2.1 +0.9 +3.4 +7.9
+  D1 flow, k=16, 85 folds                                -2.0% [  -5.0,   +1.2] n.d. | tasks:   -2.0% [  -4.4,   +0.6] n.d., 13/17 | folds 55/85
+                                                       per seed: -2.8 -2.4 -3.2 +2.5 -3.9
+  D2 sampled chunk, k=16, 85 folds                       +3.9% [  +0.2,   +7.7] higher | tasks:   +3.9% [  +1.9,   +6.1] higher, 3/17 | folds 33/85
+                                                       per seed: +7.5 +2.0 -0.1 +4.6 +5.6
+== P (projection for the draft's head), 85 folds, complete method, projected vs raw
+  P head flow, k=1                                       -0.0% [  -0.0,   +0.0] n.d. | tasks:   -0.0% [  -0.0,   +0.0] n.d., 7/17 | folds 36/85
+                                                       per seed: +0.0 -0.0 -0.0 -0.0 -0.0
+  P head sampled chunk, k=1                              -0.0% [  -0.1,   +0.0] n.d. | tasks:   -0.0% [  -0.0,   +0.0] n.d., 8/17 | folds 44/85
+                                                       per seed: -0.0 +0.0 -0.0 -0.0 -0.1
+  P head flow, k=16                                      -0.0% [  -0.0,   +0.0] n.d. | tasks:   -0.0% [  -0.0,   +0.0] n.d., 7/17 | folds 39/85
+                                                       per seed: +0.0 -0.0 -0.0 -0.0 +0.0
+  P head sampled chunk, k=16                             -0.0% [  -0.0,   +0.0] n.d. | tasks:   -0.0% [  -0.0,   +0.0] n.d., 9/17 | folds 41/85
+                                                       per seed: -0.0 +0.0 +0.0 -0.0 -0.0
+  P trunk flow, k=1                                      -0.2% [  -0.4,   -0.0] lower | tasks:   -0.2% [  -0.4,   -0.0] lower, 11/17 | folds 54/85
+                                                       per seed: +0.1 -0.3 -0.2 -0.3 -0.3
+  P trunk sampled chunk, k=1                             -0.0% [  -0.2,   +0.2] n.d. | tasks:   -0.0% [  -0.2,   +0.2] n.d., 11/17 | folds 45/85
+                                                       per seed: -0.1 -0.3 +0.2 -0.0 +0.2
+  P trunk flow, k=16                                     -0.4% [  -0.6,   -0.2] lower | tasks:   -0.4% [  -0.6,   -0.2] lower, 15/17 | folds 70/85
+                                                       per seed: -0.1 -0.3 -0.5 -0.5 -0.6
+  P trunk sampled chunk, k=16                            -0.0% [  -0.2,   +0.1] n.d. | tasks:   -0.0% [  -0.2,   +0.2] n.d., 10/17 | folds 50/85
+                                                       per seed: -0.2 -0.1 +0.0 +0.1 +0.0
+  rule: projection proposed for MSAL's head: NO
+== secondary, descriptive (85 folds)
+  inversion trunk, projected vs raw, flow, k=1           -0.2% [  -0.4,   -0.1] lower | tasks:   -0.2% [  -0.4,   -0.1] lower, 11/17 | folds 55/85
+                                                       per seed: -0.0 -0.3 -0.2 -0.4 -0.3
+  inversion trunk, projected vs raw, flow, k=16          -0.4% [  -0.6,   -0.3] lower | tasks:   -0.4% [  -0.6,   -0.2] lower, 15/17 | folds 71/85
+                                                       per seed: -0.2 -0.4 -0.4 -0.5 -0.6
+  complete trunk, projected vs raw, flow, k=2            -0.3% [  -0.5,   -0.1] lower | tasks:   -0.3% [  -0.5,   -0.1] lower, 14/17 | folds 61/85
+                                                       per seed: -0.1 -0.3 -0.4 -0.4 -0.4
+  complete trunk, projected vs raw, flow, k=4            -0.3% [  -0.5,   -0.1] lower | tasks:   -0.3% [  -0.5,   -0.1] lower, 13/17 | folds 65/85
+                                                       per seed: -0.1 -0.3 -0.4 -0.4 -0.5
+  complete trunk, projected vs raw, flow, k=8            -0.4% [  -0.5,   -0.2] lower | tasks:   -0.4% [  -0.5,   -0.2] lower, 15/17 | folds 67/85
+                                                       per seed: -0.2 -0.3 -0.4 -0.4 -0.5
+  zero-shot trunk, projected vs raw, test rows          -25.3% [ -27.6,  -22.9] lower | tasks:  -25.3% [ -32.9,  -17.6] lower, 17/17 | folds 82/85
+                                                       per seed: -23.8 -28.2 -25.3 -23.6 -25.5
+  inversion head, projected vs raw, flow, k=1            -0.0% [  -0.0,   +0.0] n.d. | tasks:   -0.0% [  -0.0,   +0.0] n.d., 9/17 | folds 41/85
+                                                       per seed: +0.0 -0.0 -0.0 -0.0 -0.0
+  inversion head, projected vs raw, flow, k=16           -0.0% [  -0.0,   +0.0] n.d. | tasks:   -0.0% [  -0.0,   +0.0] n.d., 8/17 | folds 43/85
+                                                       per seed: +0.0 -0.0 -0.0 -0.0 +0.0
+  complete head, projected vs raw, flow, k=2             -0.0% [  -0.0,   +0.0] n.d. | tasks:   -0.0% [  -0.0,   +0.0] n.d., 6/17 | folds 40/85
+                                                       per seed: +0.0 -0.0 -0.0 -0.0 +0.0
+  complete head, projected vs raw, flow, k=4             -0.0% [  -0.0,   +0.0] n.d. | tasks:   -0.0% [  -0.0,   +0.0] n.d., 6/17 | folds 39/85
+                                                       per seed: -0.0 -0.0 -0.0 -0.0 +0.0
+  complete head, projected vs raw, flow, k=8             -0.0% [  -0.0,   +0.0] n.d. | tasks:   -0.0% [  -0.0,   +0.0] n.d., 7/17 | folds 40/85
+                                                       per seed: +0.0 -0.0 -0.0 -0.0 -0.0
+  zero-shot head, projected vs raw, test rows            -0.3% [  -0.5,   -0.2] lower | tasks:   -0.3% [  -0.5,   -0.2] lower, 17/17 | folds 59/85
+                                                       per seed: -0.2 -0.5 -0.4 -0.4 -0.2
+  D1 flow, k=2 (200 folds)                               -1.0% [  -5.1,   +3.3] n.d. | tasks:   -1.0% [  -2.6,   +0.6] n.d., 23/40 | folds 107/200
+                                                       per seed: -1.2 -0.2 -3.3 +4.5 -4.4
+  D1 flow, k=4 (200 folds)                               -1.0% [  -5.1,   +3.3] n.d. | tasks:   -1.0% [  -2.6,   +0.6] n.d., 24/40 | folds 109/200
+                                                       per seed: -1.3 -0.2 -3.4 +4.4 -4.3
+  D1 flow, k=8 (200 folds)                               -1.1% [  -5.4,   +3.3] n.d. | tasks:   -1.1% [  -2.7,   +0.5] n.d., 25/40 | folds 111/200
+                                                       per seed: -1.3 -0.2 -3.7 +4.4 -4.6
+  descriptor shift k=16, tfilm_nl, raw: mean 3.200
+  descriptor shift k=16, tfilm_nl, projected: mean 2.998
+  descriptor shift k=16, film_nl, raw: mean 5.492
+  descriptor shift k=16, film_nl, projected: mean 5.391
+== check: raw results vs the stored PLAN_L40_TRUNK.md records
+  stored lane loc->loc new lane: 2 records, 2 bit-identical
+  stored lane loc->ws3 new lane: 2 records, 0 bit-identical
+  stored lane loc->ws4 new lane: 10 records, 0 bit-identical
+  stored lane ws2->loc new lane: 8 records, 0 bit-identical
+  stored lane ws2->ws2 new lane: 74 records, 74 bit-identical
+  stored lane ws2->ws3 new lane: 2 records, 0 bit-identical
+  stored lane ws2->ws4 new lane: 2 records, 0 bit-identical
+  stored lane ws3->ws3 new lane: 4 records, 4 bit-identical
+  stored lane ws3->ws4 new lane: 16 records, 16 bit-identical
+  stored lane ws4->loc new lane: 2 records, 0 bit-identical
+  stored lane ws4->ws3 new lane: 22 records, 22 bit-identical
+  stored lane ws4->ws4 new lane: 26 records, 26 bit-identical
+written results\l40z\l40z_analysis.json

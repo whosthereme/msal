@@ -1,0 +1,41 @@
+new records 410 tasks 41 missing 0
+== J1 harmonic projected vs harmonic raw
+  sampled chunk                -19.5% [  -20.4,   -18.5]  lower               per seed -19.6 -18.2 -20.1 -19.4 -19.9 | tasks lower 41/41, directions lower 16/16, direction bootstrap -22.8..-16.6
+  flow MSE                     -18.2% [  -18.8,   -17.6]  lower               per seed -18.6 -17.3 -18.5 -18.5 -18.3 | tasks lower 38/41, directions lower 16/16, direction bootstrap -20.8..-15.7
+  flow MSE, ROBUSTNESS rows    -18.1% [  -19.2,   -17.1]  lower               per seed -18.6 -16.8 -18.9 -18.1 -18.4 | tasks lower 38/41, directions lower 16/16, direction bootstrap -20.6..-15.6
+== J2 harmonic projected vs no description (stored)
+  sampled chunk                -18.3% [  -19.9,   -16.6]  lower               per seed -18.3 -16.8 -17.4 -18.6 -20.2 | tasks lower 39/41, directions lower 16/16, direction bootstrap -22.5..-14.0
+  flow MSE                     +75.5% [  +66.5,   +85.0]  higher              per seed +70.2 +81.7 +85.7 +70.7 +69.7 | tasks lower 0/41, directions lower 0/16, direction bootstrap +65.4..+84.3
+  flow MSE, ROBUSTNESS rows    +74.2% [  +63.3,   +85.9]  higher              per seed +70.0 +75.9 +89.3 +71.9 +64.8 | tasks lower 0/41, directions lower 0/16, direction bootstrap +63.2..+84.1
+== J3 harmonic projected vs coordinates (stored)
+  sampled chunk               +115.7% [ +108.5,  +123.2]  higher              per seed +120.7 +122.4 +116.3 +109.1 +110.5 | tasks lower 0/41, directions lower 0/16, direction bootstrap +96.8..+133.6
+  flow MSE                    +118.0% [ +107.8,  +128.8]  higher              per seed +116.3 +125.8 +120.9 +123.3 +104.7 | tasks lower 0/41, directions lower 0/16, direction bootstrap +99.7..+135.7
+  flow MSE, ROBUSTNESS rows   +116.3% [ +103.7,  +129.5]  higher              per seed +115.3 +115.3 +129.5 +120.9 +101.2 | tasks lower 0/41, directions lower 0/16, direction bootstrap +97.6..+133.5
+== J4 identifier projected vs identifier raw
+  sampled chunk                 -4.6% [   -5.3,    -3.8]  lower               per seed -4.0 -5.5 -4.1 -4.5 -4.7 | tasks lower 37/41, directions lower 16/16, direction bootstrap -5.3..-3.5
+  flow MSE                      -5.6% [   -6.4,    -4.9]  lower               per seed -5.5 -6.5 -4.8 -5.8 -5.5 | tasks lower 37/41, directions lower 15/16, direction bootstrap -6.8..-4.0
+  flow MSE, ROBUSTNESS rows     -5.6% [   -6.0,    -5.2]  lower               per seed -5.6 -6.0 -5.2 -5.5 -5.6 | tasks lower 37/41, directions lower 15/16, direction bootstrap -6.8..-3.9
+== J5 identifier projected vs coordinates alone (stored)
+  sampled chunk                +19.7% [  +16.1,   +23.3]  higher              per seed +23.7 +21.6 +16.7 +19.1 +17.5 | tasks lower 1/41, directions lower 0/16, direction bootstrap +15.5..+25.3
+  flow MSE                     +20.8% [  +18.7,   +23.0]  higher              per seed +20.3 +21.3 +22.9 +21.5 +18.2 | tasks lower 1/41, directions lower 0/16, direction bootstrap +16.6..+25.8
+  flow MSE, ROBUSTNESS rows    +20.0% [  +17.3,   +22.7]  higher              per seed +18.6 +19.1 +22.9 +21.6 +17.7 | tasks lower 1/41, directions lower 0/16, direction bootstrap +15.5..+24.5
+== context: harmonic raw (this run) vs no description (stored)
+  sampled chunk                 +1.5% [   -0.2,    +3.1]  not distinguishable per seed +1.5 +1.7 +3.4 +1.1 -0.3 | tasks lower 18/41, directions lower 4/16, direction bootstrap -2.2..+5.4
+  flow MSE                    +114.6% [ +104.1,  +125.6]  higher              per seed +109.0 +119.8 +127.7 +109.4 +107.6 | tasks lower 0/41, directions lower 0/16, direction bootstrap +97.4..+129.4
+  flow MSE, ROBUSTNESS rows   +112.8% [  +98.8,  +127.8]  higher              per seed +108.8 +111.3 +133.5 +109.8 +101.9 | tasks lower 0/41, directions lower 0/16, direction bootstrap +94.9..+128.3
+== context: identifier raw (this run) vs coordinates alone (stored)
+  sampled chunk                +25.4% [  +21.5,   +29.4]  higher              per seed +28.8 +28.7 +21.7 +24.7 +23.3 | tasks lower 0/41, directions lower 0/16, direction bootstrap +20.7..+31.1
+  flow MSE                     +28.0% [  +25.8,   +30.3]  higher              per seed +27.3 +29.7 +29.1 +28.9 +25.1 | tasks lower 2/41, directions lower 0/16, direction bootstrap +22.2..+33.8
+  flow MSE, ROBUSTNESS rows    +27.1% [  +24.6,   +29.6]  higher              per seed +25.6 +26.8 +29.6 +28.6 +24.8 | tasks lower 3/41, directions lower 0/16, direction bootstrap +20.9..+32.6
+== check: harmonic raw (this run) vs harmonic raw (stored)
+  sampled chunk                 +0.1% [   -0.3,    +0.5]  not distinguishable per seed +0.1 +0.7 +0.0 -0.2 -0.1 | tasks lower 21/41, directions lower 10/16, direction bootstrap -0.5..+0.9
+  flow MSE                      +0.6% [   -0.4,    +1.7]  not distinguishable per seed +0.2 +1.4 +1.7 -0.0 -0.1 | tasks lower 14/41, directions lower 4/16, direction bootstrap +0.0..+1.4
+  flow MSE, ROBUSTNESS rows     +0.6% [   -0.4,    +1.6]  not distinguishable per seed +0.4 +1.3 +1.6 -0.1 -0.1 | tasks lower 13/41, directions lower 5/16, direction bootstrap -0.0..+1.5
+== check: identifier raw (this run) vs identifier raw (stored)
+  sampled chunk                 +0.3% [   -1.1,    +1.8]  not distinguishable per seed +1.5 +0.3 +1.2 +0.2 -1.4 | tasks lower 17/41, directions lower 7/16, direction bootstrap -0.5..+1.5
+  flow MSE                      +0.4% [   -1.4,    +2.2]  not distinguishable per seed +1.4 +0.4 +2.3 -1.2 -0.9 | tasks lower 24/41, directions lower 9/16, direction bootstrap -0.7..+2.1
+  flow MSE, ROBUSTNESS rows     +0.4% [   -1.4,    +2.2]  not distinguishable per seed +1.2 +0.2 +2.4 -1.1 -0.9 | tasks lower 25/41, directions lower 10/16, direction bootstrap -0.8..+2.1
+check lodo_sat     raw scores bit-exact with stored 0/205; scorer self-check 205/205; span share mean 0.187 (0.076 to 0.344); span rank [20] of 21 columns
+check lodo_xy6id2  raw scores bit-exact with stored 79/205; scorer self-check 205/205; span share mean 0.327 (0.258 to 0.423); span rank [18] of 22 columns
+readings: {"out_of_span_harms_harmonic": "supported", "out_of_span_harms_identifier": "supported", "in_span_part_of_harmonic_usable": "supported"}
+written results\proj\proj_analysis.json

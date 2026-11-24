@@ -1,0 +1,31 @@
+held {'C0': 1200, 'C1': 1200, 'F0': 1200, 'G0': 1200, 'J0': 1200, 'K0': 1200, 'K1': 1200, 'M0': 1200, 'N0': 1200, 'T0': 1200}
+trained {'K0': 600}
+H10       J0 vs K0 (success mean): 0.2 vs 16.2, diff -15.9 [-19.5, -12.5] -> worse  (targets 40, units 1200)
+H10_dist  J0 vs K0 (final_dist median): 14.4 vs 4.5, diff +10.0 [+8.8, +11.2] -> farther  (targets 40, units 1200)
+H11       J0 vs N0 (success mean): 0.2 vs 3.2, diff -2.9 [-4.4, -1.6] -> worse  (targets 40, units 1200)
+H11_dist  J0 vs N0 (final_dist median): 14.4 vs 10.8, diff +3.7 [+2.4, +4.9] -> farther  (targets 40, units 1200)
+H12       K1 vs K0 (success mean): 20.9 vs 16.2, diff +4.8 [+0.2, +9.4] -> better  (targets 40, units 1200)
+H12_dist  K1 vs K0 (final_dist median): 4.2 vs 4.5, diff -0.3 [-0.9, +0.6] -> n.d.  (targets 40, units 1200)
+H13       K0 held vs trained targets: 16.2 vs 25.8, diff -9.7 [-16.8, -2.7] -> worse (targets [40, 20], units [1200, 600])
+post hoc  K1 vs C1: 20.9 vs 10.9, diff +10.0 [+5.7, +14.5] -> better
+post hoc  K1 vs T0: 20.9 vs 16.8, diff +4.2 [-0.8, +9.1] -> not distinguishable
+post hoc  J0 vs G0: 0.2 vs 0.2, diff +0.1 [-0.4, +0.6] -> not distinguishable
+post hoc  K1 vs N0: 20.9 vs 3.2, diff +17.8 [+13.6, +22.2] -> better
+C0 held    n=1200 success  10.9% median dist 0.061 folds [6.4, 16.7, 7.2, 17.5] seeds [10.0, 12.0, 10.8] rings [3.3, 17.1, 8.5] probe 7.6e-06
+C1 held    n=1200 success  10.9% median dist 0.055 folds [6.7, 13.8, 11.1, 14.2] seeds [10.8, 11.2, 10.8] rings [7.5, 14.0, 9.6] probe 6.2e-06
+F0 held    n=1200 success   9.0% median dist 0.079 folds [8.1, 10.4, 10.3, 7.1] seeds [6.5, 11.5, 9.0] rings [7.1, 11.7, 7.3] probe 4.5e-06
+G0 held    n=1200 success   0.2% median dist 0.134 folds [0.0, 0.8, 0.0, 0.0] seeds [0.0, 0.0, 0.5] rings [0.0, 0.0, 0.4] probe 6.4e-06
+J0 held    n=1200 success   0.2% median dist 0.142 folds [0.3, 0.4, 0.3, 0.0] seeds [0.2, 0.2, 0.2] rings [0.4, 0.2, 0.2] probe 6.7e-06
+K0 held    n=1200 success  16.2% median dist 0.044 folds [10.3, 24.6, 14.4, 19.2] seeds [7.5, 22.2, 18.8] rings [9.2, 20.0, 15.8] probe 7.6e-06
+K1 held    n=1200 success  20.9% median dist 0.038 folds [16.1, 27.1, 23.3, 18.3] seeds [20.8, 22.0, 20.0] rings [18.3, 21.9, 21.2] probe 7.6e-06
+M0 held    n=1200 success   8.2% median dist 0.080 folds [6.9, 12.1, 7.5, 7.1] seeds [5.8, 8.0, 10.8] rings [4.6, 10.8, 7.3] probe 4.8e-06
+N0 held    n=1200 success   3.2% median dist 0.108 folds [2.5, 3.8, 3.3, 3.3] seeds [3.5, 3.0, 3.0] rings [2.5, 3.5, 3.1] probe 4.8e-06
+T0 held    n=1200 success  16.8% median dist 0.041 folds [11.1, 23.8, 15.8, 19.6] seeds [6.5, 19.0, 24.8] rings [15.0, 19.8, 14.6] probe 7.6e-06
+K0 trained n= 600 success  25.8% median dist 0.037 folds [26.7, 29.2, 18.9, 31.7] seeds [16.0, 33.0, 28.5] rings [15.8, 28.3, 28.3] probe 7.6e-06
+offline harmonic vs coordinates, sampled chunk       +102.5% [ +92.4, +113.1] (3 seeds, 120 pairs)
+offline harmonic vs coordinates, flow                +650.8% [+584.0, +724.1] (3 seeds, 120 pairs)
+offline harmonic heads                               {'n': 120, 'flow': 0.9147986502386629, 'chunk': 0.15447472047854774, 'iota': 0.1814814814814815, 'iota_min': 0.037037037037036806, 'iota_max': 0.2777777777777784}
+offline adapted (k=1) vs zero-shot, flow               -5.6% [  -6.2,   -4.9] (3 seeds, 120 pairs)
+offline inversion (k=1) vs zero-shot, flow             +1.0% [  -0.6,   +2.6] (3 seeds, 120 pairs)
+offline adapted (k=1) vs zero-shot, sampled chunk      +0.0% [  -2.7,   +2.9] (3 seeds, 120 pairs)
+offline adapted heads                                {'n': 120, 'descriptor_shift': 1.6316379082699617, 'code_norm': 0.014445485109339693, 'zero_shot_flow_equals_stored': [120, 120]}

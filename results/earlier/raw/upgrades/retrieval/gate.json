@@ -1,0 +1,342 @@
+{
+ "success_pct": {
+  "gate_k1": {
+   "overall": 55.25,
+   "per_task": {
+    "1000": 18.0,
+    "1019": 90.0,
+    "1020": 70.0,
+    "1023": 68.0,
+    "1025": 76.0,
+    "1030": 76.0,
+    "1033": 42.0,
+    "1037": 2.0
+   },
+   "episodes": 400
+  },
+  "gate_k16": {
+   "overall": 62.25,
+   "per_task": {
+    "1000": 30.0,
+    "1019": 96.0,
+    "1020": 74.0,
+    "1023": 74.0,
+    "1025": 82.0,
+    "1030": 56.00000000000001,
+    "1033": 68.0,
+    "1037": 18.0
+   },
+   "episodes": 400
+  },
+  "ret_replay_k1": {
+   "overall": 53.0,
+   "per_task": {
+    "1000": 14.000000000000002,
+    "1019": 88.0,
+    "1020": 70.0,
+    "1023": 57.99999999999999,
+    "1025": 78.0,
+    "1030": 76.0,
+    "1033": 40.0,
+    "1037": 0.0
+   },
+   "episodes": 400
+  },
+  "ret_replay_k16": {
+   "overall": 65.5,
+   "per_task": {
+    "1000": 66.0,
+    "1019": 96.0,
+    "1020": 82.0,
+    "1023": 70.0,
+    "1025": 80.0,
+    "1030": 48.0,
+    "1033": 68.0,
+    "1037": 14.000000000000002
+   },
+   "episodes": 400
+  },
+  "msal_k1": {
+   "overall": 16.0,
+   "per_task": {
+    "1000": 0.0,
+    "1019": 44.0,
+    "1020": 2.0,
+    "1023": 0.0,
+    "1025": 10.0,
+    "1030": 40.0,
+    "1033": 12.0,
+    "1037": 20.0
+   },
+   "episodes": 400
+  },
+  "msal_k16": {
+   "overall": 13.75,
+   "per_task": {
+    "1000": 0.0,
+    "1019": 32.0,
+    "1020": 6.0,
+    "1023": 0.0,
+    "1025": 8.0,
+    "1030": 42.0,
+    "1033": 10.0,
+    "1037": 12.0
+   },
+   "episodes": 400
+  },
+  "ft_k1": {
+   "overall": 41.0,
+   "per_task": {
+    "1000": 4.0,
+    "1019": 92.0,
+    "1020": 8.0,
+    "1023": 34.0,
+    "1025": 70.0,
+    "1030": 64.0,
+    "1033": 54.0,
+    "1037": 2.0
+   },
+   "episodes": 400
+  },
+  "ft_k16": {
+   "overall": 59.25,
+   "per_task": {
+    "1000": 36.0,
+    "1019": 98.0,
+    "1020": 30.0,
+    "1023": 78.0,
+    "1025": 56.00000000000001,
+    "1030": 76.0,
+    "1033": 72.0,
+    "1037": 28.000000000000004
+   },
+   "episodes": 400
+  },
+  "seen": {
+   "overall": 52.75,
+   "per_task": {
+    "1000": 46.0,
+    "1019": 82.0,
+    "1020": 60.0,
+    "1023": 56.00000000000001,
+    "1025": 62.0,
+    "1030": 52.0,
+    "1033": 36.0,
+    "1037": 28.000000000000004
+   },
+   "episodes": 400
+  }
+ },
+ "head_fraction": {
+  "gate_k1": {
+   "overall_head_replans_pct": 32.58767772511848,
+   "mean_over_tasks_pct": 23.098871646478443,
+   "per_task": {
+    "1000": {
+     "head_replans_pct": 65.74621959237344,
+     "episodes_any_head_pct": 96.0,
+     "head_pct_success_eps": 16.99518087923885,
+     "head_pct_failed_eps": 71.54471544715447,
+     "T": 55660.78515625
+    },
+    "1019": {
+     "head_replans_pct": 2.127659574468085,
+     "episodes_any_head_pct": 14.000000000000002,
+     "head_pct_success_eps": 0.5555555555555556,
+     "head_pct_failed_eps": 5.263157894736842,
+     "T": 55657.921875
+    },
+    "1020": {
+     "head_replans_pct": 1.0309278350515463,
+     "episodes_any_head_pct": 8.0,
+     "head_pct_success_eps": 0.0,
+     "head_pct_failed_eps": 2.2222222222222223,
+     "T": 55758.06640625
+    },
+    "1023": {
+     "head_replans_pct": 44.85842026825633,
+     "episodes_any_head_pct": 62.0,
+     "head_pct_success_eps": 27.99519108342638,
+     "head_pct_failed_eps": 62.5,
+     "T": 55117.78515625
+    },
+    "1025": {
+     "head_replans_pct": 27.526132404181183,
+     "episodes_any_head_pct": 28.000000000000004,
+     "head_pct_success_eps": 1.9736842105263157,
+     "head_pct_failed_eps": 67.59259259259261,
+     "T": 55376.4296875
+    },
+    "1030": {
+     "head_replans_pct": 9.217877094972067,
+     "episodes_any_head_pct": 24.0,
+     "head_pct_success_eps": 0.0,
+     "head_pct_failed_eps": 19.64285714285714,
+     "T": 55658.953125
+    },
+    "1033": {
+     "head_replans_pct": 16.206261510128915,
+     "episodes_any_head_pct": 57.99999999999999,
+     "head_pct_success_eps": 0.4761904761904762,
+     "head_pct_failed_eps": 21.428571428571434,
+     "T": 55735.81640625
+    },
+    "1037": {
+     "head_replans_pct": 18.077474892395983,
+     "episodes_any_head_pct": 94.0,
+     "head_pct_success_eps": 18.181818181818183,
+     "head_pct_failed_eps": 18.075801749271132,
+     "T": 55660.671875
+    }
+   }
+  },
+  "gate_k16": {
+   "overall_head_replans_pct": 39.78643464504647,
+   "mean_over_tasks_pct": 31.491424563293947,
+   "per_task": {
+    "1000": {
+     "head_replans_pct": 71.76029962546816,
+     "episodes_any_head_pct": 76.0,
+     "head_pct_success_eps": 5.436507936507937,
+     "head_pct_failed_eps": 81.55844155844156,
+     "T": 38269.79296875
+    },
+    "1019": {
+     "head_replans_pct": 0.0,
+     "episodes_any_head_pct": 0.0,
+     "head_pct_success_eps": 0.0,
+     "head_pct_failed_eps": 0.0,
+     "T": 38269.79296875
+    },
+    "1020": {
+     "head_replans_pct": 27.73109243697479,
+     "episodes_any_head_pct": 52.0,
+     "head_pct_success_eps": 9.845754845754847,
+     "head_pct_failed_eps": 52.991452991452995,
+     "T": 38283.78515625
+    },
+    "1023": {
+     "head_replans_pct": 43.13099041533546,
+     "episodes_any_head_pct": 74.0,
+     "head_pct_success_eps": 26.01188601188601,
+     "head_pct_failed_eps": 69.23076923076923,
+     "T": 38265.015625
+    },
+    "1025": {
+     "head_replans_pct": 26.65505226480836,
+     "episodes_any_head_pct": 34.0,
+     "head_pct_success_eps": 8.819903195799895,
+     "head_pct_failed_eps": 63.58024691358024,
+     "T": 38130.015625
+    },
+    "1030": {
+     "head_replans_pct": 30.45977011494253,
+     "episodes_any_head_pct": 62.0,
+     "head_pct_success_eps": 8.370082298653726,
+     "head_pct_failed_eps": 42.53246753246753,
+     "T": 38272.4453125
+    },
+    "1033": {
+     "head_replans_pct": 15.63169164882227,
+     "episodes_any_head_pct": 32.0,
+     "head_pct_success_eps": 0.326797385620915,
+     "head_pct_failed_eps": 32.14285714285714,
+     "T": 38281.62890625
+    },
+    "1037": {
+     "head_replans_pct": 36.5625,
+     "episodes_any_head_pct": 86.0,
+     "head_pct_success_eps": 2.244668911335578,
+     "head_pct_failed_eps": 40.41811846689895,
+     "T": 38275.56640625
+    }
+   }
+  }
+ },
+ "tests": {
+  "gate_k1 vs ret_replay_k1": {
+   "a": "gate_k1",
+   "b": "ret_replay_k1",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": 2.2500000000000004,
+   "boot95_pp": [
+    -0.7499999999999988,
+    6.25
+   ],
+   "reading": "not distinguishable",
+   "tasks_a_better": 5,
+   "tasks_b_better": 1
+  },
+  "gate_k16 vs ret_replay_k16": {
+   "a": "gate_k16",
+   "b": "ret_replay_k16",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": -3.25,
+   "boot95_pp": [
+    -14.249999999999998,
+    4.256249999999912
+   ],
+   "reading": "not distinguishable",
+   "tasks_a_better": 4,
+   "tasks_b_better": 2
+  },
+  "gate_k1 vs msal_k1": {
+   "a": "gate_k1",
+   "b": "msal_k1",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": 39.24999999999999,
+   "boot95_pp": [
+    18.0,
+    57.49999999999999
+   ],
+   "reading": "better",
+   "tasks_a_better": 7,
+   "tasks_b_better": 1
+  },
+  "gate_k16 vs msal_k16": {
+   "a": "gate_k16",
+   "b": "msal_k16",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": 48.5,
+   "boot95_pp": [
+    29.000000000000004,
+    66.0
+   ],
+   "reading": "better",
+   "tasks_a_better": 8,
+   "tasks_b_better": 0
+  },
+  "gate_k1 vs ft_k1": {
+   "a": "gate_k1",
+   "b": "ft_k1",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": 14.249999999999998,
+   "boot95_pp": [
+    -0.49999999999999994,
+    31.5
+   ],
+   "reading": "not distinguishable",
+   "tasks_a_better": 5,
+   "tasks_b_better": 2
+  },
+  "gate_k16 vs ft_k16": {
+   "a": "gate_k16",
+   "b": "ft_k16",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": 2.999999999999999,
+   "boot95_pp": [
+    -10.25,
+    19.25
+   ],
+   "reading": "not distinguishable",
+   "tasks_a_better": 2,
+   "tasks_b_better": 6
+  }
+ }
+}

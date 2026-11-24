@@ -1,0 +1,352 @@
+{
+ "l40 sampled chunk": {
+  "pairs": 7,
+  "all": {
+   "n": 1,
+   "pct": 12.286544212866168,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 2
+  },
+  "same": {
+   "n": 1,
+   "pct": 10.204861183653957,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 6,
+   "won": 2
+  },
+  "verdict": "one seed"
+ },
+ "l40 flow": {
+  "pairs": 7,
+  "all": {
+   "n": 1,
+   "pct": 22.275632267669376,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 1
+  },
+  "same": {
+   "n": 1,
+   "pct": 22.653358487603946,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 6,
+   "won": 1
+  },
+  "verdict": "one seed"
+ },
+ "l40 input concatenation vs none, sampled chunk": {
+  "pairs": 7,
+  "all": {
+   "n": 1,
+   "pct": 6.0398167958849,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 2
+  },
+  "verdict": "one seed"
+ },
+ "l40 input concatenation vs none, flow": {
+  "pairs": 7,
+  "all": {
+   "n": 1,
+   "pct": 21.561261341088755,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 1
+  },
+  "verdict": "one seed"
+ },
+ "l40 MSAL's head vs none, sampled chunk": {
+  "pairs": 6,
+  "all": {
+   "n": 1,
+   "pct": -5.753297472038188,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 6,
+   "won": 5
+  },
+  "same": {
+   "n": 1,
+   "pct": -4.454376069082433,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 5,
+   "won": 4
+  },
+  "verdict": "one seed"
+ },
+ "l40 MSAL's head vs none, flow": {
+  "pairs": 6,
+  "all": {
+   "n": 1,
+   "pct": -3.4702222720134457,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 6,
+   "won": 5
+  },
+  "same": {
+   "n": 1,
+   "pct": -3.0973636994053644,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 5,
+   "won": 4
+  },
+  "verdict": "one seed"
+ },
+ "l40 sampled chunk, k=1": {
+  "pairs": 7,
+  "all": {
+   "n": 1,
+   "pct": 9.90259112436842,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 0
+  },
+  "same": {
+   "n": 1,
+   "pct": 10.729062424200219,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 6,
+   "won": 0
+  },
+  "verdict": "one seed"
+ },
+ "l40 flow, k=1": {
+  "pairs": 7,
+  "all": {
+   "n": 1,
+   "pct": -2.744304796409469,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 4
+  },
+  "same": {
+   "n": 1,
+   "pct": -2.4642510996385147,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 6,
+   "won": 3
+  },
+  "verdict": "one seed"
+ },
+ "l40 sampled chunk, k=16": {
+  "pairs": 7,
+  "all": {
+   "n": 1,
+   "pct": 10.13044704295536,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 0
+  },
+  "same": {
+   "n": 1,
+   "pct": 11.597258043088821,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 6,
+   "won": 0
+  },
+  "verdict": "one seed"
+ },
+ "l40 flow, k=16": {
+  "pairs": 7,
+  "all": {
+   "n": 1,
+   "pct": -3.200656394702328,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 3
+  },
+  "same": {
+   "n": 1,
+   "pct": -2.55210375088869,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 6,
+   "won": 2
+  },
+  "verdict": "one seed"
+ },
+ "l40 residual code beyond inversion, flow, k=1": {
+  "pairs": 8,
+  "all": {
+   "n": 1,
+   "pct": -2.551031649229918,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 8,
+   "won": 8
+  },
+  "verdict": "one seed"
+ },
+ "l40 residual code beyond inversion, sampled chunk, k=1": {
+  "pairs": 8,
+  "all": {
+   "n": 1,
+   "pct": -1.8391441453072477,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 8,
+   "won": 8
+  },
+  "verdict": "one seed"
+ },
+ "l40 method vs own zero-shot, sampled chunk, k=1": {
+  "pairs": 8,
+  "all": {
+   "n": 1,
+   "pct": -10.104682729927427,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 8,
+   "won": 5
+  },
+  "verdict": "one seed"
+ },
+ "l40 method vs own zero-shot, flow, k=1": {
+  "pairs": 8,
+  "all": {
+   "n": 1,
+   "pct": -43.197825174614835,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 8,
+   "won": 8
+  },
+  "verdict": "one seed"
+ },
+ "l40 MSAL vs own zero-shot (stored), sampled chunk, k=1": {
+  "pairs": 7,
+  "all": {
+   "n": 1,
+   "pct": -5.575401429172855,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 5
+  },
+  "verdict": "one seed"
+ },
+ "l40 residual code beyond inversion, flow, k=16": {
+  "pairs": 8,
+  "all": {
+   "n": 1,
+   "pct": -2.4818312122832253,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 8,
+   "won": 8
+  },
+  "verdict": "one seed"
+ },
+ "l40 residual code beyond inversion, sampled chunk, k=16": {
+  "pairs": 8,
+  "all": {
+   "n": 1,
+   "pct": -1.6037364485818273,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 8,
+   "won": 8
+  },
+  "verdict": "one seed"
+ },
+ "l40 method vs own zero-shot, sampled chunk, k=16": {
+  "pairs": 8,
+  "all": {
+   "n": 1,
+   "pct": -15.450763182788885,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 8,
+   "won": 6
+  },
+  "verdict": "one seed"
+ },
+ "l40 method vs own zero-shot, flow, k=16": {
+  "pairs": 8,
+  "all": {
+   "n": 1,
+   "pct": -45.87414644399621,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 8,
+   "won": 8
+  },
+  "verdict": "one seed"
+ },
+ "l40 MSAL vs own zero-shot (stored), sampled chunk, k=16": {
+  "pairs": 7,
+  "all": {
+   "n": 1,
+   "pct": -11.346980922083894,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 7
+  },
+  "verdict": "one seed"
+ },
+ "l40 inversion: concatenation vs MSAL's head, sampled chunk, k=1": {
+  "pairs": 7,
+  "all": {
+   "n": 1,
+   "pct": 9.398152579501229,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 0
+  },
+  "same": {
+   "n": 1,
+   "pct": 9.536945726458734,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 6,
+   "won": 0
+  },
+  "verdict": "one seed"
+ },
+ "l40 inversion: concatenation vs MSAL's head, sampled chunk, k=16": {
+  "pairs": 7,
+  "all": {
+   "n": 1,
+   "pct": 9.074780205508226,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 0
+  },
+  "same": {
+   "n": 1,
+   "pct": 10.04930155176651,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 6,
+   "won": 0
+  },
+  "verdict": "one seed"
+ },
+ "l40 means": {
+  "tin_chunk": 0.13804552685533486,
+  "tin_flow": 0.3829271808742163,
+  "shift_tin": 3.631299465894699,
+  "shift_msal": 5.731815951211112
+ }
+}

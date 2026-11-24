@@ -1,0 +1,42 @@
+{
+ "held": 1037,
+ "instruction": "pick up the black bowl on the ramekin and place it on the plate",
+ "demo_episode": 1264,
+ "frames": 50,
+ "loss_decoded_code": 1.1074376937467605,
+ "loss_fitted_code": 1.0334616436157376,
+ "trajectory": [
+  [
+   0,
+   1.1074376937467605
+  ],
+  [
+   20,
+   1.0872101496206596
+  ],
+  [
+   40,
+   1.0697078450466506
+  ],
+  [
+   60,
+   1.0553546256851405
+  ],
+  [
+   80,
+   1.0442748019704595
+  ],
+  [
+   99,
+   1.0339967930922285
+  ]
+ ],
+ "code_change_norm": 6.473512649536133,
+ "seconds": 215.51640558242798,
+ "settings": {
+  "STEPS": 100,
+  "LR": 0.01,
+  "FRAME_STRIDE": 2,
+  "DRAWS": 2
+ }
+}

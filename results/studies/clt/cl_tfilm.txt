@@ -1,0 +1,20 @@
+records 8400 {'C0': 1200, 'F0': 1200, 'G0': 1200, 'K0': 1200, 'M0': 1200, 'N0': 1200, 'T0': 1200}
+H7        K0 vs T0 (success mean): 0.162 vs 0.167, diff -0.006 [-0.042, +0.032] -> not distinguishable  (targets 40, units 1200)
+H7_dist   K0 vs T0 (final_dist median): 0.045 vs 0.043, diff +0.002 [-0.002, +0.006] -> n.d.  (targets 40, units 1200)
+H8        K0 vs C0 (success mean): 0.162 vs 0.109, diff +0.053 [+0.021, +0.084] -> better  (targets 40, units 1200)
+H8_dist   K0 vs C0 (final_dist median): 0.045 vs 0.063, diff -0.018 [-0.024, -0.013] -> closer  (targets 40, units 1200)
+H9        K0 vs N0 (success mean): 0.162 vs 0.032, diff +0.130 [+0.096, +0.165] -> better  (targets 40, units 1200)
+H9_dist   K0 vs N0 (final_dist median): 0.045 vs 0.108, diff -0.063 [-0.075, -0.054] -> closer  (targets 40, units 1200)
+offline lc_tfilm_xy6 vs lc_tin_xy6, chunk          -0.8% [  -4.3,   +2.9] (3 seeds, 120 pairs)
+offline lc_tfilm_xy6 vs lc_tin_xy6, flow           -1.0% [  -6.0,   +4.4] (3 seeds, 120 pairs)
+offline lc_tfilm_xy6 vs lc_film_xy6, chunk         +2.3% [  -6.1,  +11.5] (3 seeds, 120 pairs)
+offline lc_tfilm_xy6 vs lc_film_xy6, flow         -30.0% [ -37.0,  -22.2] (3 seeds, 120 pairs)
+offline lc_tfilm_xy6 vs lc_moe_xy6, chunk          -0.6% [  -7.3,   +6.5] (3 seeds, 120 pairs)
+offline lc_tfilm_xy6 vs lc_moe_xy6, flow          -16.2% [ -24.7,   -6.9] (3 seeds, 120 pairs)
+C0  n=1200 success 0.109 median dist 0.061 folds {0: 0.064, 1: 0.167, 2: 0.072, 3: 0.175} seeds {148021: 0.1, 148022: 0.12, 148023: 0.107} probe 7.6e-06
+F0  n=1200 success 0.090 median dist 0.079 folds {0: 0.081, 1: 0.104, 2: 0.103, 3: 0.071} seeds {148021: 0.065, 148022: 0.115, 148023: 0.09} probe 4.5e-06
+G0  n=1200 success 0.002 median dist 0.134 folds {0: 0.0, 1: 0.008, 2: 0.0, 3: 0.0} seeds {148021: 0.0, 148022: 0.0, 148023: 0.005} probe 6.4e-06
+K0  n=1200 success 0.162 median dist 0.044 folds {0: 0.103, 1: 0.246, 2: 0.144, 3: 0.192} seeds {148021: 0.075, 148022: 0.223, 148023: 0.188} probe 7.6e-06
+M0  n=1200 success 0.082 median dist 0.080 folds {0: 0.069, 1: 0.121, 2: 0.075, 3: 0.071} seeds {148021: 0.058, 148022: 0.08, 148023: 0.107} probe 4.8e-06
+N0  n=1200 success 0.032 median dist 0.108 folds {0: 0.025, 1: 0.037, 2: 0.033, 3: 0.033} seeds {148021: 0.035, 148022: 0.03, 148023: 0.03} probe 4.8e-06
+T0  n=1200 success 0.168 median dist 0.041 folds {0: 0.111, 1: 0.237, 2: 0.158, 3: 0.196} seeds {148021: 0.065, 148022: 0.19, 148023: 0.247} probe 7.6e-06

@@ -1,0 +1,740 @@
+{
+ "l40 sampled chunk": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": 4.7013789234249925,
+   "lo": 0.16853595099266538,
+   "hi": 9.43934284743817,
+   "pairs": 200,
+   "won": 74
+  },
+  "same": {
+   "n": 5,
+   "pct": 4.239252656154435,
+   "lo": -0.6466666885050376,
+   "hi": 9.36544786320166,
+   "pairs": 183,
+   "won": 70
+  },
+  "verdict": "higher"
+ },
+ "l40 flow": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": 26.869387295139724,
+   "lo": 21.244833526246754,
+   "hi": 32.75486438900324,
+   "pairs": 200,
+   "won": 13
+  },
+  "same": {
+   "n": 5,
+   "pct": 26.138565186286257,
+   "lo": 19.25226786885432,
+   "hi": 33.42251607954974,
+   "pairs": 183,
+   "won": 13
+  },
+  "verdict": "higher"
+ },
+ "l40 input concatenation vs none, sampled chunk": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": 1.5008438483530506,
+   "lo": -1.8892231333695775,
+   "hi": 5.008049380065871,
+   "pairs": 200,
+   "won": 96
+  },
+  "verdict": "not distinguishable"
+ },
+ "l40 input concatenation vs none, flow": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": 21.55655644003245,
+   "lo": 18.430713957098988,
+   "hi": 24.764901940144824,
+   "pairs": 200,
+   "won": 27
+  },
+  "verdict": "higher"
+ },
+ "l40 MSAL's head vs none, sampled chunk": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": -3.0568222768228237,
+   "lo": -4.619276968682662,
+   "hi": -1.4687726367750509,
+   "pairs": 200,
+   "won": 120
+  },
+  "same": {
+   "n": 5,
+   "pct": -2.910186422225869,
+   "lo": -4.67948610343023,
+   "hi": -1.1080457371919872,
+   "pairs": 183,
+   "won": 109
+  },
+  "verdict": "lower"
+ },
+ "l40 MSAL's head vs none, flow": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": -4.187638143745332,
+   "lo": -8.692683681379421,
+   "hi": 0.5396835061921124,
+   "pairs": 200,
+   "won": 141
+  },
+  "same": {
+   "n": 5,
+   "pct": -4.019663040074139,
+   "lo": -8.66522474751308,
+   "hi": 0.8621859250710129,
+   "pairs": 183,
+   "won": 128
+  },
+  "verdict": "not distinguishable"
+ },
+ "l40 sampled chunk, k=1": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": 3.6648849624168367,
+   "lo": 1.1537626639119614,
+   "hi": 6.238345378970767,
+   "pairs": 200,
+   "won": 68
+  },
+  "same": {
+   "n": 5,
+   "pct": 3.632125426309152,
+   "lo": 1.0321886746618603,
+   "hi": 6.298968291752871,
+   "pairs": 183,
+   "won": 61
+  },
+  "verdict": "higher"
+ },
+ "l40 flow, k=1": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": -0.30448363224617747,
+   "lo": -4.566746346405848,
+   "hi": 4.148141274849504,
+   "pairs": 200,
+   "won": 105
+  },
+  "same": {
+   "n": 5,
+   "pct": -0.6244964516546436,
+   "lo": -5.1325621827040475,
+   "hi": 4.097790903832443,
+   "pairs": 183,
+   "won": 97
+  },
+  "verdict": "not distinguishable"
+ },
+ "l40 sampled chunk, k=16": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": 3.5131186536157877,
+   "lo": 1.3482744058673557,
+   "hi": 5.724204937989774,
+   "pairs": 200,
+   "won": 67
+  },
+  "same": {
+   "n": 5,
+   "pct": 3.406755194481259,
+   "lo": 1.0156478731094598,
+   "hi": 5.85446161057448,
+   "pairs": 183,
+   "won": 61
+  },
+  "verdict": "higher"
+ },
+ "l40 flow, k=16": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": -1.3792171356945992,
+   "lo": -5.69070218864991,
+   "hi": 3.129373651194167,
+   "pairs": 200,
+   "won": 113
+  },
+  "same": {
+   "n": 5,
+   "pct": -1.6269327997786576,
+   "lo": -6.095439357587451,
+   "hi": 3.0542104044355645,
+   "pairs": 183,
+   "won": 105
+  },
+  "verdict": "not distinguishable"
+ },
+ "l40 residual code beyond inversion, flow, k=1": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": -1.8159600149871724,
+   "lo": -2.1924226257559964,
+   "hi": -1.4380483948357337,
+   "pairs": 200,
+   "won": 192
+  },
+  "verdict": "lower"
+ },
+ "l40 residual code beyond inversion, sampled chunk, k=1": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": -1.6042333593011993,
+   "lo": -1.7060573792728295,
+   "hi": -1.5023038584548898,
+   "pairs": 200,
+   "won": 185
+  },
+  "verdict": "lower"
+ },
+ "l40 method vs own zero-shot, sampled chunk, k=1": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": -17.66717946815706,
+   "lo": -19.64764676868166,
+   "hi": -15.637899026875324,
+   "pairs": 200,
+   "won": 168
+  },
+  "verdict": "lower"
+ },
+ "l40 method vs own zero-shot, flow, k=1": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": -41.70976857163679,
+   "lo": -43.02044832572635,
+   "hi": -40.36893973129959,
+   "pairs": 200,
+   "won": 200
+  },
+  "verdict": "lower"
+ },
+ "l40 MSAL vs own zero-shot (stored), sampled chunk, k=1": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": -16.84397427861809,
+   "lo": -18.073516403929467,
+   "hi": -15.595979343280476,
+   "pairs": 200,
+   "won": 169
+  },
+  "verdict": "lower"
+ },
+ "l40 residual code beyond inversion, flow, k=16": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": -2.3420658985287335,
+   "lo": -2.527735643748663,
+   "hi": -2.1560424808613754,
+   "pairs": 200,
+   "won": 200
+  },
+  "verdict": "lower"
+ },
+ "l40 residual code beyond inversion, sampled chunk, k=16": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": -1.8413004963804602,
+   "lo": -1.92701148532598,
+   "hi": -1.755514600228203,
+   "pairs": 200,
+   "won": 194
+  },
+  "verdict": "lower"
+ },
+ "l40 method vs own zero-shot, sampled chunk, k=16": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": -19.950925605576575,
+   "lo": -22.06028582339442,
+   "hi": -17.7844776684167,
+   "pairs": 200,
+   "won": 181
+  },
+  "verdict": "lower"
+ },
+ "l40 method vs own zero-shot, flow, k=16": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": -44.76594544374326,
+   "lo": -45.924248140656275,
+   "hi": -43.58283190108989,
+   "pairs": 200,
+   "won": 200
+  },
+  "verdict": "lower"
+ },
+ "l40 MSAL vs own zero-shot (stored), sampled chunk, k=16": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": -19.032016621139647,
+   "lo": -20.401436782337523,
+   "hi": -17.639036844012924,
+   "pairs": 200,
+   "won": 185
+  },
+  "verdict": "lower"
+ },
+ "l40 inversion: concatenation vs MSAL's head, sampled chunk, k=1": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": 2.858610697472108,
+   "lo": 0.3301227085503733,
+   "hi": 5.450820840194992,
+   "pairs": 200,
+   "won": 70
+  },
+  "same": {
+   "n": 5,
+   "pct": 2.589850442121744,
+   "lo": -0.362037142624394,
+   "hi": 5.629191042396253,
+   "pairs": 183,
+   "won": 64
+  },
+  "verdict": "higher"
+ },
+ "l40 inversion: concatenation vs MSAL's head, sampled chunk, k=16": {
+  "pairs": 200,
+  "all": {
+   "n": 5,
+   "pct": 2.3172336944997207,
+   "lo": 0.20831982152709205,
+   "hi": 4.4705302867070085,
+   "pairs": 200,
+   "won": 78
+  },
+  "same": {
+   "n": 5,
+   "pct": 2.031648198620317,
+   "lo": -0.5468453635675163,
+   "hi": 4.676993627644843,
+   "pairs": 183,
+   "won": 73
+  },
+  "verdict": "higher"
+ },
+ "l40 means": {
+  "tin_chunk": 0.1317469169982611,
+  "tin_flow": 0.3654362319072967,
+  "shift_tin": 3.53655054628849,
+  "shift_msal": 5.380096681118012
+ },
+ "dev sampled chunk": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -3.7092277829816833,
+   "lo": -6.77936398573774,
+   "hi": -0.5379794584199793,
+   "pairs": 205,
+   "won": 119
+  },
+  "same": {
+   "n": 1,
+   "pct": -6.826462929442512,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 37,
+   "won": 25
+  },
+  "verdict": "lower"
+ },
+ "dev flow": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -0.2855802561534393,
+   "lo": -3.575254672510342,
+   "hi": 3.1163263235229444,
+   "pairs": 205,
+   "won": 109
+  },
+  "same": {
+   "n": 1,
+   "pct": -3.9161391050528627,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 37,
+   "won": 23
+  },
+  "verdict": "not distinguishable"
+ },
+ "dev sampled chunk, k=1": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -4.758503956010173,
+   "lo": -8.360788908814087,
+   "hi": -1.0146152429088784,
+   "pairs": 205,
+   "won": 136
+  },
+  "same": {
+   "n": 1,
+   "pct": -9.021158824726827,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 37,
+   "won": 29
+  },
+  "verdict": "lower"
+ },
+ "dev flow, k=1": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -1.070527532903276,
+   "lo": -5.265014198980356,
+   "hi": 3.309674244050065,
+   "pairs": 205,
+   "won": 113
+  },
+  "same": {
+   "n": 1,
+   "pct": -5.137118730586576,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 37,
+   "won": 27
+  },
+  "verdict": "not distinguishable"
+ },
+ "dev sampled chunk, k=16": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -4.961987643749987,
+   "lo": -8.601090328409722,
+   "hi": -1.177991892016672,
+   "pairs": 205,
+   "won": 135
+  },
+  "same": {
+   "n": 1,
+   "pct": -9.246834514964085,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 37,
+   "won": 31
+  },
+  "verdict": "lower"
+ },
+ "dev flow, k=16": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -1.4983633516578276,
+   "lo": -5.520724385828457,
+   "hi": 2.69524569626014,
+   "pairs": 205,
+   "won": 117
+  },
+  "same": {
+   "n": 1,
+   "pct": -5.502069837882617,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 37,
+   "won": 28
+  },
+  "verdict": "not distinguishable"
+ },
+ "dev residual code beyond inversion, flow, k=1": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -7.969019338590466,
+   "lo": -9.241898389906666,
+   "hi": -6.678288205195249,
+   "pairs": 205,
+   "won": 205
+  },
+  "verdict": "lower"
+ },
+ "dev residual code beyond inversion, sampled chunk, k=1": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -4.156593565723421,
+   "lo": -5.0241250689116,
+   "hi": -3.2811378300965366,
+   "pairs": 205,
+   "won": 200
+  },
+  "verdict": "lower"
+ },
+ "dev method vs own zero-shot, sampled chunk, k=1": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -21.11187283555006,
+   "lo": -23.903739196692065,
+   "hi": -18.21757676634891,
+   "pairs": 205,
+   "won": 204
+  },
+  "verdict": "lower"
+ },
+ "dev method vs own zero-shot, flow, k=1": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -25.185792180329834,
+   "lo": -27.251837963283588,
+   "hi": -23.0610707544766,
+   "pairs": 205,
+   "won": 205
+  },
+  "verdict": "lower"
+ },
+ "dev MSAL vs own zero-shot (stored), sampled chunk, k=1": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -20.24276183239796,
+   "lo": -22.3657525697312,
+   "hi": -18.061715664375434,
+   "pairs": 205,
+   "won": 197
+  },
+  "verdict": "lower"
+ },
+ "dev residual code beyond inversion, flow, k=16": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -8.700817189776867,
+   "lo": -9.888721370479237,
+   "hi": -7.4972533007228614,
+   "pairs": 205,
+   "won": 205
+  },
+  "verdict": "lower"
+ },
+ "dev residual code beyond inversion, sampled chunk, k=16": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -4.216108201404955,
+   "lo": -5.091812089015679,
+   "hi": -3.3323243228508215,
+   "pairs": 205,
+   "won": 202
+  },
+  "verdict": "lower"
+ },
+ "dev method vs own zero-shot, sampled chunk, k=16": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -23.05749465134326,
+   "lo": -25.159963410067444,
+   "hi": -20.895961585827894,
+   "pairs": 205,
+   "won": 204
+  },
+  "verdict": "lower"
+ },
+ "dev method vs own zero-shot, flow, k=16": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -27.551455486542743,
+   "lo": -29.380075622804057,
+   "hi": -25.675485376003905,
+   "pairs": 205,
+   "won": 205
+  },
+  "verdict": "lower"
+ },
+ "dev MSAL vs own zero-shot (stored), sampled chunk, k=16": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -22.043263819932058,
+   "lo": -23.736166166093287,
+   "hi": -20.31278247715389,
+   "pairs": 205,
+   "won": 203
+  },
+  "verdict": "lower"
+ },
+ "dev inversion: concatenation vs MSAL's head, sampled chunk, k=1": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -4.5391849962504,
+   "lo": -8.164754826315301,
+   "hi": -0.7704810506526494,
+   "pairs": 205,
+   "won": 134
+  },
+  "same": {
+   "n": 1,
+   "pct": -8.774957826593877,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 37,
+   "won": 29
+  },
+  "verdict": "lower"
+ },
+ "dev inversion: concatenation vs MSAL's head, sampled chunk, k=16": {
+  "pairs": 205,
+  "all": {
+   "n": 5,
+   "pct": -4.826272487090588,
+   "lo": -8.617637635205499,
+   "hi": -0.8776072942585311,
+   "pairs": 205,
+   "won": 128
+  },
+  "same": {
+   "n": 1,
+   "pct": -9.34306314440846,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 37,
+   "won": 30
+  },
+  "verdict": "lower"
+ },
+ "dev means": {
+  "tin_chunk": 0.04105641311794833,
+  "tin_flow": 0.2146598129332086,
+  "shift_tin": 3.912084441068696,
+  "shift_msal": 3.8116874834386314
+ },
+ "anchors": [
+  {
+   "key": [
+    "dev",
+    148021,
+    0
+   ],
+   "new": "ws2",
+   "stored": "local",
+   "exact": false
+  },
+  {
+   "key": [
+    "dev",
+    148022,
+    0
+   ],
+   "new": "ws2",
+   "stored": "local",
+   "exact": false
+  },
+  {
+   "key": [
+    "dev",
+    148023,
+    0
+   ],
+   "new": "ws2",
+   "stored": "a800",
+   "exact": false
+  },
+  {
+   "key": [
+    "dev",
+    148024,
+    0
+   ],
+   "new": "ws2",
+   "stored": "a800",
+   "exact": false
+  },
+  {
+   "key": [
+    "dev",
+    148025,
+    0
+   ],
+   "new": "a800",
+   "stored": "a800",
+   "exact": true
+  },
+  {
+   "key": [
+    "l40",
+    148021,
+    1000
+   ],
+   "new": "ws2",
+   "stored": "ws2",
+   "exact": true
+  },
+  {
+   "key": [
+    "l40",
+    148022,
+    1000
+   ],
+   "new": "ws2",
+   "stored": "ws2",
+   "exact": true
+  },
+  {
+   "key": [
+    "l40",
+    148023,
+    1000
+   ],
+   "new": "ws2",
+   "stored": "ws2",
+   "exact": true
+  },
+  {
+   "key": [
+    "l40",
+    148024,
+    1000
+   ],
+   "new": "a800",
+   "stored": "a800",
+   "exact": true
+  },
+  {
+   "key": [
+    "l40",
+    148025,
+    1000
+   ],
+   "new": "a800",
+   "stored": "a800",
+   "exact": true
+  }
+ ]
+}

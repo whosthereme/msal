@@ -1,0 +1,37 @@
+records 8400 {'C0': 1200, 'F0': 1200, 'G0': 1200, 'H0': 1200, 'M0': 1200, 'N0': 1200, 'T0': 1200}
+H1        C0 vs F0 (success mean): 0.109 vs 0.090, diff +0.019 [-0.017, +0.057] -> not distinguishable  (targets 40, units 1200)
+H1_dist   C0 vs F0 (final_dist median): 0.063 vs 0.097, diff -0.034 [-0.043, -0.019] -> closer  (targets 40, units 1200)
+H2        C0 vs M0 (success mean): 0.109 vs 0.082, diff +0.027 [-0.002, +0.058] -> not distinguishable  (targets 40, units 1200)
+H2_dist   C0 vs M0 (final_dist median): 0.063 vs 0.083, diff -0.020 [-0.028, -0.014] -> closer  (targets 40, units 1200)
+H3        T0 vs C0 (success mean): 0.167 vs 0.109, diff +0.058 [+0.018, +0.098] -> better  (targets 40, units 1200)
+H3_dist   T0 vs C0 (final_dist median): 0.043 vs 0.063, diff -0.020 [-0.027, -0.014] -> closer  (targets 40, units 1200)
+H4_F      F0 vs N0 (success mean): 0.090 vs 0.032, diff +0.058 [+0.033, +0.086] -> better  (targets 40, units 1200)
+H4_F_dist F0 vs N0 (final_dist median): 0.097 vs 0.108, diff -0.011 [-0.028, -0.003] -> closer  (targets 40, units 1200)
+H4_M      M0 vs N0 (success mean): 0.082 vs 0.032, diff +0.050 [+0.025, +0.076] -> better  (targets 40, units 1200)
+H4_M_dist M0 vs N0 (final_dist median): 0.083 vs 0.108, diff -0.025 [-0.036, -0.014] -> closer  (targets 40, units 1200)
+H4_T      T0 vs N0 (success mean): 0.167 vs 0.032, diff +0.136 [+0.098, +0.176] -> better  (targets 40, units 1200)
+H4_T_dist T0 vs N0 (final_dist median): 0.043 vs 0.108, diff -0.065 [-0.075, -0.057] -> closer  (targets 40, units 1200)
+H5        G0 vs C0 (success mean): 0.002 vs 0.109, diff -0.107 [-0.142, -0.076] -> worse  (targets 40, units 1200)
+H5_dist   G0 vs C0 (final_dist median): 0.135 vs 0.063, diff +0.072 [+0.062, +0.083] -> farther  (targets 40, units 1200)
+H6        G0 vs N0 (success mean): 0.002 vs 0.032, diff -0.030 [-0.045, -0.017] -> worse  (targets 40, units 1200)
+H6_dist   G0 vs N0 (final_dist median): 0.135 vs 0.108, diff +0.027 [+0.016, +0.038] -> farther  (targets 40, units 1200)
+G0 success vs span share: rho +0.11 [-0.06, +0.30] over 40 targets (share mean 0.18, 0.04 to 0.28)
+C0  n=1200 success 0.109 median dist 0.061 folds {0: 0.064, 1: 0.167, 2: 0.072, 3: 0.175} probe 7.6e-06
+F0  n=1200 success 0.090 median dist 0.079 folds {0: 0.081, 1: 0.104, 2: 0.103, 3: 0.071} probe 4.5e-06
+G0  n=1200 success 0.002 median dist 0.134 folds {0: 0.0, 1: 0.008, 2: 0.0, 3: 0.0} probe 6.4e-06
+H0  n=1200 success 0.107 median dist 0.059 folds {0: 0.081, 1: 0.171, 2: 0.106, 3: 0.087} probe 6.7e-06
+M0  n=1200 success 0.082 median dist 0.080 folds {0: 0.069, 1: 0.121, 2: 0.075, 3: 0.071} probe 4.8e-06
+N0  n=1200 success 0.032 median dist 0.108 folds {0: 0.025, 1: 0.037, 2: 0.033, 3: 0.033} probe 4.8e-06
+T0  n=1200 success 0.168 median dist 0.041 folds {0: 0.111, 1: 0.237, 2: 0.158, 3: 0.196} probe 7.6e-06
+offline lc_film_xy6  n=120 flow 0.1717 sampled chunk 0.0744 share 1.000
+offline lc_moe_xy6   n=120 flow 0.1448 sampled chunk 0.0772 share 1.000
+offline lc_tin_xy6   n=120 flow 0.1231 sampled chunk 0.0774 share 1.000
+offline lc_h20       n=120 flow 0.1784 sampled chunk 0.0819 share 0.181
+offline flow lc_film_xy6 vs lc_xy6     +39.8% [ +31.9,  +48.2] (3 seeds, 120 pairs)
+offline flow lc_film_xy6 vs lc_plain   +15.3% [  +3.4,  +28.6] (3 seeds, 120 pairs)
+offline flow lc_h20 vs lc_xy6          +45.2% [ +40.1,  +50.4] (3 seeds, 120 pairs)
+offline flow lc_h20 vs lc_plain        +19.7% [  +9.1,  +31.4] (3 seeds, 120 pairs)
+offline flow lc_moe_xy6 vs lc_xy6      +16.9% [ +11.3,  +22.8] (3 seeds, 120 pairs)
+offline flow lc_moe_xy6 vs lc_plain     -3.6% [ -15.6,  +10.2] (3 seeds, 120 pairs)
+offline flow lc_tin_xy6 vs lc_xy6       -1.1% [  -9.3,   +7.8] (3 seeds, 120 pairs)
+offline flow lc_tin_xy6 vs lc_plain    -18.5% [ -22.3,  -14.5] (3 seeds, 120 pairs)

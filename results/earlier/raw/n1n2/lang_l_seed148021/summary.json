@@ -1,0 +1,20 @@
+{
+ "protocol": "revision_20261021_loto_v1",
+ "feature": "lang",
+ "seed": 148021,
+ "arms": {
+  "plain": {
+   "fold_count": 41,
+   "complete": true,
+   "mean_selection": 0.3818257138496492,
+   "mean_robustness": 0.38145712258793957
+  },
+  "sal": {
+   "fold_count": 41,
+   "complete": true,
+   "mean_selection": 0.3509354757471043,
+   "mean_robustness": 0.3545264908864441
+  }
+ },
+ "finished_unix": 1792574040.6658459
+}

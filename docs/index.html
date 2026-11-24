@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MSAL: Interpretable zero-shot generalization of frozen robot policies</title>
+<meta name="description" content="When does a robot policy with frozen weights generalize zero-shot from a task description? Two conditions, checkable before deployment, with code, registered plans, proofs and scores.">
+<style>
+  :root {
+    --ink: #222831; --muted: #5d6673; --line: #dfe3e8; --bg: #ffffff; --soft: #f4f6f8;
+    --navy: #182c5c; --orange: #b96a1a; --teal: #2f7a72; --link: #1f4fa3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e7eaee; --muted: #a3acb8; --line: #333a44; --bg: #14171c; --soft: #1c2027;
+            --navy: #a9bdf0; --orange: #e5a15a; --teal: #7cc7bd; --link: #8fb2f5; }
+    figure img { background: #fff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 17px/1.62 "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Georgia, serif; }
+  main { max-width: 880px; margin: 0 auto; padding: 0 22px 80px; }
+  header { padding: 64px 0 28px; border-bottom: 1px solid var(--line); }
+  .kicker { font: 600 13px/1.4 system-ui, "Segoe UI", sans-serif; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+  h1 { font-size: 2.15rem; line-height: 1.2; margin: 14px 0 14px; letter-spacing: -.01em; color: var(--navy); }
+  .authors { color: var(--muted); margin: 0 0 22px; }
+  nav.links { display: flex; flex-wrap: wrap; gap: 10px; }
+  nav.links a { font: 600 14px/1 system-ui, "Segoe UI", sans-serif; text-decoration: none; color: var(--ink);
+                border: 1px solid var(--line); border-radius: 6px; padding: 10px 14px; background: var(--soft); }
+  nav.links a:hover { border-color: var(--navy); color: var(--navy); }
+  h2 { font-size: 1.4rem; margin: 54px 0 12px; color: var(--navy); }
+  h3 { font: 600 15px/1.4 system-ui, "Segoe UI", sans-serif; margin: 26px 0 6px; }
+  p { margin: 0 0 14px; }
+  a { color: var(--link); }
+  .lead { font-size: 1.12rem; }
+  .cond { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 18px 0 6px; }
+  .cond div { border: 1px solid var(--line); border-left: 4px solid var(--orange); border-radius: 6px; padding: 14px 16px; background: var(--soft); }
+  .cond div:nth-child(2) { border-left-color: var(--teal); }
+  .cond b { display: block; font: 600 14px/1.4 system-ui, "Segoe UI", sans-serif; margin-bottom: 4px; }
+  figure { margin: 22px 0; }
+  figure img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; padding: 10px; }
+  figure.narrow img { max-width: 560px; display: block; margin: 0 auto; }
+  figcaption { font: 14px/1.5 system-ui, "Segoe UI", sans-serif; color: var(--muted); margin-top: 8px; }
+  .tablewrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0 8px; font: 15px/1.4 system-ui, "Segoe UI", sans-serif; }
+  th, td { padding: 7px 10px; border-bottom: 1px solid var(--line); text-align: right; font-variant-numeric: tabular-nums; }
+  th:first-child, td:first-child { text-align: left; }
+  thead th { border-bottom: 2px solid var(--ink); font-weight: 600; }
+  tr.group td { font-style: italic; color: var(--muted); border-bottom: none; padding-top: 12px; }
+  .note { font: 14px/1.5 system-ui, "Segoe UI", sans-serif; color: var(--muted); }
+  code { font: 14px/1.4 ui-monospace, Consolas, monospace; background: var(--soft); padding: 1px 5px; border-radius: 4px; }
+  ul { padding-left: 22px; margin: 0 0 14px; }
+  li { margin-bottom: 6px; }
+  footer { margin-top: 60px; padding-top: 18px; border-top: 1px solid var(--line); }
+  @media (max-width: 640px) { .cond { grid-template-columns: 1fr; } h1 { font-size: 1.7rem; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="kicker">Robot learning &middot; multimodal conditioning</div>
+  <h1>Interpretable Zero-Shot Generalization of Frozen Robot Policies via Nonlinear Conditioning and Span Analysis</h1>
+  <p class="authors">Anonymous authors &middot; under review</p>
+  <nav class="links">
+    <a href="https://github.com/whosthereme/msal/tree/main/code">Code</a>
+    <a href="https://github.com/whosthereme/msal/tree/main/plans">Registered plans</a>
+    <a href="https://github.com/whosthereme/msal/tree/main/results">Scores</a>
+    <a href="https://github.com/whosthereme/msal/tree/main/lean">Lean proofs</a>
+    <a href="https://github.com/whosthereme/msal/blob/main/DATA.md">Data</a>
+  </nav>
+</header>
+
+<h2>The question</h2>
+<p class="lead">A robot policy is deployed with every weight frozen, because changed weights must be validated
+again. New tasks keep arriving, and the policy can meet them only through a description of the task. When does
+it generalize zero-shot, and can that be known before the robot acts?</p>
+<p>We show that zero-shot generalization of a frozen policy is limited by two conditions. Both can be checked
+before deployment, and neither guarantees accuracy.</p>
+<div class="cond">
+  <div><b>Condition 1: where the description enters</b>
+  Conditioning layers that are linear in the representation and feed a linear output map, feature-wise modulation
+  among them, give each task one linear readout. To do more, the description must act on a nonlinear readout.</div>
+  <div><b>Condition 2: what the description encodes</b>
+  Training fixes the response only to the part of a new description that lies in the span of the training
+  descriptions. That share is computed from the descriptions alone.</div>
+</div>
+
+<figure class="narrow">
+  <img src="img/fig_arch.png" alt="Five zero-shot heads: a linear readout, a mixture of experts, MSAL-h, MSAL and input concatenation, each with its drop in offline error and its closed-loop success.">
+  <figcaption>Where a task description <i>d</i> meets the policy's representation in five zero-shot heads, and
+  what each task then receives. Right: drop in zero-shot sampled-chunk error on 41 placement targets, and
+  zero-shot closed-loop success at unseen cluttered targets given coordinates (3.2% without a description).
+  MSAL and input concatenation were not distinguishable.</figcaption>
+</figure>
+
+<h2>Method</h2>
+<p>MSAL is a head on frozen features of a vision-language-action backbone (SmolVLA). The description modulates
+the first activation of the head's trunk, ahead of every later nonlinearity; a library of shared residual atoms
+adds a correction whose code enters linearly. The head is trained once on source tasks. On the robot no weight
+changes: a new task is predicted from its description, and demonstrations, when they exist, refine the
+description by gradient steps and fix the code in closed form, so a task is stored as 37 or 81 numbers.</p>
+<p>We built first, and report throughout, a variant that modulates the trunk's output, MSAL-h. A rule written
+down before the LIBERO run would have kept MSAL-h as the main method, because the trunk-modulated head was less
+accurate there; we present the trunk-modulated head as MSAL nonetheless, with those results known, and give
+both variants' results (<code>plans/DECISION_HEAD_20261121.md</code>).</p>
+<figure>
+  <img src="img/fig_method_v9.png" alt="Overview of MSAL in three stages: a task enters as a readable description, the trunk-modulated head with a shared atom library, and a new task with frozen weights.">
+  <figcaption>A task enters as a readable description; the head lets it act inside the trunk, before a nonlinear
+  readout; a new task is predicted from its description, then refined from demonstrations without training.
+  The rollout images are from MSAL-h adapted from one demonstration.</figcaption>
+</figure>
+
+<h2>Results</h2>
+<h3>Condition 1 on 41 placement targets</h3>
+<p>Descriptions that enter before a nonlinear readout (MSAL, MSAL-h, input concatenation) lowered zero-shot
+sampled-chunk error by 63% to 69% against the same readout without task input, MSAL most; seven other heads
+lowered it by at most 55%. MSAL's error was 12% below that of input concatenation and 16% below MSAL-h's. On
+the 40 LIBERO tasks the order of the three reversed.</p>
+
+<h3>Condition 2 on directions never trained</h3>
+<p>With a harmonic description only 19% of a held descriptor lay in the span of the training descriptors, and
+the description raised MSAL's sampled-chunk error by 20%. The target's coordinates, six of the same 21 columns
+with a share of one, lowered it by 69%. Before training, the share predicted that appending a direction
+identifier would raise error in a given order; error rose in that order on both heads, by up to 85% (25% with
+MSAL-h). Deleting the out-of-span part of a held description lowered error but repaired neither failure: lying
+in the span is not sufficient.</p>
+<figure class="narrow">
+  <img src="img/fig_design_v4.png" alt="Change in error against no description for harmonic and coordinate descriptors on held directions with MSAL's head, and error against span share for the identifier test.">
+  <figcaption>MSAL's head, log scale. (a) Held directions never trained: change in error against the same head
+  without description; open markers score the in-span part only. (b) Prospective test: coordinates plus a
+  direction identifier of growing weight, against the span share computed before training.</figcaption>
+</figure>
+
+<h3>Both conditions in closed loop</h3>
+<p>Zero-shot placement at unseen targets in cluttered scenes, 1,200 paired episodes per head (40 targets, three
+training seeds). The target is not marked in the images and is given only by its description. A scripted policy
+solved 398 of 400 scenes.</p>
+<figure>
+  <img src="img/figS5_cl_coord.png" alt="Four rollout scenes of the cluttered placement family from the front and wrist cameras, and success rates of policies.">
+  <figcaption>The cluttered placement family: a scanned bowl among scanned clutter, the target not shown in the
+  images. The bars are from the first study of this family, run with MSAL-h.</figcaption>
+</figure>
+<div class="tablewrap"><table>
+  <thead><tr><th>Head</th><th>Success (%)</th><th>vs MSAL head, coordinates (points, 95% interval)</th><th>Distance (cm)</th></tr></thead>
+  <tbody>
+    <tr><td>No description</td><td>3.2</td><td>&minus;13.0 [&minus;16.5, &minus;9.6]</td><td>10.8</td></tr>
+    <tr class="group"><td colspan="4">coordinates (span share 1)</td></tr>
+    <tr><td>FiLM, linear readout</td><td>9.0</td><td>&minus;7.2 [&minus;11.1, &minus;3.4]*</td><td>9.7</td></tr>
+    <tr><td>Mixture of experts</td><td>8.2</td><td>&minus;8.0 [&minus;11.3, &minus;4.7]*</td><td>8.3</td></tr>
+    <tr><td>MSAL-h head</td><td>10.9</td><td>&minus;5.3 [&minus;8.4, &minus;2.1]</td><td>6.3</td></tr>
+    <tr><td>MSAL head</td><td>16.2</td><td>&mdash;</td><td>4.5</td></tr>
+    <tr><td>Input concatenation</td><td>16.8</td><td>+0.6 [&minus;3.2, +4.2]</td><td>4.3</td></tr>
+    <tr class="group"><td colspan="4">harmonic descriptor (span share 0.18)</td></tr>
+    <tr><td>MSAL-h head</td><td>0.17</td><td>&minus;16.0 [&minus;19.3, &minus;12.7]*</td><td>13.5</td></tr>
+    <tr><td>MSAL head</td><td>0.25</td><td>&minus;15.9 [&minus;19.5, &minus;12.5]</td><td>14.4</td></tr>
+  </tbody>
+</table></div>
+<p class="note">* Post hoc. Intervals resample targets and episodes. The second condition held on both heads: the
+description that leaves the target mostly outside the span placed almost nothing. MSAL's head and input
+concatenation were not distinguishable. When the three training seeds are resampled as well (post hoc), MSAL's
+leads over no description, the linear readout and the mixture remain; its lead over MSAL-h does not, and neither
+does the gain from one demonstration (20.9% against 16.2%).</p>
+
+<h3>What the results do not show</h3>
+<ul>
+  <li>MSAL's head is not the most accurate everywhere. On the 40 LIBERO tasks it was less accurate than MSAL-h
+  and than input concatenation, and its word description raised zero-shot error above that of a head without
+  one.</li>
+  <li>With language, neither a bag of words nor a pretrained sentence embedding helped zero-shot by more than a
+  few percent on either head; on eight held-out LIBERO tasks zero-shot success was near zero, and one
+  demonstration raised it to 10.5% (16% with MSAL-h).</li>
+  <li>Success stays far below a scripted policy or a policy trained end to end, and below replaying stored
+  demonstrations where scenes match them.</li>
+  <li>The choice of the head was made with results known, against a rule written down beforehand.</li>
+</ul>
+
+<h2>What is in the repository</h2>
+<ul>
+  <li><b>Code</b>: the heads, adaptation, the runner of every study, the analysis behind every number, and the
+  cluttered placement family (scene generation, scripted demonstrations, rollouts). In the code MSAL's head is
+  the arm <code>tfilm_nl</code> and MSAL-h's the arm <code>film_nl</code>.</li>
+  <li><b>Registered plans</b>: the written plan of every study, 23 of them with a SHA-256 digest
+  time-stamped before the runs it governs (<code>plans/PLAN_HASHES.log</code>), and the record of the choice of
+  the head.</li>
+  <li><b>Scores</b>: per-fold errors and per-episode outcomes of every study, with the analysis outputs.</li>
+  <li><b>Lean proofs</b>: 39 theorems for the algebraic statements, with an axiom audit.</li>
+  <li><b>Data</b>: the two placement families are attached to the
+  <a href="https://github.com/whosthereme/msal/releases/tag/data-v1">data-v1 release</a>
+  (see <a href="https://github.com/whosthereme/msal/blob/main/DATA.md">DATA.md</a>); LIBERO and the SmolVLA
+  checkpoint are public.</li>
+</ul>
+
+<footer class="note">
+  Machine names, user names, network addresses and some directory names were replaced, and comments were
+  removed from the source files.
+  Code under the MIT license; records, plans and proofs under CC BY 4.0.
+</footer>
+</main>
+</body>
+</html>

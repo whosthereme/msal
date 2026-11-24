@@ -1,0 +1,241 @@
+{
+ "tasks": 41,
+ "A1 MSAL trunk vs MSAL head, flow, k=1": {
+  "n": 41,
+  "pct": -5.643178531355764,
+  "lo": -9.070231921904071,
+  "hi": -2.268117963189853,
+  "won": 28
+ },
+ "A2 MSAL trunk vs MSAL head, sampled chunk, k=1": {
+  "n": 41,
+  "pct": -17.76398278116441,
+  "lo": -20.559446639230018,
+  "hi": -14.909090042809236,
+  "won": 40
+ },
+ "A1 MSAL trunk vs MSAL head, flow, k=16": {
+  "n": 41,
+  "pct": -6.861945465079322,
+  "lo": -10.322128231710447,
+  "hi": -3.4745558913399033,
+  "won": 31
+ },
+ "A2 MSAL trunk vs MSAL head, sampled chunk, k=16": {
+  "n": 41,
+  "pct": -18.096345124499756,
+  "lo": -21.126997072408127,
+  "hi": -14.978964683987183,
+  "won": 40
+ },
+ "code beyond inversion, trunk, flow, k=1": {
+  "n": 41,
+  "pct": -8.275449017122193,
+  "lo": -9.089001389525485,
+  "hi": -7.450296750340135,
+  "won": 41
+ },
+ "code beyond inversion, head (replication), flow, k=1": {
+  "n": 41,
+  "pct": -8.29058545867265,
+  "lo": -8.99728527003376,
+  "hi": -7.557629010611333,
+  "won": 41
+ },
+ "inversion trunk vs head, flow, k=1": {
+  "n": 41,
+  "pct": -5.658749351793069,
+  "lo": -9.200221458000824,
+  "hi": -2.215651576614097,
+  "won": 26
+ },
+ "code beyond inversion, trunk, sampled chunk, k=1": {
+  "n": 41,
+  "pct": -4.01797201249302,
+  "lo": -4.869981177155569,
+  "hi": -3.1929887808970547,
+  "won": 39
+ },
+ "code beyond inversion, head, sampled chunk, k=1": {
+  "n": 41,
+  "pct": -4.376019423914023,
+  "lo": -5.2643927237911665,
+  "hi": -3.5257193192667624,
+  "won": 39
+ },
+ "code beyond inversion, trunk, flow, k=16": {
+  "n": 41,
+  "pct": -9.381820132041007,
+  "lo": -10.226227260580123,
+  "hi": -8.512899632669757,
+  "won": 41
+ },
+ "code beyond inversion, head (replication), flow, k=16": {
+  "n": 41,
+  "pct": -8.925542826554478,
+  "lo": -9.5850586152878,
+  "hi": -8.221133949160775,
+  "won": 41
+ },
+ "inversion trunk vs head, flow, k=16": {
+  "n": 41,
+  "pct": -6.392980179930429,
+  "lo": -9.924178670726025,
+  "hi": -2.9584864188837656,
+  "won": 29
+ },
+ "code beyond inversion, trunk, sampled chunk, k=16": {
+  "n": 41,
+  "pct": -4.108222678986917,
+  "lo": -4.9444608830203745,
+  "hi": -3.334275455509461,
+  "won": 40
+ },
+ "code beyond inversion, head, sampled chunk, k=16": {
+  "n": 41,
+  "pct": -4.716436550700909,
+  "lo": -5.609858497042497,
+  "hi": -3.888364333581551,
+  "won": 40
+ },
+ "zero-shot trunk vs head, flow": {
+  "n": 41,
+  "pct": -4.182036544848955,
+  "lo": -8.907292333564332,
+  "hi": 0.31036018681769306,
+  "won": 26
+ },
+ "zero-shot trunk vs head, sampled chunk": {
+  "n": 41,
+  "pct": -15.247671518468165,
+  "lo": -19.160008201548873,
+  "hi": -11.3069272931698,
+  "won": 36
+ },
+ "MSAL trunk vs head, flow, k=1": {
+  "n": 41,
+  "pct": -5.643178531355764,
+  "lo": -9.070231921904071,
+  "hi": -2.268117963189853,
+  "won": 28
+ },
+ "MSAL trunk vs head, ROBUSTNESS flow, k=1": {
+  "n": 41,
+  "pct": -6.301205656109776,
+  "lo": -9.625147602877638,
+  "hi": -2.8671470855899606,
+  "won": 31
+ },
+ "MSAL trunk vs head, flow, k=2": {
+  "n": 41,
+  "pct": -6.531950817326438,
+  "lo": -9.97760773095604,
+  "hi": -3.1363361880291096,
+  "won": 31
+ },
+ "MSAL trunk vs head, ROBUSTNESS flow, k=2": {
+  "n": 41,
+  "pct": -7.051983085071711,
+  "lo": -10.471483254130264,
+  "hi": -3.5458971268966466,
+  "won": 31
+ },
+ "MSAL trunk vs head, flow, k=4": {
+  "n": 41,
+  "pct": -6.728594803068056,
+  "lo": -10.225786953225446,
+  "hi": -3.2706466655142763,
+  "won": 31
+ },
+ "MSAL trunk vs head, ROBUSTNESS flow, k=4": {
+  "n": 41,
+  "pct": -7.182124672867552,
+  "lo": -10.653380012440216,
+  "hi": -3.6074041638875842,
+  "won": 31
+ },
+ "MSAL trunk vs head, flow, k=8": {
+  "n": 41,
+  "pct": -6.794337761403401,
+  "lo": -10.257791747313794,
+  "hi": -3.4003632435331554,
+  "won": 31
+ },
+ "MSAL trunk vs head, ROBUSTNESS flow, k=8": {
+  "n": 41,
+  "pct": -7.241171617933007,
+  "lo": -10.661465276489846,
+  "hi": -3.7393190211593597,
+  "won": 31
+ },
+ "MSAL trunk vs head, flow, k=16": {
+  "n": 41,
+  "pct": -6.861945465079322,
+  "lo": -10.322128231710447,
+  "hi": -3.4745558913399033,
+  "won": 31
+ },
+ "MSAL trunk vs head, ROBUSTNESS flow, k=16": {
+  "n": 41,
+  "pct": -7.311478646389702,
+  "lo": -10.73744187754807,
+  "hi": -3.816933531164479,
+  "won": 31
+ },
+ "film_nl: MSAL vs its zero-shot head, flow, k=1": {
+  "n": 41,
+  "pct": -25.485199602812937,
+  "lo": -28.32903120715039,
+  "hi": -22.641778371169607,
+  "won": 41
+ },
+ "film_nl: MSAL vs its zero-shot head, sampled chunk, k=1": {
+  "n": 41,
+  "pct": -23.205543638655644,
+  "lo": -26.80086081473204,
+  "hi": -19.44841387635754,
+  "won": 40
+ },
+ "film_nl: MSAL vs its zero-shot head, flow, k=16": {
+  "n": 41,
+  "pct": -27.62602897374702,
+  "lo": -30.316424906054284,
+  "hi": -24.95277094529453,
+  "won": 41
+ },
+ "film_nl: MSAL vs its zero-shot head, sampled chunk, k=16": {
+  "n": 41,
+  "pct": -24.28493408413088,
+  "lo": -27.81674547656,
+  "hi": -20.672382534362875,
+  "won": 41
+ },
+ "tfilm_nl: MSAL vs its zero-shot head, flow, k=1": {
+  "n": 41,
+  "pct": -26.621486573965957,
+  "lo": -29.558398420104716,
+  "hi": -23.71914967121186,
+  "won": 41
+ },
+ "tfilm_nl: MSAL vs its zero-shot head, sampled chunk, k=1": {
+  "n": 41,
+  "pct": -25.485584304403197,
+  "lo": -29.970002469637958,
+  "hi": -21.020779550880786,
+  "won": 41
+ },
+ "tfilm_nl: MSAL vs its zero-shot head, flow, k=16": {
+  "n": 41,
+  "pct": -29.650238668378382,
+  "lo": -32.52480754331548,
+  "hi": -26.775138759345584,
+  "won": 41
+ },
+ "tfilm_nl: MSAL vs its zero-shot head, sampled chunk, k=16": {
+  "n": 41,
+  "pct": -26.82984953032396,
+  "lo": -31.36407508990309,
+  "hi": -22.290853389103493,
+  "won": 41
+ }
+}

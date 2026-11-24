@@ -1,0 +1,142 @@
+{
+ "comparisons": {
+  "code_k1 vs zero": {
+   "a": "code_k1",
+   "b": "zero",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": -3.4999999999999996,
+   "boot95_pp": [
+    -11.250000000000002,
+    0.0
+   ],
+   "reading": "not distinguishable",
+   "tasks_a_better": 0,
+   "tasks_b_better": 1,
+   "role": "primary"
+  },
+  "code_k1 vs ft_k1": {
+   "a": "code_k1",
+   "b": "ft_k1",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": -52.25,
+   "boot95_pp": [
+    -71.50000000000001,
+    -32.75
+   ],
+   "reading": "worse",
+   "tasks_a_better": 0,
+   "tasks_b_better": 7,
+   "role": "secondary"
+  },
+  "ft_k1 vs zero": {
+   "a": "ft_k1",
+   "b": "zero",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": 48.75,
+   "boot95_pp": [
+    29.75,
+    68.5
+   ],
+   "reading": "better",
+   "tasks_a_better": 7,
+   "tasks_b_better": 0,
+   "role": "secondary"
+  },
+  "code_k1 vs replay_k1": {
+   "a": "code_k1",
+   "b": "replay_k1",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": -52.75,
+   "boot95_pp": [
+    -72.5,
+    -30.49375000000009
+   ],
+   "reading": "worse",
+   "tasks_a_better": 0,
+   "tasks_b_better": 7,
+   "role": "descriptive"
+  },
+  "ft_k1 vs replay_k1": {
+   "a": "ft_k1",
+   "b": "replay_k1",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": -0.4999999999999998,
+   "boot95_pp": [
+    -15.0,
+    14.75
+   ],
+   "reading": "not distinguishable",
+   "tasks_a_better": 3,
+   "tasks_b_better": 4,
+   "role": "descriptive"
+  },
+  "zero vs replay_k1": {
+   "a": "zero",
+   "b": "replay_k1",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": -49.25,
+   "boot95_pp": [
+    -68.75,
+    -27.993750000000087
+   ],
+   "reading": "worse",
+   "tasks_a_better": 0,
+   "tasks_b_better": 7,
+   "role": "descriptive"
+  },
+  "code_small_k1 vs zero": {
+   "a": "code_small_k1",
+   "b": "zero",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": -0.24999999999999953,
+   "boot95_pp": [
+    -3.0,
+    2.0000000000000004
+   ],
+   "reading": "not distinguishable",
+   "tasks_a_better": 0,
+   "tasks_b_better": 1,
+   "role": "post hoc"
+  },
+  "code_small_k1 vs code_k1": {
+   "a": "code_small_k1",
+   "b": "code_k1",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": 3.25,
+   "boot95_pp": [
+    0.0,
+    10.750000000000002
+   ],
+   "reading": "not distinguishable",
+   "tasks_a_better": 1,
+   "tasks_b_better": 0,
+   "role": "post hoc"
+  },
+  "code_small_k1 vs ft_k1": {
+   "a": "code_small_k1",
+   "b": "ft_k1",
+   "tasks": 8,
+   "episodes": 400,
+   "diff_pp": -49.0,
+   "boot95_pp": [
+    -68.25,
+    -29.75
+   ],
+   "reading": "worse",
+   "tasks_a_better": 0,
+   "tasks_b_better": 7,
+   "role": "post hoc"
+  }
+ },
+ "crashes": {
+  "code_k1_1000": 0
+ }
+}

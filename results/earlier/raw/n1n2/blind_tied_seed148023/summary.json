@@ -1,0 +1,14 @@
+{
+ "protocol": "revision_20261021_loto_tied_v1",
+ "feature": "blind",
+ "seed": 148023,
+ "arms": {
+  "sal_tied": {
+   "fold_count": 41,
+   "complete": true,
+   "mean_selection": 0.33245237859379473,
+   "mean_robustness": 0.3263547908798809
+  }
+ },
+ "finished_unix": 1792606944.8732812
+}

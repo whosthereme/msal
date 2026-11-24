@@ -1,0 +1,33 @@
+text records 200 (machines {'ws2': 0, 'a800': 200}); plain_nl records 200; stored word-descriptor records 200
+span share of the held descriptor: mean 0.802, min 0.484, max 0.983; scorer check 200/200
+T1: text embedding vs no task input
+  T1 sampled chunk                                       -2.1% [  -5.5,   +1.4] not distinguishable (5 seeds, folds 122/200)
+      same-machine pairs                                 -4.2% [  -7.4,   -1.0] lower               (3 seeds, folds 60/90)
+  T1 flow                                                -3.6% [  -6.4,   -0.7] lower               (5 seeds, folds 135/200)
+      same-machine pairs                                 -5.7% [ -11.2,   +0.0] not distinguishable (3 seeds, folds 60/90)
+T2: text embedding vs bag of words (stored MSAL head)
+  T2 sampled chunk                                       +1.0% [  -3.4,   +5.5] not distinguishable (5 seeds, folds 92/200)
+      same-machine pairs                                 -0.6% [  -1.2,   -0.1] lower               (4 seeds, folds 48/91)
+  T2 flow                                                +0.6% [  -3.3,   +4.7] not distinguishable (5 seeds, folds 92/200)
+      same-machine pairs                                 -2.0% [  -7.9,   +4.2] not distinguishable (4 seeds, folds 45/91)
+T3: in-span part only vs whole descriptor (same model)
+  T3 sampled chunk                                       -0.2% [  -0.5,   +0.1] not distinguishable (5 seeds, folds 98/200)
+  T3 flow                                                -0.6% [  -0.8,   -0.3] lower               (5 seeds, folds 123/200)
+T4: whole descriptor vs constant-only descriptor (same model)
+  T4 sampled chunk                                       -1.4% [  -1.9,   -0.9] lower               (5 seeds, folds 129/200)
+  T4 flow                                                -0.7% [  -1.5,   -0.0] lower               (5 seeds, folds 115/200)
+reference: bag of words vs no task input (stored head, new plain_nl)
+  W vs N sampled chunk                                   -3.1% [  -4.6,   -1.5] lower               (5 seeds, folds 120/200)
+      same-machine pairs                                 -2.9% [  -4.7,   -1.1] lower               (5 seeds, folds 109/183)
+  W vs N flow                                            -4.2% [  -8.7,   +0.5] not distinguishable (5 seeds, folds 141/200)
+      same-machine pairs                                 -4.0% [  -8.7,   +0.9] not distinguishable (5 seeds, folds 128/183)
+T5 sampled chunk: Spearman of span share and log(E/N) over 40 tasks: -0.27 [-0.55, +0.04] not supported
+  T1 sampled chunk, share at or above the median 0.81    -3.8% [  -7.3,   -0.2] lower               (5 seeds, folds 68/100)
+  T3 sampled chunk, share at or above the median 0.81    -0.1% [  -0.1,   +0.0] not distinguishable (5 seeds, folds 46/100)
+  T1 sampled chunk, share below the median               -0.4% [  -5.7,   +5.3] not distinguishable (5 seeds, folds 54/100)
+  T3 sampled chunk, share below the median               -0.3% [  -0.8,   +0.2] not distinguishable (5 seeds, folds 52/100)
+T5 flow: Spearman of span share and log(E/N) over 40 tasks: -0.32 [-0.58, -0.01] supported
+  T1 flow, share at or above the median 0.81             -5.4% [  -8.8,   -1.9] lower               (5 seeds, folds 73/100)
+  T3 flow, share at or above the median 0.81             -0.2% [  -0.3,   -0.1] lower               (5 seeds, folds 52/100)
+  T1 flow, share below the median                        -1.7% [  -5.9,   +2.6] not distinguishable (5 seeds, folds 62/100)
+  T3 flow, share below the median                        -0.9% [  -1.4,   -0.4] lower               (5 seeds, folds 71/100)

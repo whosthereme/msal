@@ -1,0 +1,42 @@
+2026-11-14 18:46:02 2a5ae14462e9320dee94187bc6b6382e4b3d086fa58afbdd09e2ff8ff7811f5d  PLAN_L40_ZERO.md
+2026-11-14 20:54:09 d0da724a0b795ec2b59eba12d3ad6ae53a9f8e8cea20d864772d53a4080d9676  PLAN_LODO_ADAPT.md
+2026-11-14 23:13:11 b60d63b8d140595330dd4e4da8d5e9f1c1be4513ed353e8774b3f559ab6c0b60  PLAN_LODO_DIM.md
+2026-11-14 23:19:29 b78d88f2e7535a0ec6a057fd4f6415189bc6f49f3329b0a6cc0f7aff67c063df  PLAN_CL_TRUNK.md
+2026-11-15 06:09:32 287501541cb8becb8ab14b282fc5a431a41001135c4091824a2d41cb51874b55  PLAN_LODO_CONFIRM.md
+2026-11-15 15:17:41 66d60c1418c7c31ef647c6845776c93870a4fa4a164e6bb9c93f59105f85b694  PLAN_LOTO_COORD.md
+2026-11-15 15:38:07 aaa8ecd610875d5dcc42449594fb6376dbed88620bdb601fc9fc0f438c9d0a71  PLAN_LOTO_COORD.md (Amendment 1)
+2026-11-16 11:56:38 33c03b26b2d09296aa37e33c1b4845c494882d7efd78d933334501babb2996fe  PLAN_SPAN_PRED.md
+2026-11-16T15:01:04+08:00 08d2bb2b479bf1df2179d8fc9e3109f7cfcdb4a5fa31cd6e294309ab2294bb84  PLAN_CL_COORD.md
+2026-11-16T15:54:49+08:00 amendment 1 a6042eaff5a2fa675b3889587f6c37c245ace8c3a884357741efdf9189dde608  PLAN_CL_COORD.md
+2026-11-18T16:56:47+08:00 f0820a093ae4cb4d21ad48251ac46f0ac3d54776e14064c16ef1a870de1f4744  PLAN_PROJ.md
+2026-11-18T16:56:47+08:00 c7a4b9a6fe0bb3a180666447a9927255c90266a32b265491bedeab893b0bcf4a  PLAN_HEADS5.md
+2026-11-18T17:05:21+08:00 amendment 1 df7fa5fb43e3777e425fb769bb8950a6911e6a8117e5bbf8ea0195f76d1977f1  PLAN_HEADS5.md
+2026-11-18T19:18:16+08:00 results 9f05ba2fbc4b91e3bf565f8e3c6d2e97d429331b7483ef01edfc53581d352675  PLAN_PROJ.md folds (outp_ws2a,b,c concatenated; three lanes, not four as planned)
+2026-11-19T11:02:53+08:00 results d95ae3be9798ac918bcb1fb027f8d2b431f480e156bc89d2bcfd52757390a4bc  PLAN_HEADS5.md l40/heads5_folds.sha256 (digests of ws2 lanes a-c, anchor, ws4 lanes a-c, analysis; 2152 records; three ws2 film_nl anchors instead of five)
+2026-11-19T22:02:02+08:00 58b78577b21f2407b669c2dbd8df23d45a812074623d3c67d0469aaab037edb3  PLAN_TIN.md
+2026-11-19T22:02:02+08:00 b8bfcabbc9de998ee17bf2188c955c22ee0f7a6429ebe2677b9e7e558c6efc27  PLAN_TEXT.md
+2026-11-19T22:02:02+08:00 6b6ab83f4d44ffeccf6e6eaab6c82e3e8686993093a9c8bbddbd61f0baf0d257  PLAN_CL_HEADS.md
+2026-11-19T22:02:02+08:00 data 19319c9a372ca7b709572998051195d42fde5a5e1768d2df968ba688fe2760b4  text/text_embeddings.npz (PLAN_TEXT.md descriptors, computed before hashing)
+2026-11-19T22:06:32+08:00 runner 5132ae92d4d806cd264b464c3cfcfff846fed699f18ebe395b8e05b0db3b62f0  l40/tc_tin.py (PLAN_TIN.md; smoke passed, lanes start)
+2026-11-19T22:14:00+08:00 runner b9203f5abdd2315703a53d6f2817de4c39f1068c8474f6d66b9b88e7bed99987  l40/tc_text.py (PLAN_TEXT.md; smoke passed on the A800 server, lanes start there; PLAN_TIN.md development seeds 148024-148025 assigned to that server)
+2026-11-19T22:19:46+08:00 runner d8dd37a76e94fcfe0be16c6894a4f06dd3f28012770072f6f217c488a8a010de  libcoord/lc_heads2.py; cdcc4499e95efd984e36f9692918cfb1cd79371f56eefe13e3e2fe9990627e3f  libcoord/lc_rollout2.py (PLAN_CL_HEADS.md; trainer smoke and rollout probe check passed; head training starts on the A800 server)
+2026-11-19T22:23:42+08:00 note PLAN_TIN.md: units whose stored film_nl record ran on the A800 servers are assigned to the A800 server (90 LIBERO units, development seeds 148021, 148023-148025) so that their pairs are same-machine; assignment made before any PLAN_TIN development score and after 4 LIBERO units on ws2
+2026-11-20T04:14:30+08:00 results a7ed4fa4959e4b1d66ed1fca9c02cd3347ca3e626ad4a913a5d58567163d10d8  PLAN_CL_HEADS.md libcoord/results2/held_*.jsonl concatenated (4,800 episodes; heads trained on the A800 server, rollouts on ws2 GPU 1)
+2026-11-20T04:14:30+08:00 correction PLAN_CL_HEADS.md: the plan gives the span share of the 20-column harmonic descriptor at a held target as mean 0.39 (0.04 to 0.96); that figure came from an unpivoted QR factorization of a rank-deficient matrix and is wrong. Computed by SVD (as the trainer does, lc_heads2.span_share): mean 0.18, 0.04 to 0.28, rank 16 of 20. Found when the analysis printed the trainer value, after the rollouts; no reading or prediction of the plan depends on the figure.
+2026-11-20T04:16:15+08:00 note PLAN_TIN.md: 26 LIBERO units on ws2 stopped with CUDA out-of-memory while the PLAN_CL_HEADS rollouts shared GPU 1 (no record written, or a partial unit); they are rerun now that the rollouts have ended. ws2 then also takes development seeds 148021 and 148023 from the A800 server queue (units claimed on the shared home) to shorten the wait; those pairs are cross-machine and are reported apart from the same-machine pairs as the plan states.
+2026-11-20T08:34:24+08:00 results f3cd40f94d60d1419d135d021f8f992b0f8841dcc52a99a3436851016871d9bb  PLAN_TIN.md ws2 l40/outt_*_ws2*/folds.jsonl concatenated; 1992ff5992be74ba200beda3fcc7efc85bd50e2f6f59ed312fc5ce84661c04f3  A800 server outt_*_ws4*/folds.jsonl concatenated (615 records in all)
+2026-11-20T08:34:24+08:00 results 442d61c4ceea2cd1e91ad9181695ebdf09ad33649c73bca685ee62b8d0adfc0c  PLAN_TEXT.md A800 server outx_ws4*/folds.jsonl concatenated (200 records)
+2026-11-20T18:05:15+08:00 plan 6cfeb27f2fd588013ccda83341de5e17e49f52b816aae004846abbd79023d477  PLAN_CL_TFILM.md
+2026-11-20T18:05:40+08:00 plan 94e3d1081754bf65bbbd090eda0da85e53d4f34309f722d8e0d72eb8a9432fef  PLAN_CL_TFILM.md (replaces 6cfeb27f: only the date in the first line corrected from 11-21 to 11-20, before any run)
+2026-11-20T18:48:41+08:00 plan 2fa6ff2a96dc90d3ed1bda8c419df5a8e8759c54d6375915c2db4aa59c5f84dd  pilot8/PLAN_PILOT8.md
+2026-11-20T21:06:30+08:00 plan 8280a6e0d8ba7b63e14c13f1e452ad842f593501e03196289dd5f83af77f269e  pilot8/PLAN_PILOT8_ADD1.md (post hoc addendum, written after the pilot's readings)
+2026-11-21T00:17:27+08:00 decision 6635164afefa66bb200fd3831768666ba85c463036cc0c36c3cfcd786065d1cc  DECISION_HEAD_20261121.md (author's decision record, no run)
+2026-11-21T21:10:28+08:00 plan 9d5e45cb12027b292c7690d4dd85159f7b96ac2562f3a1c1a5dbe1b54e826187  PLAN_TRUNK2.md
+2026-11-21T21:18:44+08:00 start PLAN_TRUNK2 (ws2 driver nodes/trunk2_ws2.sh; ws4 driver nodes/trunk2_ws4.sh)
+2026-11-21T21:22:55+08:00 plan d94bf5ff165fba2266c8f56d4338a1175e6334d29ca713b64049a50f22cd06ba  PLAN_TRUNK2.md (amendment 1)
+2026-11-22T17:34:17+08:00 plan 36ea8e0ea0bb3a83e20a54d07eb481c28fc551e787e9cfd1aedd1e0233387b7c  PLAN_TRUNK2.md (amendment 2)
+2026-11-22T17:34:25+08:00 plan 6a98f5317c83f19e8cef90361b6af0bb0ae5a3da56f312e2e6fec6a2f06344e1  PLAN_TRUNK2.md (amendment 2, time in heading corrected from 17:45 to 17:34)
+2026-11-22T17:34:53+08:00 start PLAN_TRUNK2 amendment 2 (ws4 driver nodes/trunk2b_ws4.sh)
+2026-11-22T19:28:03+08:00 plan 72eee40aa75d7404881de4dfc390b085f1286a07e6a023dd147e9d638519d50c  PLAN_TRUNK2.md (amendment 3)
+2026-11-22T19:28:18+08:00 plan 8b5ac78064a769381cff6a1a583b8158fd0200128d47fb7e24dab70f26aad160  PLAN_TRUNK2.md (amendment 3, time in heading corrected to 19:28)
+2026-11-22T19:28:20+08:00 start PLAN_TRUNK2 amendment 3 (ws2 nodes/trunk2c_ws2.sh)

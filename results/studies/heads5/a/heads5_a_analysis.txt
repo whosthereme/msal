@@ -1,0 +1,33 @@
+records 935 (duplicates seen 5); group A complete: True; group B complete: False
+units per machine: {'ws2': 106, 'ws4': 99}
+== checks
+  plain     ws2 folds 106: flow bit-exact 106/106, sampled chunk bit-exact 0/0 | server folds  99: flow vs stored -0.2%, per-fold SD 2.1%
+  film      ws2 folds 106: flow bit-exact 106/106, sampled chunk bit-exact 0/0 | server folds  99: flow vs stored +0.4%, per-fold SD 2.0%
+  plain_nl  ws2 folds 106: flow bit-exact 106/106, sampled chunk bit-exact 0/0 | server folds  99: flow vs stored +0.8%, per-fold SD 11.3%
+  film_nl   ws2 folds   3: flow bit-exact 3/3, sampled chunk bit-exact 3/3 | server folds  99: flow vs stored -1.0%, per-fold SD 4.7%
+  tin_nl    ws2 folds 106: flow bit-exact 41/41, sampled chunk bit-exact 41/41 | server folds   0: flow vs stored n/a, per-fold SD n/a
+== table: each head against FiLM and against MSAL's head
+  No task input (linear)         chunk 0.0977 vs FiLM +119.8 [+112.0, +127.8] vs MSAL +161.2 [+156.0, +166.5] | flow 0.3398 vs FiLM  +10.9 [  +5.6,  +16.5] vs MSAL  +79.8 [ +70.7,  +89.3]
+  FiLM                           chunk 0.0483 vs FiLM        ---             vs MSAL  +18.9 [ +16.1,  +21.7] | flow 0.3144 vs FiLM        ---             vs MSAL  +62.1 [ +57.9,  +66.3]
+  No task input (nonlinear)      chunk 0.1009 vs FiLM +126.4 [+117.7, +135.3] vs MSAL +169.1 [+162.7, +175.6] | flow 0.2615 vs FiLM  -22.3 [ -25.3,  -19.2] vs MSAL  +25.9 [ +21.4,  +30.5]
+  FiLM + MLP (MSAL head)         chunk 0.0424 vs FiLM  -15.9 [ -17.8,  -13.9] vs MSAL        ---             | flow 0.2197 vs FiLM  -38.3 [ -39.9,  -36.7] vs MSAL        ---            
+  Input concatenation            chunk 0.0410 vs FiLM  -19.3 [ -21.3,  -17.2] vs MSAL   -4.1 [  -7.6,   -0.3] | flow 0.2148 vs FiLM  -38.8 [ -40.7,  -36.8] vs MSAL   -0.8 [  -4.4,   +3.1]
+== comparisons
+  H1 film_nl vs plain_nl             sampled chunk   -62.8% [  -63.7,   -61.9]  lower               folds lower 205/205  per seed -62.0 -63.1 -63.1 -63.7 -62.3 | task bootstrap -65.8..-59.4
+  H1 film_nl vs plain_nl             flow MSE        -20.6% [  -23.4,   -17.6]  lower               folds lower 187/205  per seed -21.3 -22.1 -20.5 -22.3 -16.5 | task bootstrap -23.3..-17.6
+  H2 film vs plain                   sampled chunk   -54.5% [  -56.1,   -52.8]  lower               folds lower 205/205  per seed -52.4 -56.1 -54.7 -54.8 -54.4 | task bootstrap -57.2..-51.3
+  H2 film vs plain                   flow MSE         -9.8% [  -14.2,    -5.3]  lower               folds lower 168/205  per seed -9.0 -13.4 -11.4 -11.2 -3.9 | task bootstrap -12.5..-7.0
+  H3 H1 minus H2                     sampled chunk   -18.3% [  -20.4,   -16.2]  lower               per seed -20.0 -16.0 -18.5 -19.8 -17.2 | task bootstrap -21.2..-15.5
+  H3 H1 minus H2                     flow MSE        -11.9% [  -13.9,    -9.9]  lower               per seed -13.5 -10.0 -10.3 -12.5 -13.1 | task bootstrap -14.7..-9.0
+  H4 film_nl vs film                 sampled chunk   -15.9% [  -17.8,   -13.9]  lower               folds lower 174/205  per seed -17.7 -13.8 -14.9 -16.9 -16.0 | task bootstrap -19.4..-12.3
+  H4 film_nl vs film                 flow MSE        -38.3% [  -39.9,   -36.7]  lower               folds lower 194/205  per seed -40.0 -37.7 -36.7 -39.0 -38.0 | task bootstrap -42.0..-34.1
+  H5 plain_nl vs film                sampled chunk  +126.4% [ +117.7,  +135.3]  higher              folds lower   0/205  per seed +116.3 +133.9 +130.6 +129.0 +122.5 | task bootstrap +110.8..+141.6
+  H5 plain_nl vs film                flow MSE        -22.3% [  -25.3,   -19.2]  lower               folds lower 171/205  per seed -23.8 -20.1 -20.3 -21.5 -25.7 | task bootstrap -26.0..-18.5
+  C1 tin_nl vs film_nl               sampled chunk    -4.1% [   -7.6,    -0.3]  lower               folds lower 124/205  per seed -1.6 -6.7 -4.7 -0.3 -6.7 | task bootstrap -7.0..-0.9
+  C1 tin_nl vs film_nl               flow MSE         -0.8% [   -4.4,    +3.1]  not distinguishable folds lower 111/205  per seed +4.0 -2.1 -0.0 -1.3 -4.1 | task bootstrap -3.2..+2.0
+  C1 tin_nl vs film_nl, four new seeds sampled chunk    -4.6% [   -9.3,    +0.3]  not distinguishable folds lower 101/164  per seed -6.7 -4.7 -0.3 -6.7 | task bootstrap -7.7..-1.4
+  C1 tin_nl vs film_nl, four new seeds flow MSE         -1.9% [   -4.6,    +0.9]  not distinguishable folds lower  95/164  per seed -2.1 -0.0 -1.3 -4.1 | task bootstrap -4.4..+0.9
+  tin_nl vs plain_nl                 sampled chunk   -64.3% [  -65.8,   -62.9]  lower               folds lower 205/205  per seed -62.6 -65.6 -64.8 -63.8 -64.8
+  tin_nl vs plain_nl                 flow MSE        -21.2% [  -24.1,   -18.2]  lower               folds lower 190/205  per seed -18.1 -23.8 -20.5 -23.3 -20.0
+readings (sampled chunk): {"description_helps_more_before_nonlinear_readout": true, "readout_alone_beats_film": "higher", "msal_head_most_accurate": false, "arms_not_higher_than_msal_head": ["tin_nl"], "arms_compared": ["plain", "film", "plain_nl", "tin_nl"], "input_concatenation_vs_msal_head": "lower", "input_concatenation_four_new_seeds": "not distinguishable"}
+written results\heads5\a\heads5_a_analysis.json

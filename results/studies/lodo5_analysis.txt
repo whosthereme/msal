@@ -1,0 +1,60 @@
+complete (arm, seed): [('lodo_plain', 148021), ('lodo_plain', 148022), ('lodo_plain', 148023), ('lodo_plain', 148024), ('lodo_plain', 148025), ('lodo_sat', 148021), ('lodo_sat', 148022), ('lodo_sat', 148023), ('lodo_sat', 148024), ('lodo_sat', 148025), ('lodo_xy6', 148021), ('lodo_xy6', 148022), ('lodo_xy6', 148023), ('lodo_xy6', 148024), ('lodo_xy6', 148025), ('lodo_txy6', 148021), ('lodo_txy6', 148022), ('lodo_txy6', 148023), ('lodo_txy6', 148024), ('lodo_txy6', 148025), ('lodo_h9', 148021)]
+L1          act  seeds 5  t:  -62.6% [ -63.6,  -61.6] lower  | 4 new:  -62.4% [ -63.6,  -61.2] lower  | dirs:  -62.6% [ -66.2,  -57.5] lower won 41/41 tasks, 16/16 dirs
+            per seed: -63.5 -63.0 -63.1 -61.5 -62.0
+L1          flow seeds 5  t:  -62.2% [ -63.8,  -60.6] lower  | 4 new:  -62.2% [ -64.5,  -59.8] lower  | dirs:  -62.2% [ -65.9,  -57.0] lower won 41/41 tasks, 16/16 dirs
+            per seed: -62.3 -62.9 -62.4 -63.5 -60.1
+L1          rob  seeds 5  t:  -61.9% [ -64.1,  -59.6] lower  | 4 new:  -61.9% [ -65.0,  -58.4] lower  | dirs:  -61.9% [ -65.6,  -56.6] lower won 41/41 tasks, 16/16 dirs
+            per seed: -62.0 -60.9 -64.1 -63.0 -59.5
+L2          act  seeds 5  t:  -62.1% [ -63.0,  -61.2] lower  | 4 new:  -61.9% [ -62.9,  -60.9] lower  | dirs:  -62.1% [ -65.8,  -57.0] lower won 41/41 tasks, 16/16 dirs
+            per seed: -63.0 -62.6 -61.8 -61.1 -62.1
+L2          flow seeds 5  t:  -19.5% [ -23.3,  -15.6] lower  | 4 new:  -19.1% [ -24.3,  -13.5] lower  | dirs:  -19.5% [ -23.8,  -14.9] lower won 37/41 tasks, 16/16 dirs
+            per seed: -21.3 -19.5 -15.9 -23.5 -17.1
+L2          rob  seeds 5  t:  -19.4% [ -22.0,  -16.8] lower  | 4 new:  -19.0% [ -22.4,  -15.5] lower  | dirs:  -19.4% [ -23.5,  -15.1] lower won 38/41 tasks, 16/16 dirs
+            per seed: -21.0 -18.3 -17.5 -22.2 -18.1
+L3          act  seeds 5  t:   +1.3% [  -0.3,   +3.0] n.d.  | 4 new:   +1.3% [  -1.0,   +3.7] n.d.  | dirs:   +1.3% [  -2.6,   +5.1] n.d. won 19/41 tasks, 7/16 dirs
+            per seed: +1.4 +1.0 +3.3 +1.3 -0.3
+L3          flow seeds 5  t: +113.2% [+104.9, +121.9] higher  | 4 new: +114.4% [+103.0, +126.4] higher  | dirs: +113.2% [ +94.1, +128.6] higher won 0/41 tasks, 0/16 dirs
+            per seed: +108.5 +116.7 +123.9 +109.5 +107.7
+L3          rob  seeds 5  t: +111.5% [ +99.1, +124.7] higher  | 4 new: +112.4% [ +94.6, +131.8] higher  | dirs: +111.5% [ +92.1, +128.2] higher won 0/41 tasks, 0/16 dirs
+            per seed: +108.1 +108.6 +129.8 +110.1 +102.1
+L4          act  seeds 5  t:  -18.1% [ -19.0,  -17.2] lower  | 4 new:  -18.0% [ -19.3,  -16.7] lower  | dirs:  -18.1% [ -20.6,  -15.5] lower won 41/41 tasks, 16/16 dirs
+            per seed: -18.4 -18.0 -19.0 -18.1 -17.0
+L4          flow seeds 5  t:  -10.2% [ -13.8,   -6.4] lower  | 4 new:   -9.4% [ -14.0,   -4.7] lower  | dirs:  -10.2% [ -12.0,   -8.3] lower won 40/41 tasks, 16/16 dirs
+            per seed: -13.1 -12.0 -11.3 -5.5 -8.7
+L4          rob  seeds 5  t:  -10.1% [ -14.5,   -5.5] lower  | 4 new:   -9.2% [ -14.5,   -3.5] lower  | dirs:  -10.1% [ -12.1,   -8.2] lower won 40/41 tasks, 16/16 dirs
+            per seed: -13.7 -11.2 -11.7 -4.0 -9.6
+txy6_plain  act  seeds 5  t:  -69.0% [ -69.8,  -68.1] lower  | 4 new:  -68.7% [ -69.6,  -67.9] lower  | dirs:  -69.0% [ -72.5,  -64.0] lower won 41/41 tasks, 16/16 dirs
+            per seed: -69.8 -69.3 -69.1 -68.1 -68.5
+txy6_plain  flow seeds 5  t:  -27.7% [ -31.2,  -24.0] lower  | 4 new:  -26.7% [ -30.1,  -23.1] lower  | dirs:  -27.7% [ -31.5,  -23.3] lower won 40/41 tasks, 16/16 dirs
+            per seed: -31.6 -29.2 -25.5 -27.8 -24.3
+txy6_plain  rob  seeds 5  t:  -27.6% [ -30.8,  -24.3] lower  | 4 new:  -26.5% [ -28.1,  -24.9] lower  | dirs:  -27.6% [ -31.3,  -23.4] lower won 40/41 tasks, 16/16 dirs
+            per seed: -31.9 -27.5 -27.2 -25.3 -26.0
+h9_xy6      act  seeds 1  t: -  | dirs:   -3.1% [  -6.2,   -0.3] lower won 26/41 tasks, 12/16 dirs
+            per seed: -3.1
+h9_xy6      flow seeds 1  t: -  | dirs:   -4.0% [ -11.8,   +2.6] n.d. won 25/41 tasks, 11/16 dirs
+            per seed: -4.0
+h9_xy6      rob  seeds 1  t: -  | dirs:   -4.6% [ -12.9,   +2.3] n.d. won 25/41 tasks, 10/16 dirs
+            per seed: -4.6
+
+context (seed-mean over complete seeds; bootstrap over directions)
+  lodo_plain vs_loto_film_nl_act  +173.2% [+146.5, +202.5] higher (seeds 5)
+  lodo_plain vs_seen_act          +1348.5% [+1218.9, +1503.6] higher (seeds 5)
+  lodo_plain vs_seen_flow         +305.6% [+243.2, +406.4] higher (seeds 5)
+  lodo_plain vs_loto_film_nl_flow  +29.2% [ +21.8,  +37.0] higher (seeds 5)
+  lodo_plain vs_loto_plain_nl_flow   +3.5% [  -2.4,  +10.0] n.d. (seeds 5)
+  lodo_sat   vs_loto_film_nl_act  +176.8% [+148.9, +207.3] higher (seeds 5)
+  lodo_sat   vs_seen_act          +1368.0% [+1217.0, +1555.2] higher (seeds 5)
+  lodo_sat   vs_seen_flow         +764.6% [+674.5, +890.3] higher (seeds 5)
+  lodo_sat   vs_loto_film_nl_flow +175.5% [+155.2, +197.3] higher (seeds 5)
+  lodo_sat   vs_loto_plain_nl_flow +120.7% [+106.0, +136.2] higher (seeds 5)
+  lodo_xy6   vs_loto_film_nl_act    +3.5% [  -5.0,  +12.4] n.d. (seeds 5)
+  lodo_xy6   vs_seen_act          +448.8% [+362.5, +561.5] higher (seeds 5)
+  lodo_xy6   vs_seen_flow         +226.4% [+167.8, +322.8] higher (seeds 5)
+  lodo_xy6   vs_loto_film_nl_flow   +4.0% [  -2.9,  +13.1] n.d. (seeds 5)
+  lodo_xy6   vs_loto_plain_nl_flow  -16.7% [ -22.8,   -8.9] lower (seeds 5)
+  lodo_txy6  vs_loto_film_nl_act   -15.2% [ -23.0,   -7.0] lower (seeds 5)
+  lodo_txy6  vs_seen_act          +349.6% [+272.4, +452.1] higher (seeds 5)
+  lodo_txy6  vs_seen_flow         +193.2% [+138.5, +284.0] higher (seeds 5)
+  lodo_txy6  vs_loto_film_nl_flow   -6.6% [ -13.5,   +2.6] n.d. (seeds 5)
+  lodo_txy6  vs_loto_plain_nl_flow  -25.2% [ -31.2,  -17.3] lower (seeds 5)
+written results\lodo5_analysis.json

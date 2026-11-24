@@ -1,0 +1,26 @@
+{
+ "protocol": "revision_20261021_loto_v1",
+ "feature": "blind",
+ "seed": 148024,
+ "arms": {
+  "bilinear": {
+   "fold_count": 41,
+   "complete": true,
+   "mean_selection": 0.41834693940109596,
+   "mean_robustness": 0.45683208707439404
+  },
+  "plain": {
+   "fold_count": 41,
+   "complete": true,
+   "mean_selection": 0.3387426967482741,
+   "mean_robustness": 0.36048549004807706
+  },
+  "sal_word": {
+   "fold_count": 41,
+   "complete": true,
+   "mean_selection": 0.3319744958715179,
+   "mean_robustness": 0.35377838505198855
+  }
+ },
+ "finished_unix": 1792601103.8789563
+}

@@ -1,0 +1,42 @@
+{
+ "held": 1023,
+ "instruction": "pick up the chocolate pudding and place it in the basket",
+ "demo_episode": 823,
+ "frames": 81,
+ "loss_decoded_code": 0.29407716351533963,
+ "loss_fitted_code": 0.2699932444784281,
+ "trajectory": [
+  [
+   0,
+   0.29407716351533963
+  ],
+  [
+   20,
+   0.2857994968398998
+  ],
+  [
+   40,
+   0.28036825981007496
+  ],
+  [
+   60,
+   0.27631911015328114
+  ],
+  [
+   80,
+   0.2730726945076185
+  ],
+  [
+   99,
+   0.2701531460052138
+  ]
+ ],
+ "code_change_norm": 5.060518264770508,
+ "seconds": 325.92472553253174,
+ "settings": {
+  "STEPS": 100,
+  "LR": 0.01,
+  "FRAME_STRIDE": 2,
+  "DRAWS": 2
+ }
+}

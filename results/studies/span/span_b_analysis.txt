@@ -1,0 +1,20 @@
+records 820 tasks 41 missing 0
+== action_selection
+  lodo_xy6id05  vs xy6    +2.1% [  +0.3,   +4.0]  confirmed (higher)     per seed +2.3 +2.7 +0.4 +4.2 +1.0 | directions +0.0..+5.1, higher 11/16 | tasks higher 27/41
+  lodo_xy6id1   vs xy6    +9.8% [  +7.4,  +12.3]  confirmed (higher)     per seed +11.0 +10.2 +7.7 +12.2 +7.9 | directions +7.3..+13.3, higher 16/16 | tasks higher 38/41
+  lodo_xy6id2   vs xy6   +25.0% [ +21.2,  +28.8]  confirmed (higher)     per seed +27.0 +28.3 +20.3 +24.5 +25.1 | directions +20.0..+30.6, higher 16/16 | tasks higher 41/41
+  monotone in alpha (0 <= 0.5 <= 1 <= 2): True
+== flow_selection
+  lodo_xy6id05  vs xy6    +2.1% [  -1.1,   +5.4]  not distinguishable    per seed -2.4 +3.6 +2.1 +4.0 +3.2 | directions +0.5..+4.1, higher 13/16 | tasks higher 29/41
+  lodo_xy6id1   vs xy6   +10.0% [  +7.2,  +12.8]  confirmed (higher)     per seed +8.3 +11.1 +9.5 +13.4 +7.8 | directions +7.2..+13.2, higher 16/16 | tasks higher 35/41
+  lodo_xy6id2   vs xy6   +27.5% [ +24.9,  +30.2]  confirmed (higher)     per seed +25.6 +29.1 +26.2 +30.4 +26.2 | directions +21.5..+33.1, higher 16/16 | tasks higher 40/41
+  monotone in alpha (0 <= 0.5 <= 1 <= 2): True
+== flow_robustness
+  lodo_xy6id05  vs xy6    +1.9% [  -1.7,   +5.7]  not distinguishable    per seed -3.0 +3.1 +1.9 +4.5 +3.3 | directions +0.4..+3.6, higher 12/16 | tasks higher 29/41
+  lodo_xy6id1   vs xy6    +9.5% [  +6.7,  +12.3]  confirmed (higher)     per seed +7.6 +10.0 +9.3 +13.1 +7.6 | directions +6.8..+12.3, higher 16/16 | tasks higher 37/41
+  lodo_xy6id2   vs xy6   +26.6% [ +24.0,  +29.3]  confirmed (higher)     per seed +24.1 +26.4 +26.6 +30.0 +25.9 | directions +19.9..+32.2, higher 16/16 | tasks higher 39/41
+  monotone in alpha (0 <= 0.5 <= 1 <= 2): True
+  pooled per-task Spearman(iota, log ratio), three identifier arms: -0.653
+  B1 (primary): confirmed (higher)
+  pairs per machine: {'ws2': 79, 'loc': 19, 'ws4': 60, 'ws3': 47}
+written results/span/span_b_analysis.json

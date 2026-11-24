@@ -1,0 +1,191 @@
+{
+ "seed": 148021,
+ "arms": {
+  "tin_nl": {
+   "folds": 41,
+   "flow_vs_film_nl": {
+    "pct": 4.031893487700211,
+    "lo": 0.09305044806017024,
+    "hi": 8.255343061769596,
+    "won": 16,
+    "n": 41,
+    "reading": "worse"
+   },
+   "action_vs_film_nl": {
+    "pct": -1.6467438728065775,
+    "lo": -5.702736519540959,
+    "hi": 2.577977165388091,
+    "won": 23,
+    "n": 41,
+    "reading": "not distinguishable"
+   },
+   "robustness_vs_film_nl": {
+    "pct": 3.9989692852017367,
+    "lo": 0.15059597864418023,
+    "hi": 8.045126678092355,
+    "won": 14,
+    "n": 41,
+    "reading": "worse"
+   },
+   "flow_vs_plain_nl": {
+    "pct": -18.09793290432592,
+    "lo": -22.513896578625367,
+    "hi": -13.273554262931114,
+    "won": 35,
+    "n": 41,
+    "reading": "better"
+   },
+   "action_vs_trained_head": {
+    "pct": 420.53380623239536,
+    "lo": 359.71012647611263,
+    "hi": 498.754202088887,
+    "won": 0,
+    "n": 41,
+    "reading": "worse"
+   },
+   "flow_vs_film_nl_without_outliers": {
+    "pct": 4.733763890475062,
+    "lo": 0.3857983912313707,
+    "hi": 9.259596086743972,
+    "won": 13,
+    "n": 37,
+    "reading": "worse"
+   },
+   "action_vs_film_nl_without_outliers": {
+    "pct": -1.3365274003922734,
+    "lo": -5.837218284349019,
+    "hi": 3.356773588009448,
+    "won": 19,
+    "n": 37,
+    "reading": "not distinguishable"
+   },
+   "gap_closed_flow": 0.195277530313214,
+   "mean_flow": 0.21732395324038295,
+   "mean_action": 0.04225377794469731
+  },
+  "tfilm_nl": {
+   "folds": 41,
+   "flow_vs_film_nl": {
+    "pct": -3.877068794629568,
+    "lo": -8.40491722851703,
+    "hi": 0.9264584290579065,
+    "won": 26,
+    "n": 41,
+    "reading": "not distinguishable"
+   },
+   "action_vs_film_nl": {
+    "pct": -14.837809645176625,
+    "lo": -19.101409688852698,
+    "hi": -10.511943808035284,
+    "won": 36,
+    "n": 41,
+    "reading": "better"
+   },
+   "robustness_vs_film_nl": {
+    "pct": -4.254894604067417,
+    "lo": -8.735402029495482,
+    "hi": 0.49307798616748005,
+    "won": 28,
+    "n": 41,
+    "reading": "not distinguishable"
+   },
+   "flow_vs_plain_nl": {
+    "pct": -24.32448841329696,
+    "lo": -28.401439049290488,
+    "hi": -19.928346356456874,
+    "won": 37,
+    "n": 41,
+    "reading": "better"
+   },
+   "action_vs_trained_head": {
+    "pct": 350.72019817173486,
+    "lo": 297.30833455256374,
+    "hi": 419.3346112574705,
+    "won": 0,
+    "n": 41,
+    "reading": "worse"
+   },
+   "flow_vs_film_nl_without_outliers": {
+    "pct": -3.506877102720196,
+    "lo": -8.577590200662568,
+    "hi": 1.7633833344859924,
+    "won": 23,
+    "n": 37,
+    "reading": "not distinguishable"
+   },
+   "action_vs_film_nl_without_outliers": {
+    "pct": -15.151168720112862,
+    "lo": -19.68843011261257,
+    "hi": -10.417361278495948,
+    "won": 32,
+    "n": 37,
+    "reading": "better"
+   },
+   "gap_closed_flow": 0.2763776225350167,
+   "mean_flow": 0.20120305488476667,
+   "mean_action": 0.03708754038285422
+  },
+  "tboth_nl": {
+   "folds": 41,
+   "flow_vs_film_nl": {
+    "pct": -2.5298447917404654,
+    "lo": -6.467227650431248,
+    "hi": 1.6607759825324038,
+    "won": 25,
+    "n": 41,
+    "reading": "not distinguishable"
+   },
+   "action_vs_film_nl": {
+    "pct": -12.468031919615008,
+    "lo": -16.667566780526254,
+    "hi": -8.304864416499152,
+    "won": 37,
+    "n": 41,
+    "reading": "better"
+   },
+   "robustness_vs_film_nl": {
+    "pct": -3.2181025328771318,
+    "lo": -7.275843007480012,
+    "hi": 1.0609818917615037,
+    "won": 25,
+    "n": 41,
+    "reading": "not distinguishable"
+   },
+   "flow_vs_plain_nl": {
+    "pct": -23.26384799834027,
+    "lo": -28.187160658794237,
+    "hi": -17.965148760360798,
+    "won": 36,
+    "n": 41,
+    "reading": "better"
+   },
+   "action_vs_trained_head": {
+    "pct": 363.26222746475656,
+    "lo": 307.0386376429616,
+    "hi": 437.216678899164,
+    "won": 0,
+    "n": 41,
+    "reading": "worse"
+   },
+   "flow_vs_film_nl_without_outliers": {
+    "pct": -2.5024972749400742,
+    "lo": -6.897206392422745,
+    "hi": 2.057299158951351,
+    "won": 22,
+    "n": 37,
+    "reading": "not distinguishable"
+   },
+   "action_vs_film_nl_without_outliers": {
+    "pct": -12.966766500671067,
+    "lo": -17.458265277784413,
+    "hi": -8.482751678378074,
+    "won": 33,
+    "n": 37,
+    "reading": "better"
+   },
+   "gap_closed_flow": 0.24511264873804717,
+   "mean_flow": 0.20741783776434092,
+   "mean_action": 0.03849156699018926
+  }
+ }
+}

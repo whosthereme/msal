@@ -1,0 +1,40 @@
+== LIBERO40: 8 tin_nl units; machines {'ws2': 8, 'a800': 0}
+ zero-shot (D1 / L1): input concatenation vs MSAL's head
+  sampled chunk                                               +12.3% [  +nan,   +nan] one seed            (1 seeds) folds 2/7
+      same-machine pairs                                      +10.2% [  +nan,   +nan] one seed            (1 seeds) folds 2/6   -> one seed
+  flow                                                        +22.3% [  +nan,   +nan] one seed            (1 seeds) folds 1/7
+      same-machine pairs                                      +22.7% [  +nan,   +nan] one seed            (1 seeds) folds 1/6   -> one seed
+ what the description adds (L2), against the same readout without task input
+  input concatenation vs none, sampled chunk                   +6.0% [  +nan,   +nan] one seed            (1 seeds) folds 2/7
+  input concatenation vs none, flow                           +21.6% [  +nan,   +nan] one seed            (1 seeds) folds 1/7
+  MSAL's head vs none, sampled chunk                           -5.8% [  +nan,   +nan] one seed            (1 seeds) folds 5/6
+      same-machine pairs                                       -4.5% [  +nan,   +nan] one seed            (1 seeds) folds 4/5   -> one seed
+  MSAL's head vs none, flow                                    -3.5% [  +nan,   +nan] one seed            (1 seeds) folds 5/6
+      same-machine pairs                                       -3.1% [  +nan,   +nan] one seed            (1 seeds) folds 4/5   -> one seed
+ complete method (D2 / L3): concatenation + inversion + residual code vs MSAL
+  sampled chunk, k=1                                           +9.9% [  +nan,   +nan] one seed            (1 seeds) folds 0/7
+      same-machine pairs                                      +10.7% [  +nan,   +nan] one seed            (1 seeds) folds 0/6   -> one seed
+  flow, k=1                                                    -2.7% [  +nan,   +nan] one seed            (1 seeds) folds 4/7
+      same-machine pairs                                       -2.5% [  +nan,   +nan] one seed            (1 seeds) folds 3/6   -> one seed
+  sampled chunk, k=16                                         +10.1% [  +nan,   +nan] one seed            (1 seeds) folds 0/7
+      same-machine pairs                                      +11.6% [  +nan,   +nan] one seed            (1 seeds) folds 0/6   -> one seed
+  flow, k=16                                                   -3.2% [  +nan,   +nan] one seed            (1 seeds) folds 3/7
+      same-machine pairs                                       -2.6% [  +nan,   +nan] one seed            (1 seeds) folds 2/6   -> one seed
+ on the concatenation head (D3 / L4 and descriptive)
+  residual code beyond inversion, flow, k=1                    -2.6% [  +nan,   +nan] one seed            (1 seeds) folds 8/8
+  residual code beyond inversion, sampled chunk, k=1           -1.8% [  +nan,   +nan] one seed            (1 seeds) folds 8/8
+  method vs own zero-shot, sampled chunk, k=1                 -10.1% [  +nan,   +nan] one seed            (1 seeds) folds 5/8
+  method vs own zero-shot, flow, k=1                          -43.2% [  +nan,   +nan] one seed            (1 seeds) folds 8/8
+  MSAL vs own zero-shot (stored), sampled chunk, k=1           -5.6% [  +nan,   +nan] one seed            (1 seeds) folds 5/7
+  residual code beyond inversion, flow, k=16                   -2.5% [  +nan,   +nan] one seed            (1 seeds) folds 8/8
+  residual code beyond inversion, sampled chunk, k=16          -1.6% [  +nan,   +nan] one seed            (1 seeds) folds 8/8
+  method vs own zero-shot, sampled chunk, k=16                -15.5% [  +nan,   +nan] one seed            (1 seeds) folds 6/8
+  method vs own zero-shot, flow, k=16                         -45.9% [  +nan,   +nan] one seed            (1 seeds) folds 8/8
+  MSAL vs own zero-shot (stored), sampled chunk, k=16         -11.3% [  +nan,   +nan] one seed            (1 seeds) folds 7/7
+  inversion: concatenation vs MSAL's head, sampled chunk, k=1   +9.4% [  +nan,   +nan] one seed            (1 seeds) folds 0/7
+      same-machine pairs                                       +9.5% [  +nan,   +nan] one seed            (1 seeds) folds 0/6   -> one seed
+  inversion: concatenation vs MSAL's head, sampled chunk, k=16   +9.1% [  +nan,   +nan] one seed            (1 seeds) folds 0/7
+      same-machine pairs                                      +10.0% [  +nan,   +nan] one seed            (1 seeds) folds 0/6   -> one seed
+  mean zero-shot sampled chunk 0.13805, flow 0.38293; descriptor shift by inversion at k=16: concatenation 3.63, MSAL 5.73
+== anchors: film_nl retrained in the new runs vs its stored record
+  l40 seed 148021 task 1000: no stored record

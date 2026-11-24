@@ -1,0 +1,44 @@
+== LIBERO40: 200 tin_nl units; machines {'ws2': 110, 'a800': 90}
+ zero-shot (D1 / L1): input concatenation vs MSAL's head
+  sampled chunk                                                +4.7% [  +0.2,   +9.4] higher              (5 seeds) folds 74/200
+      same-machine pairs                                       +4.2% [  -0.6,   +9.4] not distinguishable (5 seeds) folds 70/183   -> higher
+  flow                                                        +26.9% [ +21.2,  +32.8] higher              (5 seeds) folds 13/200
+      same-machine pairs                                      +26.1% [ +19.3,  +33.4] higher              (5 seeds) folds 13/183   -> higher
+ what the description adds (L2), against the same readout without task input
+  input concatenation vs none, sampled chunk                   +1.5% [  -1.9,   +5.0] not distinguishable (5 seeds) folds 96/200
+  input concatenation vs none, flow                           +21.6% [ +18.4,  +24.8] higher              (5 seeds) folds 27/200
+  MSAL's head vs none, sampled chunk                           -3.1% [  -4.6,   -1.5] lower               (5 seeds) folds 120/200
+      same-machine pairs                                       -2.9% [  -4.7,   -1.1] lower               (5 seeds) folds 109/183   -> lower
+  MSAL's head vs none, flow                                    -4.2% [  -8.7,   +0.5] not distinguishable (5 seeds) folds 141/200
+      same-machine pairs                                       -4.0% [  -8.7,   +0.9] not distinguishable (5 seeds) folds 128/183   -> not distinguishable
+ complete method (D2 / L3): concatenation + inversion + residual code vs MSAL
+  sampled chunk, k=1                                           +3.7% [  +1.2,   +6.2] higher              (5 seeds) folds 68/200
+      same-machine pairs                                       +3.6% [  +1.0,   +6.3] higher              (5 seeds) folds 61/183   -> higher
+  flow, k=1                                                    -0.3% [  -4.6,   +4.1] not distinguishable (5 seeds) folds 105/200
+      same-machine pairs                                       -0.6% [  -5.1,   +4.1] not distinguishable (5 seeds) folds 97/183   -> not distinguishable
+  sampled chunk, k=16                                          +3.5% [  +1.3,   +5.7] higher              (5 seeds) folds 67/200
+      same-machine pairs                                       +3.4% [  +1.0,   +5.9] higher              (5 seeds) folds 61/183   -> higher
+  flow, k=16                                                   -1.4% [  -5.7,   +3.1] not distinguishable (5 seeds) folds 113/200
+      same-machine pairs                                       -1.6% [  -6.1,   +3.1] not distinguishable (5 seeds) folds 105/183   -> not distinguishable
+ on the concatenation head (D3 / L4 and descriptive)
+  residual code beyond inversion, flow, k=1                    -1.8% [  -2.2,   -1.4] lower               (5 seeds) folds 192/200
+  residual code beyond inversion, sampled chunk, k=1           -1.6% [  -1.7,   -1.5] lower               (5 seeds) folds 185/200
+  method vs own zero-shot, sampled chunk, k=1                 -17.7% [ -19.6,  -15.6] lower               (5 seeds) folds 168/200
+  method vs own zero-shot, flow, k=1                          -41.7% [ -43.0,  -40.4] lower               (5 seeds) folds 200/200
+  MSAL vs own zero-shot (stored), sampled chunk, k=1          -16.8% [ -18.1,  -15.6] lower               (5 seeds) folds 169/200
+  residual code beyond inversion, flow, k=16                   -2.3% [  -2.5,   -2.2] lower               (5 seeds) folds 200/200
+  residual code beyond inversion, sampled chunk, k=16          -1.8% [  -1.9,   -1.8] lower               (5 seeds) folds 194/200
+  method vs own zero-shot, sampled chunk, k=16                -20.0% [ -22.1,  -17.8] lower               (5 seeds) folds 181/200
+  method vs own zero-shot, flow, k=16                         -44.8% [ -45.9,  -43.6] lower               (5 seeds) folds 200/200
+  MSAL vs own zero-shot (stored), sampled chunk, k=16         -19.0% [ -20.4,  -17.6] lower               (5 seeds) folds 185/200
+  inversion: concatenation vs MSAL's head, sampled chunk, k=1   +2.9% [  +0.3,   +5.5] higher              (5 seeds) folds 70/200
+      same-machine pairs                                       +2.6% [  -0.4,   +5.6] not distinguishable (5 seeds) folds 64/183   -> higher
+  inversion: concatenation vs MSAL's head, sampled chunk, k=16   +2.3% [  +0.2,   +4.5] higher              (5 seeds) folds 78/200
+      same-machine pairs                                       +2.0% [  -0.5,   +4.7] not distinguishable (5 seeds) folds 73/183   -> higher
+  mean zero-shot sampled chunk 0.13175, flow 0.36544; descriptor shift by inversion at k=16: concatenation 3.54, MSAL 5.38
+== anchors: film_nl retrained in the new runs vs its stored record
+  l40 seed 148021 task 1000: new on ws2, stored on ws2, zero-shot flow 0.456515 vs 0.456515, bit-exact True
+  l40 seed 148022 task 1000: new on ws2, stored on ws2, zero-shot flow 0.451432 vs 0.451432, bit-exact True
+  l40 seed 148023 task 1000: new on ws2, stored on ws2, zero-shot flow 0.500852 vs 0.500852, bit-exact True
+  l40 seed 148024 task 1000: new on a800, stored on a800, zero-shot flow 0.529108 vs 0.529108, bit-exact True
+  l40 seed 148025 task 1000: new on a800, stored on a800, zero-shot flow 0.535512 vs 0.535512, bit-exact True

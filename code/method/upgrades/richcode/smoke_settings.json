@@ -1,0 +1,3 @@
+{"note": "pipeline test only (not a chosen setting)",
+ "k": {"1": {"variant": "modsh", "lr": 0.01, "lam": 0.001, "steps": 25},
+       "16": {"variant": "mod", "lr": 0.01, "lam": 0.001, "steps": 25}}}

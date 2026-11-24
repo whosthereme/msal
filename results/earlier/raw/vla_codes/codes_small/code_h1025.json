@@ -1,0 +1,42 @@
+{
+ "held": 1025,
+ "instruction": "pick up the ketchup and place it in the basket",
+ "demo_episode": 808,
+ "frames": 74,
+ "loss_decoded_code": 0.4668192770332098,
+ "loss_fitted_code": 0.4271736340597272,
+ "trajectory": [
+  [
+   0,
+   0.4668192770332098
+  ],
+  [
+   20,
+   0.4542047707363963
+  ],
+  [
+   40,
+   0.4453279869630933
+  ],
+  [
+   60,
+   0.4373314566910267
+  ],
+  [
+   80,
+   0.4315820289775729
+  ],
+  [
+   99,
+   0.42736497800797224
+  ]
+ ],
+ "code_change_norm": 5.723397254943848,
+ "seconds": 281.87975692749023,
+ "settings": {
+  "STEPS": 100,
+  "LR": 0.01,
+  "FRAME_STRIDE": 2,
+  "DRAWS": 2
+ }
+}

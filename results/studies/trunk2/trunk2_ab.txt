@@ -1,0 +1,75 @@
+== Part A: held directions, MSAL's head. records 1230; tasks 41; complete seeds [148021, 148022, 148023, 148024, 148025]
+  seed-task units per host: {'workstation': 32, 'n1': 173}
+  mean span share lodo_tsat      0.187 (0.076 to 0.344)
+  mean span share lodo_txy6      1.000 (1.000 to 1.000)
+  mean span share lodo_txy6id05  0.898 (0.876 to 0.928)
+  mean span share lodo_txy6id1   0.681 (0.626 to 0.759)
+  mean span share lodo_txy6id2   0.327 (0.258 to 0.423)
+  A1 harmonic vs none, sampled chunk                           +19.9% [  +13.4,   +26.7] higher              tasks  4/41 dirs  0/16 boot +12.6..+28.4 per seed [20.5, 22.1, 26.4, 19.0, 11.8]
+  A2 coordinates vs none, sampled chunk                        -68.9% [  -69.9,   -67.9] lower               tasks 41/41 dirs 16/16 boot -72.3..-64.3 per seed [-69.8, -69.7, -68.4, -68.1, -68.5]
+  A3 coordinates vs harmonic, sampled chunk                    -74.1% [  -75.8,   -72.2] lower               tasks 41/41 dirs 16/16 boot -77.7..-69.2 per seed [-75.0, -75.2, -75.0, -73.2, -71.9]
+  A4 identifier alpha=2 vs coordinates, sampled chunk          +84.8% [  +74.3,   +95.8] higher              tasks  0/41 dirs  0/16 boot +68.3..+102.9 per seed [88.9, 97.9, 75.5, 79.3, 83.0]
+  A4 identifier alpha=1 vs coordinates, sampled chunk          +30.8% [  +25.6,   +36.3] higher              tasks  0/41 dirs  0/16 boot +23.9..+38.7 per seed [29.2, 37.7, 25.9, 31.2, 30.4]
+  A4 identifier alpha=0.5 vs coordinates, sampled chunk        +11.8% [  +10.7,   +12.9] higher              tasks  5/41 dirs  0/16 boot +7.9..+17.0 per seed [10.5, 11.5, 11.8, 12.3, 12.9]
+  A4 identifier alpha=2 vs none, sampled chunk                 -42.6% [  -44.6,   -40.5] lower               tasks 41/41 dirs 16/16 boot -47.4..-37.1 per seed [-43.0, -40.0, -44.6, -42.8, -42.4]
+  A5 harmonic in-span vs whole, sampled chunk                  -24.1% [  -26.9,   -21.3] lower               tasks 41/41 dirs 16/16 boot -27.7..-20.8 per seed [-23.5, -24.1, -27.9, -22.9, -22.2]
+  A5 identifier in-span vs whole, sampled chunk                -27.9% [  -31.4,   -24.2] lower               tasks 41/41 dirs 16/16 boot -31.3..-23.7 per seed [-29.3, -31.5, -24.1, -28.7, -25.6]
+  A5 harmonic in-span vs none, sampled chunk                    -9.0% [  -11.9,    -6.1] lower               tasks 29/41 dirs 11/16 boot -15.6..-2.5 per seed [-7.8, -7.3, -8.8, -8.2, -13.0]
+  A5 harmonic in-span vs coordinates, sampled chunk           +192.6% [ +177.3,  +208.7] higher              tasks  0/41 dirs  0/16 boot +154.8..+230.1 per seed [205.6, 205.5, 188.7, 187.6, 176.4]
+  A5 identifier in-span vs coordinates, sampled chunk          +33.2% [  +29.2,   +37.4] higher              tasks  1/41 dirs  0/16 boot +25.8..+43.0 per seed [33.6, 35.6, 33.1, 27.9, 36.1]
+  A1 harmonic vs none, flow                                   +317.7% [ +307.0,  +328.8] higher              tasks  0/41 dirs  0/16 boot +253.6..+378.8 per seed [318.7, 322.5, 329.1, 306.5, 312.3]
+  A2 coordinates vs none, flow                                 -26.7% [  -29.2,   -24.0] lower               tasks 41/41 dirs 16/16 boot -29.6..-23.4 per seed [-29.1, -27.4, -24.7, -27.8, -24.3]
+  A3 coordinates vs harmonic, flow                             -82.4% [  -83.1,   -81.8] lower               tasks 41/41 dirs 16/16 boot -85.1..-78.6 per seed [-83.1, -82.8, -82.4, -82.2, -81.6]
+  A4 identifier alpha=2 vs coordinates, flow                  +207.7% [ +190.8,  +225.6] higher              tasks  0/41 dirs  0/16 boot +167.0..+248.8 per seed [226.2, 219.0, 192.4, 199.8, 202.3]
+  A4 identifier alpha=1 vs coordinates, flow                   +82.8% [  +77.1,   +88.7] higher              tasks  0/41 dirs  0/16 boot +68.2..+96.8 per seed [89.6, 84.1, 76.8, 81.3, 82.3]
+  A4 identifier alpha=0.5 vs coordinates, flow                 +29.2% [  +27.4,   +31.1] higher              tasks  0/41 dirs  0/16 boot +24.4..+34.4 per seed [29.4, 27.5, 31.3, 28.1, 29.7]
+  A4 identifier alpha=2 vs none, flow                         +125.6% [ +117.1,  +134.4] higher              tasks  0/41 dirs  0/16 boot +102.3..+149.1 per seed [131.3, 131.6, 120.3, 116.5, 128.8]
+  A5 harmonic in-span vs whole, flow                           -37.7% [  -40.0,   -35.3] lower               tasks 41/41 dirs 16/16 boot -41.5..-33.5 per seed [-37.5, -35.8, -37.2, -37.0, -40.8]
+  A5 identifier in-span vs whole, flow                         -51.7% [  -54.1,   -49.2] lower               tasks 41/41 dirs 16/16 boot -56.4..-46.0 per seed [-54.2, -51.9, -48.6, -51.9, -51.8]
+  A5 harmonic in-span vs none, flow                           +160.3% [ +146.8,  +174.5] higher              tasks  0/41 dirs  0/16 boot +133.3..+184.9 per seed [161.7, 171.2, 169.5, 155.9, 144.0]
+  A5 harmonic in-span vs coordinates, flow                    +254.9% [ +230.3,  +281.4] higher              tasks  0/41 dirs  0/16 boot +207.5..+299.4 per seed [269.1, 273.4, 257.7, 254.4, 222.3]
+  A5 identifier in-span vs coordinates, flow                   +48.5% [  +44.0,   +53.2] higher              tasks  0/41 dirs  0/16 boot +41.7..+56.1 per seed [49.3, 53.4, 50.3, 44.1, 45.7]
+  A4 order of alpha 0.5 < 1 < 2 in sampled chunk: True ([11.8, 30.8, 84.8])
+  projected arms: raw flow equals the stored scorer on 410 of 410 records
+ anchors: new record against the stored record of the same arm, seed and task
+  lodo_plain  pairs 205, bit-identical  82, mean log ratio of sampled chunk -0.35% (SD 4.8%); by (new host, stored source): {"('workstation', 'local')": [32, 0], "('n1', 'local')": [91, 0], "('n1', 'final_nodes')": [82, 82]}
+  lodo_txy6   pairs 205, bit-identical  82, mean log ratio of sampled chunk -0.18% (SD 8.2%); by (new host, stored source): {"('workstation', 'local')": [32, 0], "('n1', 'local')": [91, 0], "('n1', 'final_nodes')": [82, 82]}
+ descriptive: MSAL's head against the stored MSAL-h record of the same descriptor (other process)
+  MSAL vs MSAL-h, harmonic, sampled chunk                      +17.9% [  +13.4,   +22.5] higher              tasks  0/41 dirs  0/16 boot +12.7..+23.1 per seed [18.1, 19.7, 22.0, 17.5, 12.2]
+  MSAL vs MSAL-h, harmonic, flow                               +94.6% [  +90.3,   +99.1] higher              tasks  0/41 dirs  0/16 boot +79.0..+109.0 per seed [98.2, 90.9, 91.6, 94.0, 98.4]
+  MSAL vs MSAL-h, coordinates, sampled chunk                   -18.2% [  -19.6,   -16.9] lower               tasks 41/41 dirs 16/16 boot -20.6..-15.8 per seed [-18.9, -19.7, -17.5, -18.1, -17.0]
+  MSAL vs MSAL-h, coordinates, flow                             -9.5% [  -12.5,    -6.4] lower               tasks 38/41 dirs 16/16 boot -11.2..-7.8 per seed [-11.1, -11.6, -10.4, -5.5, -8.7]
+  MSAL vs MSAL-h, identifier 0.5, sampled chunk                -10.8% [  -13.8,    -7.7] lower               tasks 33/41 dirs 15/16 boot -14.2..-7.8 per seed [-12.4, -13.2, -9.3, -11.7, -7.2]
+  MSAL vs MSAL-h, identifier 0.5, flow                         +14.2% [  +10.3,   +18.2] higher              tasks  4/41 dirs  0/16 boot +10.1..+18.4 per seed [17.6, 9.6, 12.7, 16.4, 14.8]
+  MSAL vs MSAL-h, identifier 1, sampled chunk                   -2.9% [   -6.2,    +0.5] not distinguishable tasks 27/41 dirs 14/16 boot -6.7..+0.6 per seed [-5.5, -0.2, -4.8, -4.2, 0.3]
+  MSAL vs MSAL-h, identifier 1, flow                           +49.9% [  +43.0,   +57.1] higher              tasks  0/41 dirs  0/16 boot +39.8..+59.4 per seed [55.3, 47.5, 41.5, 51.0, 54.4]
+  MSAL vs MSAL-h, identifier 2, sampled chunk                  +20.5% [  +17.9,   +23.1] higher              tasks  2/41 dirs  0/16 boot +15.4..+25.4 per seed [20.8, 23.3, 18.8, 18.1, 21.5]
+  MSAL vs MSAL-h, identifier 2, flow                          +117.6% [ +105.7,  +130.2] higher              tasks  0/41 dirs  0/16 boot +96.5..+138.9 per seed [130.4, 119.9, 103.1, 117.1, 118.6]
+== Part B: text embedding on MSAL's head, LIBERO40. records 200; complete seeds [148021, 148022, 148023, 148024, 148025]
+  amendment 2: 107 units of the server's list, 107 read from the server; 77 units run on both machines
+    descriptive repeat, ws2 against server, action_selection: mean +0.5%, sd 3.3%, max abs 14.2%
+    descriptive repeat, ws2 against server, flow_selection: mean +0.3%, sd 2.5%, max abs 9.7%
+  span share of a held descriptor: mean 0.802 (0.484 to 0.983); units per machine {'ws2': 93, 'a800': 107}
+  T1' embedding vs none, sampled chunk                   +5.3% [  +1.0,   +9.9] higher              folds 76/200 per seed [11.2, 3.3, 1.8, 6.3, 4.3]
+      same-machine pairs                                 +5.4% [  +0.4,  +10.7] higher              folds 69/183 (5 seeds)
+  T2' embedding vs words (same head), sampled chunk      -0.0% [  -3.2,   +3.3] not distinguishable folds 105/200 per seed [2.8, 0.7, -4.1, 1.1, -0.4]
+      same-machine pairs                                 -0.1% [  -3.7,   +3.5] not distinguishable folds 96/184 (5 seeds)
+  T3' in-span vs whole, sampled chunk                    -5.1% [  -6.2,   -3.9] lower               folds 157/200 per seed [-5.3, -3.8, -4.5, -5.9, -5.9]
+  T4' whole vs constant-only, sampled chunk              +2.4% [  +0.8,   +4.1] higher              folds 83/200 per seed [0.4, 3.7, 2.4, 3.5, 2.2]
+      words vs none (stored, same head), sampled chunk   +5.4% [  +2.9,   +7.9] higher              folds 70/200 per seed [8.1, 2.6, 6.2, 5.2, 4.8]
+      same-machine pairs                                 +5.4% [  +2.8,   +8.0] higher              folds 64/183 (5 seeds)
+  T1' embedding vs none, flow                           +41.2% [ +37.9,  +44.6] higher              folds 11/200 per seed [45.2, 41.6, 38.9, 38.4, 42.1]
+      same-machine pairs                                +40.1% [ +34.1,  +46.4] higher              folds 11/183 (5 seeds)
+  T2' embedding vs words (same head), flow               +1.7% [  -0.2,   +3.7] not distinguishable folds 108/200 per seed [0.9, 1.9, -0.3, 2.3, 3.9]
+      same-machine pairs                                 +1.4% [  -1.3,   +4.2] not distinguishable folds 100/184 (5 seeds)
+  T3' in-span vs whole, flow                            -25.1% [ -26.3,  -23.9] lower               folds 196/200 per seed [-26.3, -23.8, -25.1, -24.8, -25.8]
+  T4' whole vs constant-only, flow                      +31.4% [ +29.7,  +33.2] higher              folds 25/200 per seed [32.3, 31.9, 33.1, 29.7, 30.2]
+      words vs none (stored, same head), flow           +38.8% [ +34.8,  +42.9] higher              folds 16/200 per seed [43.9, 39.0, 39.3, 35.2, 36.8]
+      same-machine pairs                                +38.2% [ +33.6,  +42.9] higher              folds 15/183 (5 seeds)
+== Part D: CPU time of adaptation (four threads; median of three)
+  MSAL-h  k= 1 rows   25 median 0.38 s (runs [0.85, 0.38, 0.38]), peak extra memory 0.13 GB
+  MSAL-h  k= 4 rows   98 median 0.96 s (runs [1.39, 0.96, 0.96]), peak extra memory 0.24 GB
+  MSAL-h  k=16 rows  394 median 3.34 s (runs [3.73, 3.34, 3.29]), peak extra memory 0.72 GB
+  MSAL    k= 1 rows   25 median 0.46 s (runs [0.87, 0.46, 0.46]), peak extra memory 0.13 GB
+  MSAL    k= 4 rows   98 median 1.25 s (runs [1.58, 1.25, 1.15]), peak extra memory 0.24 GB
+  MSAL    k=16 rows  394 median 4.04 s (runs [4.43, 4.04, 4.0]), peak extra memory 0.72 GB

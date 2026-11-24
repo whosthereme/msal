@@ -1,0 +1,15 @@
+{
+ "held": 0,
+ "seed": 148021,
+ "train_seconds_gpu": 100.61832213401794,
+ "head_parameters": 17939872,
+ "readout_parameters": 977568,
+ "library_parameters": 921792,
+ "descriptor_dim": 21,
+ "rows_for_k": {
+  "1": 25,
+  "4": 98,
+  "16": 394
+ },
+ "state_dim": 31680
+}

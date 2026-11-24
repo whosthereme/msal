@@ -1,0 +1,308 @@
+{
+ "stage_a": {
+  "A1": {
+   "n_exec=16": {
+    "success_pct": 37.5,
+    "episodes": 80
+   },
+   "n_exec=8": {
+    "success_pct": 32.5,
+    "episodes": 80
+   }
+  },
+  "A2": {
+   "tasks": 40,
+   "mean_success_pct": 29.625,
+   "tasks_at_least_40pct": 14,
+   "per_task_pct": {
+    "1000": 60.0,
+    "1001": 5.0,
+    "1002": 20.0,
+    "1003": 0.0,
+    "1004": 5.0,
+    "1005": 30.0,
+    "1006": 0.0,
+    "1007": 10.0,
+    "1008": 10.0,
+    "1009": 25.0,
+    "1010": 30.0,
+    "1011": 5.0,
+    "1012": 35.0,
+    "1013": 40.0,
+    "1014": 25.0,
+    "1015": 20.0,
+    "1016": 0.0,
+    "1017": 0.0,
+    "1018": 30.0,
+    "1019": 80.0,
+    "1020": 60.0,
+    "1021": 45.0,
+    "1022": 50.0,
+    "1023": 55.00000000000001,
+    "1024": 40.0,
+    "1025": 65.0,
+    "1026": 20.0,
+    "1027": 40.0,
+    "1028": 25.0,
+    "1029": 40.0,
+    "1030": 55.00000000000001,
+    "1031": 25.0,
+    "1032": 20.0,
+    "1033": 50.0,
+    "1034": 35.0,
+    "1035": 30.0,
+    "1036": 35.0,
+    "1037": 45.0,
+    "1038": 20.0,
+    "1039": 0.0
+   },
+   "gate_passed": true
+  }
+ },
+ "stage_b": {
+  "success_pct": {
+   "zero": {
+    "overall": 0.25,
+    "per_task": {
+     "1000": 0.0,
+     "1019": 0.0,
+     "1020": 0.0,
+     "1023": 0.0,
+     "1025": 0.0,
+     "1030": 2.0,
+     "1033": 0.0,
+     "1037": 0.0
+    }
+   },
+   "msal_k1": {
+    "overall": 16.0,
+    "per_task": {
+     "1000": 0.0,
+     "1019": 44.0,
+     "1020": 2.0,
+     "1023": 0.0,
+     "1025": 10.0,
+     "1030": 40.0,
+     "1033": 12.0,
+     "1037": 20.0
+    }
+   },
+   "msal_k16": {
+    "overall": 13.75,
+    "per_task": {
+     "1000": 0.0,
+     "1019": 32.0,
+     "1020": 6.0,
+     "1023": 0.0,
+     "1025": 8.0,
+     "1030": 42.0,
+     "1033": 10.0,
+     "1037": 12.0
+    }
+   },
+   "ft_k1": {
+    "overall": 41.0,
+    "per_task": {
+     "1000": 4.0,
+     "1019": 92.0,
+     "1020": 8.0,
+     "1023": 34.0,
+     "1025": 70.0,
+     "1030": 64.0,
+     "1033": 54.0,
+     "1037": 2.0
+    }
+   },
+   "ft_k16": {
+    "overall": 59.25,
+    "per_task": {
+     "1000": 36.0,
+     "1019": 98.0,
+     "1020": 30.0,
+     "1023": 78.0,
+     "1025": 56.00000000000001,
+     "1030": 76.0,
+     "1033": 72.0,
+     "1037": 28.000000000000004
+    }
+   },
+   "seen": {
+    "overall": 52.75,
+    "per_task": {
+     "1000": 46.0,
+     "1019": 82.0,
+     "1020": 60.0,
+     "1023": 56.00000000000001,
+     "1025": 62.0,
+     "1030": 52.0,
+     "1033": 36.0,
+     "1037": 28.000000000000004
+    }
+   }
+  },
+  "comparisons": {
+   "C1": {
+    "a": "msal_k16",
+    "b": "zero",
+    "tasks": 8,
+    "episodes": 400,
+    "diff_pp": 13.5,
+    "boot95_pp": [
+     4.5,
+     24.250000000000004
+    ],
+    "reading": "better",
+    "tasks_a_better": 6,
+    "tasks_b_better": 0,
+    "role": "primary"
+   },
+   "C2": {
+    "a": "msal_k1",
+    "b": "zero",
+    "tasks": 8,
+    "episodes": 400,
+    "diff_pp": 15.75,
+    "boot95_pp": [
+     5.250000000000001,
+     28.249999999999996
+    ],
+    "reading": "better",
+    "tasks_a_better": 6,
+    "tasks_b_better": 0,
+    "role": "primary"
+   },
+   "C3": {
+    "a": "msal_k16",
+    "b": "ft_k16",
+    "tasks": 8,
+    "episodes": 400,
+    "diff_pp": -45.5,
+    "boot95_pp": [
+     -60.5,
+     -31.0
+    ],
+    "reading": "worse",
+    "tasks_a_better": 0,
+    "tasks_b_better": 8,
+    "role": "secondary"
+   },
+   "C4": {
+    "a": "msal_k1",
+    "b": "ft_k1",
+    "tasks": 8,
+    "episodes": 400,
+    "diff_pp": -25.0,
+    "boot95_pp": [
+     -42.25,
+     -7.250000000000001
+    ],
+    "reading": "worse",
+    "tasks_a_better": 1,
+    "tasks_b_better": 7,
+    "role": "secondary"
+   },
+   "C5": {
+    "a": "ft_k16",
+    "b": "zero",
+    "tasks": 8,
+    "episodes": 400,
+    "diff_pp": 59.0,
+    "boot95_pp": [
+     42.0,
+     76.0
+    ],
+    "reading": "better",
+    "tasks_a_better": 8,
+    "tasks_b_better": 0,
+    "role": "secondary"
+   },
+   "C6": {
+    "a": "ft_k1",
+    "b": "zero",
+    "tasks": 8,
+    "episodes": 400,
+    "diff_pp": 40.75,
+    "boot95_pp": [
+     18.743750000000006,
+     62.999999999999986
+    ],
+    "reading": "better",
+    "tasks_a_better": 8,
+    "tasks_b_better": 0,
+    "role": "secondary"
+   }
+  },
+  "descriptive": {
+   "zero vs seen": {
+    "a": "zero",
+    "b": "seen",
+    "tasks": 8,
+    "episodes": 400,
+    "diff_pp": -52.500000000000014,
+    "boot95_pp": [
+     -64.75,
+     -41.0
+    ],
+    "reading": "worse",
+    "tasks_a_better": 0,
+    "tasks_b_better": 8
+   },
+   "msal_k1 vs seen": {
+    "a": "msal_k1",
+    "b": "seen",
+    "tasks": 8,
+    "episodes": 400,
+    "diff_pp": -36.75,
+    "boot95_pp": [
+     -50.0,
+     -22.250000000000004
+    ],
+    "reading": "worse",
+    "tasks_a_better": 0,
+    "tasks_b_better": 8
+   },
+   "msal_k16 vs seen": {
+    "a": "msal_k16",
+    "b": "seen",
+    "tasks": 8,
+    "episodes": 400,
+    "diff_pp": -39.0,
+    "boot95_pp": [
+     -51.75000000000001,
+     -25.250000000000007
+    ],
+    "reading": "worse",
+    "tasks_a_better": 0,
+    "tasks_b_better": 8
+   },
+   "ft_k1 vs seen": {
+    "a": "ft_k1",
+    "b": "seen",
+    "tasks": 8,
+    "episodes": 400,
+    "diff_pp": -11.75,
+    "boot95_pp": [
+     -30.25,
+     6.006249999999912
+    ],
+    "reading": "not distinguishable",
+    "tasks_a_better": 4,
+    "tasks_b_better": 4
+   },
+   "ft_k16 vs seen": {
+    "a": "ft_k16",
+    "b": "seen",
+    "tasks": 8,
+    "episodes": 400,
+    "diff_pp": 6.5,
+    "boot95_pp": [
+     -9.249999999999998,
+     21.0
+    ],
+    "reading": "not distinguishable",
+    "tasks_a_better": 4,
+    "tasks_b_better": 3
+   }
+  }
+ }
+}

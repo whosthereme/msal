@@ -1,0 +1,2 @@
+{"task": 1020, "suite": "libero_object", "policy": "bf_k1", "loaded_as": "msal_k1", "episode": 0, "success": false, "steps": 280, "seconds": 5.748709678649902, "n_exec": 16, "flow_steps": 10, "artifact": "held1020.pt", "probe_max_abs": 0.0}
+{"task": 1020, "suite": "libero_object", "policy": "bf_k1", "loaded_as": "msal_k1", "episode": 1, "success": false, "steps": 280, "seconds": 5.157254219055176, "n_exec": 16, "flow_steps": 10, "artifact": "held1020.pt", "probe_max_abs": 0.0}

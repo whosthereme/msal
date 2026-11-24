@@ -1,0 +1,83 @@
+{
+ "148021": {
+  "n_tasks": 41,
+  "mean_logratio_vs_nn": -0.05621865059317396,
+  "mean_logratio_vs_mean": -0.3027534823222483,
+  "mean_logratio_vs_stronger": -0.05472011166288831,
+  "median_rel_change_vs_stronger_pct": -5.053083874106601,
+  "q10_q90_rel_change_vs_stronger_pct": [
+   -9.299794024927543,
+   0.3151404124902557
+  ],
+  "wins_vs_both": 35,
+  "wins_but_under_1pct": 0,
+  "losses": 6,
+  "worst_loss_pct": 16.82264438973231,
+  "mean_mse_sal": 0.31764859733682,
+  "mean_mse_nn": 0.33683944578296543,
+  "mean_mse_mean": 0.42260941982850414
+ },
+ "148022": {
+  "n_tasks": 41,
+  "mean_logratio_vs_nn": -0.06313262013958096,
+  "mean_logratio_vs_mean": -0.3142703453852836,
+  "mean_logratio_vs_stronger": -0.0629967440287254,
+  "median_rel_change_vs_stronger_pct": -5.410002340989917,
+  "q10_q90_rel_change_vs_stronger_pct": [
+   -9.427893246409734,
+   -0.6474391055494633
+  ],
+  "wins_vs_both": 38,
+  "wins_but_under_1pct": 2,
+  "losses": 3,
+  "worst_loss_pct": 8.827421118516977,
+  "mean_mse_sal": 0.3061275662960958,
+  "mean_mse_nn": 0.325714400960411,
+  "mean_mse_mean": 0.4106000512859594
+ },
+ "148023": {
+  "n_tasks": 41,
+  "mean_logratio_vs_nn": -0.05499969552766456,
+  "mean_logratio_vs_mean": -0.2904239578779315,
+  "mean_logratio_vs_stronger": -0.05347197961002448,
+  "median_rel_change_vs_stronger_pct": -5.224648571792379,
+  "q10_q90_rel_change_vs_stronger_pct": [
+   -11.56241152939418,
+   0.5910457470139852
+  ],
+  "wins_vs_both": 33,
+  "wins_but_under_1pct": 0,
+  "losses": 8,
+  "worst_loss_pct": 8.629939832837351,
+  "mean_mse_sal": 0.3362351313368988,
+  "mean_mse_nn": 0.3554873545614623,
+  "mean_mse_mean": 0.4431372132214821
+ },
+ "across_seeds_mean_logratio_vs_nn": {
+  "mean": -0.05811698875347316,
+  "sd": 0.0043862149415999875,
+  "ci95": [
+   -0.06901295070215423,
+   -0.047221026804792086
+  ],
+  "pct_change": -5.646044253694848
+ },
+ "across_seeds_mean_logratio_vs_mean": {
+  "mean": -0.30248259519515447,
+  "sd": 0.011925501421928476,
+  "ci95": [
+   -0.3321071830100133,
+   -0.27285800738029564
+  ],
+  "pct_change": -26.101865002680313
+ },
+ "across_seeds_mean_logratio_vs_stronger": {
+  "mean": -0.05706294510054606,
+  "sd": 0.005176575672719683,
+  "ci95": [
+   -0.06992227194736197,
+   -0.044203618253730155
+  ],
+  "pct_change": -5.546538633090603
+ }
+}

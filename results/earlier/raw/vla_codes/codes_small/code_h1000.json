@@ -1,0 +1,42 @@
+{
+ "held": 1000,
+ "instruction": "pick up the book and place it in the back compartment of the caddy",
+ "demo_episode": 27,
+ "frames": 117,
+ "loss_decoded_code": 1.5001142928376794,
+ "loss_fitted_code": 1.3343591652810574,
+ "trajectory": [
+  [
+   0,
+   1.5001142928376794
+  ],
+  [
+   20,
+   1.4639754053205252
+  ],
+  [
+   40,
+   1.4282501311972737
+  ],
+  [
+   60,
+   1.3950409581884742
+  ],
+  [
+   80,
+   1.3641550177708268
+  ],
+  [
+   99,
+   1.3358353693038225
+  ]
+ ],
+ "code_change_norm": 7.163994789123535,
+ "seconds": 447.8360402584076,
+ "settings": {
+  "STEPS": 100,
+  "LR": 0.01,
+  "FRAME_STRIDE": 2,
+  "DRAWS": 2
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "held": 1020,
+ "instruction": "pick up the alphabet soup and place it in the basket",
+ "demo_episode": 813,
+ "frames": 78,
+ "loss_decoded_code": 0.32134842313826084,
+ "loss_fitted_code": 0.2940430464223027,
+ "trajectory": [
+  [
+   0,
+   0.32134842313826084
+  ],
+  [
+   20,
+   0.30979601480066776
+  ],
+  [
+   40,
+   0.3034081906080246
+  ],
+  [
+   60,
+   0.2988717593252659
+  ],
+  [
+   80,
+   0.2958387853577733
+  ],
+  [
+   99,
+   0.2941545443609357
+  ]
+ ],
+ "code_change_norm": 4.832932472229004,
+ "seconds": 285.1696219444275,
+ "settings": {
+  "STEPS": 100,
+  "LR": 0.01,
+  "FRAME_STRIDE": 2,
+  "DRAWS": 2
+ }
+}

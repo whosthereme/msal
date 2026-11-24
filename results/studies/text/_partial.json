@@ -1,0 +1,226 @@
+{
+ "T1 sampled chunk": {
+  "all": {
+   "n": 1,
+   "pct": 3.8918940384278233,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 2
+  }
+ },
+ "T1 flow": {
+  "all": {
+   "n": 1,
+   "pct": -2.2734486963011946,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 4
+  }
+ },
+ "T2 sampled chunk": {
+  "all": {
+   "n": 1,
+   "pct": 8.86399692730584,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 3
+  },
+  "same": {
+   "n": 1,
+   "pct": -0.9094344012439137,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 1,
+   "won": 1
+  }
+ },
+ "T2 flow": {
+  "all": {
+   "n": 1,
+   "pct": 0.7181780274830629,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 7,
+   "won": 4
+  },
+  "same": {
+   "n": 1,
+   "pct": -6.892138016784044,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 1,
+   "won": 1
+  }
+ },
+ "T3 sampled chunk": {
+  "all": {
+   "n": 1,
+   "pct": -1.263166433010332,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 8,
+   "won": 5
+  }
+ },
+ "T3 flow": {
+  "all": {
+   "n": 1,
+   "pct": -2.107535719329656,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 8,
+   "won": 6
+  }
+ },
+ "T4 sampled chunk": {
+  "all": {
+   "n": 1,
+   "pct": 2.088346336486202,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 8,
+   "won": 4
+  }
+ },
+ "T4 flow": {
+  "all": {
+   "n": 1,
+   "pct": 1.1189873480611956,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 8,
+   "won": 4
+  }
+ },
+ "W vs N sampled chunk": {
+  "all": {
+   "n": 1,
+   "pct": -5.753297472038188,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 6,
+   "won": 5
+  },
+  "same": {
+   "n": 1,
+   "pct": -4.454376069082433,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 5,
+   "won": 4
+  }
+ },
+ "W vs N flow": {
+  "all": {
+   "n": 1,
+   "pct": -3.4702222720134457,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 6,
+   "won": 5
+  },
+  "same": {
+   "n": 1,
+   "pct": -3.0973636994053644,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 5,
+   "won": 4
+  }
+ },
+ "T5 sampled chunk": {
+  "rho": -0.5,
+  "lo": -1.0,
+  "hi": 0.6226415094339625,
+  "tasks": 7
+ },
+ "T1 sampled chunk, share at or above the median 0.78": {
+  "all": {
+   "n": 1,
+   "pct": -0.59461444111788,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 4,
+   "won": 2
+  }
+ },
+ "T3 sampled chunk, share at or above the median 0.78": {
+  "all": {
+   "n": 1,
+   "pct": -0.9347885498899533,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 4,
+   "won": 2
+  }
+ },
+ "T1 sampled chunk, share below the median": {
+  "all": {
+   "n": 1,
+   "pct": 10.190460219806408,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 3,
+   "won": 0
+  }
+ },
+ "T3 sampled chunk, share below the median": {
+  "all": {
+   "n": 1,
+   "pct": -1.590455820658454,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 4,
+   "won": 3
+  }
+ },
+ "T5 flow": {
+  "rho": -0.6071428571428572,
+  "lo": -1.0,
+  "hi": 0.34782608695652173,
+  "tasks": 7
+ },
+ "T1 flow, share at or above the median 0.78": {
+  "all": {
+   "n": 1,
+   "pct": -5.232661273642059,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 4,
+   "won": 3
+  }
+ },
+ "T3 flow, share at or above the median 0.78": {
+  "all": {
+   "n": 1,
+   "pct": -1.3926990755403046,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 4,
+   "won": 3
+  }
+ },
+ "T1 flow, share below the median": {
+  "all": {
+   "n": 1,
+   "pct": 1.816404727720733,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 3,
+   "won": 1
+  }
+ },
+ "T3 flow, share below the median": {
+  "all": {
+   "n": 1,
+   "pct": -2.8171902779943414,
+   "lo": NaN,
+   "hi": NaN,
+   "pairs": 4,
+   "won": 3
+  }
+ }
+}
