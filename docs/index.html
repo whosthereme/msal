@@ -58,7 +58,7 @@
 <main>
 <header>
   <div class="kicker">Robot learning &middot; multimodal conditioning</div>
-  <h1>Interpretable Zero-Shot Generalization of Frozen Robot Policies via Nonlinear Conditioning and Span Analysis</h1>
+  <h1>Interpretable Zero-Shot Generalization of Frozen Robot Policies via Trunk Modulation and Span Analysis</h1>
   <p class="authors">Anonymous authors &middot; under review</p>
   <nav class="links">
     <a href="https://github.com/whosthereme/msal/tree/main/code">Code</a>
@@ -78,7 +78,8 @@ before deployment, and neither guarantees accuracy.</p>
 <div class="cond">
   <div><b>Condition 1: where the description enters</b>
   Conditioning layers that are linear in the representation and feed a linear output map, feature-wise modulation
-  among them, give each task one linear readout. To do more, the description must act on a nonlinear readout.</div>
+  among them, give each task one linear readout. A task receives more only if the description acts on a
+  nonlinear readout.</div>
   <div><b>Condition 2: what the description encodes</b>
   Training fixes the response only to the part of a new description that lies in the span of the training
   descriptions. That share is computed from the descriptions alone.</div>
@@ -103,10 +104,11 @@ down before the LIBERO run would have kept MSAL-h as the main method, because th
 accurate there; we present the trunk-modulated head as MSAL nonetheless, with those results known, and give
 both variants' results (<code>plans/DECISION_HEAD_20261121.md</code>).</p>
 <figure>
-  <img src="img/fig_method_v9.png" alt="Overview of MSAL in three stages: a task enters as a readable description, the trunk-modulated head with a shared atom library, and a new task with frozen weights.">
+  <img src="img/fig_method_v11.png" alt="Overview of MSAL in three stages: a task enters as a readable description, the trunk-modulated head with a shared atom library, and a new task with frozen weights; rollout images as multiple exposures with end-effector and object paths.">
   <figcaption>A task enters as a readable description; the head lets it act inside the trunk, before a nonlinear
   readout; a new task is predicted from its description, then refined from demonstrations without training.
-  The rollout images are from MSAL-h adapted from one demonstration.</figcaption>
+  Images: successful rollouts of MSAL, adapted from one demonstration, on three held-out LIBERO tasks, as
+  multiple exposures (earlier moments fainter) with the paths of the end effector and the moved object.</figcaption>
 </figure>
 
 <h2>Results</h2>
@@ -160,17 +162,16 @@ concatenation were not distinguishable. When the three training seeds are resamp
 leads over no description, the linear readout and the mixture remain; its lead over MSAL-h does not, and neither
 does the gain from one demonstration (20.9% against 16.2%).</p>
 
-<h3>What the results do not show</h3>
+<h3>Scope of the results</h3>
 <ul>
-  <li>MSAL's head is not the most accurate everywhere. On the 40 LIBERO tasks it was less accurate than MSAL-h
-  and than input concatenation, and its word description raised zero-shot error above that of a head without
-  one.</li>
+  <li>On the 40 LIBERO tasks, where unseen instruction words leave part of a description outside the span,
+  MSAL-h and input concatenation were more accurate than MSAL's head, and its word description raised
+  zero-shot error above that of a head without one.</li>
   <li>With language, neither a bag of words nor a pretrained sentence embedding helped zero-shot by more than a
   few percent on either head; on eight held-out LIBERO tasks zero-shot success was near zero, and one
   demonstration raised it to 10.5% (16% with MSAL-h).</li>
-  <li>Success stays far below a scripted policy or a policy trained end to end, and below replaying stored
-  demonstrations where scenes match them.</li>
-  <li>The choice of the head was made with results known, against a rule written down beforehand.</li>
+  <li>The head works on the features of a small frozen backbone; success stays far below a scripted policy or a
+  policy trained end to end, and below replaying stored demonstrations where scenes match them.</li>
 </ul>
 
 <h2>What is in the repository</h2>
@@ -178,7 +179,7 @@ does the gain from one demonstration (20.9% against 16.2%).</p>
   <li><b>Code</b>: the heads, adaptation, the runner of every study, the analysis behind every number, and the
   cluttered placement family (scene generation, scripted demonstrations, rollouts). In the code MSAL's head is
   the arm <code>tfilm_nl</code> and MSAL-h's the arm <code>film_nl</code>.</li>
-  <li><b>Registered plans</b>: the written plan of every study, 23 of them with a SHA-256 digest
+  <li><b>Registered plans</b>: the written plan of every study, 24 of them with a SHA-256 digest
   time-stamped before the runs it governs (<code>plans/PLAN_HASHES.log</code>), and the record of the choice of
   the head.</li>
   <li><b>Scores</b>: per-fold errors and per-episode outcomes of every study, with the analysis outputs.</li>

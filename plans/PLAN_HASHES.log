@@ -40,3 +40,6 @@
 2026-11-22T19:28:03+08:00 plan 72eee40aa75d7404881de4dfc390b085f1286a07e6a023dd147e9d638519d50c  PLAN_TRUNK2.md (amendment 3)
 2026-11-22T19:28:18+08:00 plan 8b5ac78064a769381cff6a1a583b8158fd0200128d47fb7e24dab70f26aad160  PLAN_TRUNK2.md (amendment 3, time in heading corrected to 19:28)
 2026-11-22T19:28:20+08:00 start PLAN_TRUNK2 amendment 3 (ws2 nodes/trunk2c_ws2.sh)
+2026-11-27T21:51:23+08:00 plan 6ad9e88830a81b7868c56aaae62cd9bde0f533c4369615b67becb3692c0767f4  PLAN_PENALTY.md
+2026-11-27T21:54:26+08:00 start PLAN_PENALTY (ws2 l40/pen_driver.sh, two lanes; this PC local_run/local_pen.sh)
+2026-11-28T00:06:25+08:00 result PLAN_PENALTY: 205 records (ws2 145, this PC 60), ws2 records sha256 9f5ce58802607a86..., analysis l40/penalty_analysis.txt sha256 0c951b928b6a796c...

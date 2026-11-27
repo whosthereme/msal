@@ -3,7 +3,7 @@
 Project page: https://whosthereme.github.io/msal/
 
 This repository holds the material behind the paper *Interpretable Zero-Shot Generalization of Frozen Robot
-Policies via Nonlinear Conditioning and Span Analysis*: code, the written study plans with their digests,
+Policies via Trunk Modulation and Span Analysis*: code, the written study plans with their digests,
 machine-checked proofs, and the per-fold and per-episode scores behind every table and figure. The data of the
 two placement families are attached to the release `data-v1` (see `DATA.md`).
 
@@ -11,7 +11,8 @@ The paper asks when a robot policy whose weights are frozen at deployment genera
 description, and states two conditions that limit it:
 
 1. **Where the description enters.** Conditioning layers that are linear in the representation and feed a linear
-   output map give each task one linear readout; to do more, the description must act on a nonlinear readout.
+   output map give each task one linear readout; a task receives more only if the description acts on a nonlinear
+   readout.
 2. **What the description encodes.** Training fixes a head's response only to the part of a new description
    that lies in the span of the training descriptions. That share can be computed before training.
 
@@ -38,6 +39,8 @@ what had been run only on MSAL-h's were planned and run after it (`plans/PLAN_TR
 | `code/analysis/` | Scripts that turn the stored records into every number, interval and table of the paper, and the trunk-modulated arms (`tc_arms.py`) |
 | `code/libcoord/` | The cluttered placement family in LIBERO: scene generation, scripted demonstrations, head training, rollouts, analysis (`lc_analyze*.py`; seed-level intervals in `lc_seedboot.py`) |
 | `code/cl/`, `code/l40/`, `code/text/`, `code/nodes/` | Closed-loop helpers, LIBERO unit lists, text-embedding descriptors, unit lists of the multi-machine runs |
+| `code/pen/` | Analysis of the sensitivity of adaptation to the two stage-2 penalty weights (runner: `code/studies/tc_penalty.py`) |
+| `code/viz/` | What the description modulates in the stored heads (supplementary Fig. S3): extraction from the stored weights and summary |
 | `plans/` | The written plan of every study (`PLAN_*.md`), the decision record, their SHA-256 digests and the time-stamped digest log; `plans/earlier/` holds the plans of the first twelve studies |
 | `results/studies/` | Per-fold and per-episode records and analysis outputs of the later studies |
 | `results/earlier/` | Records and aggregated results of the first twelve studies |
@@ -54,6 +57,8 @@ Where the main numbers of the paper come from:
 | The same studies with MSAL-h | `results/studies/lodo5_analysis.txt`, `span/`, `proj/`, `text/` |
 | Closed loop in the cluttered family | `results/studies/clh/`, `clt/`, `trunk2/cl_trunk2.txt`; seed-level intervals `trunk2/cl_seedlevel.txt` |
 | Closed loop on LIBERO | `results/studies/cl/`, `results/earlier/` |
+| Sensitivity to the penalty weights (supplementary Section S2) | `results/studies/pen/penalty_analysis.txt` (records in `pen/ws2a`, `ws2b`, `local`) |
+| What the description modulates (supplementary Fig. S3) | `code/viz/mod_viz_ws2.py`, `code/viz/mod_viz_summary.py`, data `code/viz/mod_viz.npz` |
 
 ## The plans and their digests
 
