@@ -104,9 +104,12 @@ down before the LIBERO run would have kept MSAL-h as the main method, because th
 accurate there; we present the trunk-modulated head as MSAL nonetheless, with those results known, and give
 both variants' results (<code>plans/DECISION_HEAD_20261121.md</code>).</p>
 <figure>
-  <img src="img/fig_method_v11.png" alt="Overview of MSAL in three stages: a task enters as a readable description, the trunk-modulated head with a shared atom library, and a new task with frozen weights; rollout images as multiple exposures with end-effector and object paths.">
-  <figcaption>A task enters as a readable description; the head lets it act inside the trunk, before a nonlinear
-  readout; a new task is predicted from its description, then refined from demonstrations without training.
+  <img src="img/fig_method_v12.png" alt="Overview of MSAL in three panels: description encoding, frozen policy and rollouts on held-out tasks; trunk modulation and readout with shared atoms; span analysis and few-shot adaptation for a new task. Rollout images are multiple exposures with end-effector and object paths.">
+  <figcaption>(1) A task enters a policy with frozen weights only through a readable description <i>d</i>, one
+  number per instruction word, and, once demonstrations exist, a code <i>z</i>. (2) Inside the action model,
+  <i>d</i> scales and shifts the first trunk activation; shared atoms weighted by <i>z</i> correct the nonlinear
+  readout. (3) For a new task, the span share &iota; is computed from the descriptions before deployment; from
+  <i>k</i> &ge; 1 demonstrations, <i>d</i> is refined and <i>z</i> solved in closed form, with no weight changed.
   Images: successful rollouts of MSAL, adapted from one demonstration, on three held-out LIBERO tasks, as
   multiple exposures (earlier moments fainter) with the paths of the end effector and the moved object.</figcaption>
 </figure>
