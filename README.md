@@ -5,7 +5,9 @@ Project page: https://whosthereme.github.io/msal/
 This repository holds the material behind the paper *Interpretable Zero-Shot Generalization of Frozen Robot
 Policies via Trunk Modulation and Span Analysis*: code, the written study plans with their digests,
 machine-checked proofs, and the per-fold and per-episode scores behind every table and figure. The data of the
-two placement families are attached to the release `data-v1` (see `DATA.md`).
+two placement families are attached to the release `data-v1` (see `DATA.md`). The paper's four-page
+supplementary material summarizes the studies; the complete record, with every registered reading, the plan
+table with digests and the execution record of every study, is `extended_report.pdf` (sections E1 to E10).
 
 The paper asks when a robot policy whose weights are frozen at deployment generalizes zero-shot from a task
 description, and states two conditions that limit it:
@@ -40,7 +42,7 @@ what had been run only on MSAL-h's were planned and run after it (`plans/PLAN_TR
 | `code/libcoord/` | The cluttered placement family in LIBERO: scene generation, scripted demonstrations, head training, rollouts, analysis (`lc_analyze*.py`; seed-level intervals in `lc_seedboot.py`) |
 | `code/cl/`, `code/l40/`, `code/text/`, `code/nodes/` | Closed-loop helpers, LIBERO unit lists, text-embedding descriptors, unit lists of the multi-machine runs |
 | `code/pen/` | Analysis of the sensitivity of adaptation to the two stage-2 penalty weights (runner: `code/studies/tc_penalty.py`) |
-| `code/viz/` | What the description modulates in the stored heads (supplementary Fig. S3): extraction from the stored weights and summary |
+| `code/viz/` | What the description modulates in the stored heads (supplementary Fig. S2, extended report Fig. E3): extraction from the stored weights and summary |
 | `plans/` | The written plan of every study (`PLAN_*.md`), the decision record, their SHA-256 digests and the time-stamped digest log; `plans/earlier/` holds the plans of the first twelve studies |
 | `results/studies/` | Per-fold and per-episode records and analysis outputs of the later studies |
 | `results/earlier/` | Records and aggregated results of the first twelve studies |
@@ -57,14 +59,14 @@ Where the main numbers of the paper come from:
 | The same studies with MSAL-h | `results/studies/lodo5_analysis.txt`, `span/`, `proj/`, `text/` |
 | Closed loop in the cluttered family | `results/studies/clh/`, `clt/`, `trunk2/cl_trunk2.txt`; seed-level intervals `trunk2/cl_seedlevel.txt` |
 | Closed loop on LIBERO | `results/studies/cl/`, `results/earlier/` |
-| Sensitivity to the penalty weights (supplementary Section S2) | `results/studies/pen/penalty_analysis.txt` (records in `pen/ws2a`, `ws2b`, `local`) |
-| What the description modulates (supplementary Fig. S3) | `code/viz/mod_viz_ws2.py`, `code/viz/mod_viz_summary.py`, data `code/viz/mod_viz.npz` |
+| Sensitivity to the penalty weights (supplementary Section S2, extended report E2) | `results/studies/pen/penalty_analysis.txt` (records in `pen/ws2a`, `ws2b`, `local`) |
+| What the description modulates (supplementary Fig. S2, extended report Fig. E3) | `code/viz/mod_viz_ws2.py`, `code/viz/mod_viz_summary.py`, data `code/viz/mod_viz.npz` |
 
 ## The plans and their digests
 
 Every plan in `plans/` was hashed before the runs it governs. `plans/PLAN_HASHES.log` lists time, digest and file;
-later lines for the same file are dated amendments, and the paper's supplement prints the first 16 digits of each
-final digest. The digests were time-stamped on the authors' machines, not in a public registry. In the released
+later lines for the same file are dated amendments, and the extended report (Table E17) prints the first 16 digits of
+each final digest. The digests were time-stamped on the authors' machines, not in a public registry. In the released
 plan files, machine names and directory names in paths were replaced, so their own digests differ from the logged
 ones; the logged digests are those of the unedited files, which the authors keep. The log also lists a pilot
 (`PLAN_PILOT8`) on a different question, a head shared across task families; it is not part of the paper and its
@@ -72,7 +74,7 @@ files are not in this release.
 
 `results/studies/trunk2/trunk2_ab_partialB.txt` is kept on purpose: it is the printout of one part of
 `PLAN_TRUNK2` on two of five seeds that was seen before the last units of that part had run, as the plan's third
-amendment and the supplement state.
+amendment and the extended report (Table E18) state.
 
 ## Checking the proofs
 
