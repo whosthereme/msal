@@ -1,5 +1,10 @@
 # MSAL: zero-shot generalization of frozen robot policies from task descriptions
 
+Guoqin Tang<sup>1</sup>, Gang Chen<sup>1</sup>, Zeyuan Huang<sup>2</sup>, Guoyou Ban<sup>1</sup>, Qingxuan Jia<sup>1,*</sup>
+
+<sup>1</sup> School of Intelligent Engineering and Automation, Beijing University of Posts and Telecommunications, Beijing, China;
+<sup>2</sup> Tsinghua University, Beijing, China; <sup>*</sup> corresponding author. Submitted to IEEE Transactions on Multimedia.
+
 Project page: https://whosthereme.github.io/msal/
 
 This repository holds the material behind the paper *Interpretable Zero-Shot Generalization of Frozen Robot
