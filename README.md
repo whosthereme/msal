@@ -60,7 +60,7 @@ Where the main numbers of the paper come from:
 | Closed loop in the cluttered family | `results/studies/clh/`, `clt/`, `trunk2/cl_trunk2.txt`; seed-level intervals `trunk2/cl_seedlevel.txt` |
 | Closed loop on LIBERO | `results/studies/cl/`, `results/earlier/` |
 | Sensitivity to the penalty weights (supplementary Section S2, extended report E2) | `results/studies/pen/penalty_analysis.txt` (records in `pen/ws2a`, `ws2b`, `local`) |
-| What the description modulates (supplementary Fig. S2, extended report Fig. E3) | `code/viz/mod_viz_ws2.py`, `code/viz/mod_viz_summary.py`, data `code/viz/mod_viz.npz` |
+| What the description modulates (supplementary Fig. S2, extended report Fig. E3) | `code/viz/mod_viz_extract.py`, `code/viz/mod_viz_summary.py`, data `code/viz/mod_viz.npz` |
 
 ## The plans and their digests
 
